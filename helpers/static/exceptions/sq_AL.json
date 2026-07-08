@@ -1,0 +1,350 @@
+{
+  "at_least_one_installment_required": {
+    "message": "Kërkohet të paktën një këst.",
+    "error_code": "at_least_one_installment_required"
+  },
+  "cannot_cancel_paid_reservation": {
+    "message": "Nuk mund të anulohet një rezervim i paguar plotësisht. Zhbllokoni fillimisht pagesën e rezervimit.",
+    "error_code": "cannot_cancel_paid_reservation"
+  },
+  "cannot_edit_after_delivery": {
+    "message": "Nuk mund të redaktohet një kërkesë ndryshimi që është dorëzuar tashmë",
+    "error_code": "cannot_edit_after_delivery"
+  },
+  "client_has_no_email": {
+    "message": "Klienti nuk ka adresë email të regjistruar.",
+    "error_code": "client_has_no_email"
+  },
+  "commission_splits_exceed_total": {
+    "message": "Ndarjet e komisionit tejkalojnë shumën totale të komisionit.",
+    "error_code": "commission_splits_exceed_total"
+  },
+  "constructor_not_found": {
+    "message": "Ndërtuesi nuk u gjet",
+    "error_code": "constructor_not_found"
+  },
+  "derived_sale_price_below_zero": {
+    "message": "Çmimi i njësisë minus zbritja e rezervimit dhe zbritja lokale nuk mund të prodhojë çmim përfundimtar negativ.",
+    "error_code": "derived_sale_price_below_zero"
+  },
+  "down_payment_exceeds_final_price": {
+    "message": "Parapagimi nuk mund të tejkalojë çmimin përfundimtar të shitjes të llogaritur nga serveri.",
+    "error_code": "down_payment_exceeds_final_price"
+  },
+  "edifice_not_deleted": {
+    "message": "Ndërtesa nuk është fshirë dhe nuk mund të restaurohet",
+    "error_code": "edifice_not_deleted"
+  },
+  "edifice_not_found": {
+    "message": "Ndërtesa nuk u gjet",
+    "error_code": "edifice_not_found"
+  },
+  "file_required": {
+    "message": "Kërkohet një skedar për të vazhduar.",
+    "error_code": "file_required"
+  },
+  "final_price_cannot_be_negative": {
+    "message": "Çmimi përfundimtar i shitjes nuk mund të jetë negativ.",
+    "error_code": "final_price_cannot_be_negative"
+  },
+  "floor_not_deleted": {
+    "message": "Kati nuk është fshirë dhe nuk mund të restaurohet",
+    "error_code": "floor_not_deleted"
+  },
+  "floor_not_found": {
+    "message": "Kati nuk u gjet",
+    "error_code": "floor_not_found"
+  },
+  "follow_up_inspection_already_has_follower": {
+    "message": "Inspektimi i zgjedhur ka tashmë një inspektim pasues të lidhur. Nuk mund të mbishkruhet.",
+    "error_code": "follow_up_inspection_already_has_follower"
+  },
+  "inspection_not_deleted": {
+    "message": "Inspektimi nuk është fshirë dhe nuk mund të restaurohet",
+    "error_code": "inspection_not_deleted"
+  },
+  "inspection_not_found": {
+    "message": "Inspektimi nuk u gjet",
+    "error_code": "inspection_not_found"
+  },
+  "installment_not_found": {
+    "message": "Kësti nuk u gjet.",
+    "error_code": "installment_not_found"
+  },
+  "installments_required": {
+    "message": "Këstët janë të detyrueshëm.",
+    "error_code": "installments_required"
+  },
+  "invalid_connected_units": {
+    "message": "Njësitë e lidhura të zgjedhura nuk janë të vlefshme.",
+    "error_code": "invalid_connected_units"
+  },
+  "invalid_installments_format": {
+    "message": "Formati i kësteve është i pavlefshëm.",
+    "error_code": "invalid_installments_format"
+  },
+  "invalid_status_for_approval": {
+    "message": "Statusi i kërkesës së ndryshimit nuk përputhet me fazën e miratimit",
+    "error_code": "invalid_status_for_approval"
+  },
+  "invalid_status_for_cancel_scheduled": {
+    "message": "Statusi i inspektimit nuk lejon anulimin e një inspektimi të planifikuar.",
+    "error_code": "invalid_status_for_cancel_scheduled"
+  },
+  "invalid_status_for_client_approval": {
+    "message": "Statusi i kërkesës së ndryshimit nuk lejon miratimin nga klienti.",
+    "error_code": "invalid_status_for_client_approval"
+  },
+  "invalid_status_for_deliver": {
+    "message": "Statusi i kërkesës së ndryshimit nuk lejon dorëzimin.",
+    "error_code": "invalid_status_for_deliver"
+  },
+  "invalid_status_for_finance": {
+    "message": "Statusi i kërkesës së ndryshimit nuk lejon miratimin financiar.",
+    "error_code": "invalid_status_for_finance"
+  },
+  "invalid_status_transition": {
+    "message": "Kalim i pavlefshëm statusi për kërkesën e ndryshimit.",
+    "error_code": "invalid_status_transition"
+  },
+  "manual_reservation_email_action_not_allowed": {
+    "message": "Ky veprim manual i email-it të rezervimit nuk lejohet në gjendjen aktuale.",
+    "error_code": "manual_reservation_email_action_not_allowed"
+  },
+  "manual_reservation_email_inactive": {
+    "message": "Nuk mund të dërgohet email manual i rezervimit për një rezervim joaktiv.",
+    "error_code": "manual_reservation_email_inactive"
+  },
+  "manual_reservation_email_paid": {
+    "message": "Nuk mund të dërgohet email manual i rezervimit për një rezervim të paguar.",
+    "error_code": "manual_reservation_email_paid"
+  },
+  "manual_sale_email_action_not_allowed": {
+    "message": "Ky veprim manual i email-it të shitjes nuk lejohet në gjendjen aktuale.",
+    "error_code": "manual_sale_email_action_not_allowed"
+  },
+  "manual_sale_email_installment_required": {
+    "message": "Duhet zgjedhur një këst për të dërguar këtë email shitjeje.",
+    "error_code": "manual_sale_email_installment_required"
+  },
+  "modification_request_not_deleted": {
+    "message": "Kërkesa e ndryshimit nuk është fshirë dhe nuk mund të restaurohet",
+    "error_code": "modification_request_not_deleted"
+  },
+  "modification_request_not_found": {
+    "message": "Kërkesa e ndryshimit nuk u gjet",
+    "error_code": "modification_request_not_found"
+  },
+  "no_marketing_booklet": {
+    "message": "Broshura e marketingut nuk mund të gjenerohej për këtë njësi.",
+    "error_code": "no_marketing_booklet"
+  },
+  "paymentPlan_not_found": {
+    "message": "Plani i pagesës nuk u gjet.",
+    "error_code": "paymentPlan_not_found"
+  },
+  "payment_plan_installment_count_mismatch": {
+    "message": "Fusha e numrit të kësteve nuk përputhet me numrin e rreshtave të kësteve.",
+    "error_code": "payment_plan_installment_count_mismatch"
+  },
+  "payment_plan_installment_too_small": {
+    "message": "Një këst është shumë i vogël për të mbuluar kamatën kontraktuale të caktësuar për atë periudhë.",
+    "error_code": "payment_plan_installment_too_small"
+  },
+  "payment_plan_schedule_invalid": {
+    "message": "Datat e kësteve të planit nuk bien brenda periudhës së deklaruar të planit ose nuk janë njëra pas tjetrës në kohë në mënyrë strikte (secila më e vonë nga e mëparshmja).",
+    "error_code": "payment_plan_schedule_invalid"
+  },
+  "payment_plan_start_date_must_match_sale_date": {
+    "message": "Data e fillimit të planit duhet të përputhet me datën e shitjes (në të njëjtën ditë në kalendar).",
+    "error_code": "payment_plan_start_date_must_match_sale_date"
+  },
+  "pdf_processing_failed": {
+    "message": "Përpunimi i PDF dështoi.",
+    "error_code": "pdf_processing_failed"
+  },
+  "pdf_sanitization_failed": {
+    "message": "Pastrimi i PDF dështoi",
+    "error_code": "pdf_sanitization_failed"
+  },
+  "project_not_deleted": {
+    "message": "Projekti nuk është fshirë dhe nuk mund të restaurohet",
+    "error_code": "project_not_deleted"
+  },
+  "project_not_found": {
+    "message": "Projekti nuk u gjet",
+    "error_code": "project_not_found"
+  },
+  "reservation_already_active": {
+    "message": "Ky rezervim është aktiv tashmë.",
+    "error_code": "reservation_already_active"
+  },
+  "reservation_already_paid": {
+    "message": "Rezervimi është paguar tashmë.",
+    "error_code": "reservation_already_paid"
+  },
+  "reservation_amount_exceeds_sale_total": {
+    "message": "Shuma e rezervimit e konvertuar në monedhën e shitjes nuk mund të tejkalojë totalin e shitjes.",
+    "error_code": "reservation_amount_exceeds_sale_total"
+  },
+  "reservation_cannot_be_deleted_as_it_has_a_paid_commission": {
+    "message": "Nuk mund të fshihet rezervimi sepse ka një komision të paguar.",
+    "error_code": "reservation_cannot_be_deleted_as_it_has_a_paid_commission"
+  },
+  "reservation_cannot_be_edited_beacause_it_is_already_paid": {
+    "message": "Nuk mund të redaktohet një rezervim i paguar plotësisht. Zhbllokoni fillimisht pagesën e rezervimit.",
+    "error_code": "reservation_cannot_be_edited_beacause_it_is_already_paid"
+  },
+  "reservation_client_missing": {
+    "message": "Rezervimi nuk ka klient të caktuar.",
+    "error_code": "reservation_client_missing"
+  },
+  "reservation_deposit_data_missing": {
+    "message": "Rezervimi aktiv është shenjuar si i paguar, por mungon shuma apo monedha e depozitos. Përditësoni rezervimin përpara krijimit të një shitje.",
+    "error_code": "reservation_deposit_data_missing"
+  },
+  "reservation_exchange_rate_required": {
+    "message": "Kërkohet një kurs këmbimi sepse monedha e depozitos së rezervimit ndryshon nga monedha e shitjes.",
+    "error_code": "reservation_exchange_rate_required"
+  },
+  "reservation_expiration_date_must_be_in_the_future": {
+    "message": "Data e skadimit të rezervimit duhet të jetë në të ardhmen.",
+    "error_code": "reservation_expiration_date_must_be_in_the_future"
+  },
+  "reservation_expiration_required": {
+    "message": "Kërkohet data e skadimit të rezervimit.",
+    "error_code": "reservation_expiration_required"
+  },
+  "reservation_not_deleted": {
+    "message": "Rezervimi nuk është fshirë dhe nuk mund të restaurohet",
+    "error_code": "reservation_not_deleted"
+  },
+  "reservation_not_found": {
+    "message": "Rezervimi nuk u gjet",
+    "error_code": "reservation_not_found"
+  },
+  "reservation_payment_cannot_be_reversed_since_it_already_has_a_paid_commission": {
+    "message": "Nuk mund të zhbëhet pagesa e rezervimit që ka tashmë komision të paguar. Zhbllokoni së pari pagesën e komisionit.",
+    "error_code": "reservation_payment_cannot_be_reversed_since_it_already_has_a_paid_commission"
+  },
+  "reserve_not_available_for_restore": {
+    "message": "Rezervimi nuk mund të restaurohet.",
+    "error_code": "reserve_not_available_for_restore"
+  },
+  "sale_buyer_missing": {
+    "message": "Shitja nuk ka blerës të caktuar.",
+    "error_code": "sale_buyer_missing"
+  },
+  "sale_cannot_be_deleted_as_it_has_a_paid_commission": {
+    "message": "Nuk mund të fshihet shitja sepse ka një komision të paguar.",
+    "error_code": "sale_cannot_be_deleted_as_it_has_a_paid_commission"
+  },
+  "sale_exchange_rate_required": {
+    "message": "Kërkohet një kurs këmbimi sepse monedha e listës së njësisë ndryshon nga monedha e shitjes.",
+    "error_code": "sale_exchange_rate_required"
+  },
+  "sale_not_available_for_restore": {
+    "message": "Shitja nuk mund të restaurohet.",
+    "error_code": "sale_not_available_for_restore"
+  },
+  "sale_not_deleted": {
+    "message": "Shitja nuk është fshirë dhe nuk mund të restaurohet",
+    "error_code": "sale_not_deleted"
+  },
+  "sale_not_found": {
+    "message": "Shitja nuk u gjet",
+    "error_code": "sale_not_found"
+  },
+  "sale_not_pending_approval": {
+    "message": "Shitja nuk është në pritje të miratimit.",
+    "error_code": "sale_not_pending_approval"
+  },
+  "unauthorized_to_approve": {
+    "message": "Nuk keni autorizim për të miratuar në këtë fazë",
+    "error_code": "unauthorized_to_approve"
+  },
+  "unitTypes_not_found": {
+    "message": "Tipi i njësisë nuk u gjet",
+    "error_code": "unitTypes_not_found"
+  },
+  "unit_already_has_active_reservation": {
+    "message": "Kjo njësi ka tashmë një rezervim aktiv.",
+    "error_code": "unit_already_has_active_reservation"
+  },
+  "unit_already_reserved_and_unpaid": {
+    "message": "Kjo njësi ka rezervim aktiv që nuk është shenjuar si i paguar. Përfundoni ose anuloni rezervimin përpara se të krijohet shitje.",
+    "error_code": "unit_already_reserved_and_unpaid"
+  },
+  "unit_already_rented": {
+    "message": "Njësia është e dhënë me qira.",
+    "error_code": "unit_already_rented"
+  },
+  "unit_already_sold": {
+    "message": "Njësia është shitur tashmë.",
+    "error_code": "unit_already_sold"
+  },
+  "unit_not_available_for_lease": {
+    "message": "Njësia nuk është e disponueshme për qira.",
+    "error_code": "unit_not_available_for_lease"
+  },
+  "unit_has_active_lease": {
+    "message": "Njësia ka tashmë një kontratë qiraje aktive.",
+    "error_code": "unit_has_active_lease"
+  },
+  "lease_not_active": {
+    "message": "Kontrata e qirasë nuk është aktive.",
+    "error_code": "lease_not_active"
+  },
+  "lease_invalid_date_range": {
+    "message": "Data e mbarimit të qirasë duhet të jetë në ose pas datës së fillimit.",
+    "error_code": "lease_invalid_date_range"
+  },
+  "lease_deposit_not_paid": {
+    "message": "Depozita nuk është shënuar si e paguar.",
+    "error_code": "lease_deposit_not_paid"
+  },
+  "lease_deposit_already_returned": {
+    "message": "Depozita është kthyer tashmë.",
+    "error_code": "lease_deposit_already_returned"
+  },
+  "rental_payment_already_paid": {
+    "message": "Pagesa e qirasë është paguar tashmë.",
+    "error_code": "rental_payment_already_paid"
+  },
+  "rental_payment_waived": {
+    "message": "Pagesa e qirasë është hequr dhe nuk mund të shënohet si e paguar.",
+    "error_code": "rental_payment_waived"
+  },
+  "rental_payment_invalid_amount": {
+    "message": "Shuma e paguar nuk është e vlefshme.",
+    "error_code": "rental_payment_invalid_amount"
+  },
+  "unit_already_sold_thus_reservation_payment_cannot_be_reversed": {
+    "message": "Njësia është shitur tashmë; pagesa e rezervimit nuk mund të zhbhet.",
+    "error_code": "unit_already_sold_thus_reservation_payment_cannot_be_reversed"
+  },
+  "unit_not_available": {
+    "message": "Njësia nuk është në dispozicion.",
+    "error_code": "unit_not_available"
+  },
+  "unit_not_available_for_reactivation": {
+    "message": "Njësia nuk është më e disponueshme; mund të jetë rezervuar ose e shitur. Nuk mund të riaktivohet rezervimi.",
+    "error_code": "unit_not_available_for_reactivation"
+  },
+  "unit_not_available_for_restore": {
+    "message": "Njësia nuk është më e disponueshme; mund të jetë rezervuar ose e shitur. Nuk mund të restaurohet rezervimi.",
+    "error_code": "unit_not_available_for_restore"
+  },
+  "unit_not_deleted": {
+    "message": "Njësia nuk është fshirë dhe nuk mund të restaurohet",
+    "error_code": "unit_not_deleted"
+  },
+  "unit_not_found": {
+    "message": "Njësia nuk u gjet",
+    "error_code": "unit_not_found"
+  },
+  "unit_type_in_use": {
+    "message": "Tipi i njësisë është në përdorim dhe nuk mund të fshihet.",
+    "error_code": "unit_type_in_use"
+  }
+}

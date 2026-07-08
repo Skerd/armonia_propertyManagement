@@ -1,0 +1,350 @@
+{
+  "at_least_one_installment_required": {
+    "message": "At least one installment is required.",
+    "error_code": "at_least_one_installment_required"
+  },
+  "cannot_cancel_paid_reservation": {
+    "message": "Cannot cancel a reservation that has been paid in full. Unpay the reservation first.",
+    "error_code": "cannot_cancel_paid_reservation"
+  },
+  "cannot_edit_after_delivery": {
+    "message": "Cannot edit a modification request that has already been delivered",
+    "error_code": "cannot_edit_after_delivery"
+  },
+  "client_has_no_email": {
+    "message": "The client has no email address on file.",
+    "error_code": "client_has_no_email"
+  },
+  "commission_splits_exceed_total": {
+    "message": "Commission splits exceed the total commission amount.",
+    "error_code": "commission_splits_exceed_total"
+  },
+  "constructor_not_found": {
+    "message": "Constructor not found",
+    "error_code": "constructor_not_found"
+  },
+  "derived_sale_price_below_zero": {
+    "message": "The unit price minus the reservation deduction and local discount cannot produce a negative final price.",
+    "error_code": "derived_sale_price_below_zero"
+  },
+  "down_payment_exceeds_final_price": {
+    "message": "Down payment cannot exceed the server-calculated final sale price.",
+    "error_code": "down_payment_exceeds_final_price"
+  },
+  "edifice_not_deleted": {
+    "message": "Edifice is not deleted and cannot be restored",
+    "error_code": "edifice_not_deleted"
+  },
+  "edifice_not_found": {
+    "message": "Edifice not found",
+    "error_code": "edifice_not_found"
+  },
+  "file_required": {
+    "message": "A file is required to proceed.",
+    "error_code": "file_required"
+  },
+  "final_price_cannot_be_negative": {
+    "message": "The final sale price cannot be negative.",
+    "error_code": "final_price_cannot_be_negative"
+  },
+  "floor_not_deleted": {
+    "message": "Floor is not deleted and cannot be restored",
+    "error_code": "floor_not_deleted"
+  },
+  "floor_not_found": {
+    "message": "Floor not found",
+    "error_code": "floor_not_found"
+  },
+  "follow_up_inspection_already_has_follower": {
+    "message": "The selected inspection already has a follow-up inspection linked. Cannot override.",
+    "error_code": "follow_up_inspection_already_has_follower"
+  },
+  "inspection_not_deleted": {
+    "message": "Inspection is not deleted and cannot be restored",
+    "error_code": "inspection_not_deleted"
+  },
+  "inspection_not_found": {
+    "message": "Inspection not found",
+    "error_code": "inspection_not_found"
+  },
+  "installment_not_found": {
+    "message": "Installment not found.",
+    "error_code": "installment_not_found"
+  },
+  "installments_required": {
+    "message": "Installments are required.",
+    "error_code": "installments_required"
+  },
+  "invalid_connected_units": {
+    "message": "The selected connected units are invalid.",
+    "error_code": "invalid_connected_units"
+  },
+  "invalid_installments_format": {
+    "message": "Installments format is invalid.",
+    "error_code": "invalid_installments_format"
+  },
+  "invalid_status_for_approval": {
+    "message": "Modification request status does not match the approval stage",
+    "error_code": "invalid_status_for_approval"
+  },
+  "invalid_status_for_cancel_scheduled": {
+    "message": "The inspection status does not allow cancelling a scheduled inspection.",
+    "error_code": "invalid_status_for_cancel_scheduled"
+  },
+  "invalid_status_for_client_approval": {
+    "message": "The modification request status does not allow client approval.",
+    "error_code": "invalid_status_for_client_approval"
+  },
+  "invalid_status_for_deliver": {
+    "message": "Modification request status does not allow delivery.",
+    "error_code": "invalid_status_for_deliver"
+  },
+  "invalid_status_for_finance": {
+    "message": "Modification request status does not allow finance approval.",
+    "error_code": "invalid_status_for_finance"
+  },
+  "invalid_status_transition": {
+    "message": "Invalid status transition for modification request.",
+    "error_code": "invalid_status_transition"
+  },
+  "manual_reservation_email_action_not_allowed": {
+    "message": "This manual reservation email action is not allowed in the current state.",
+    "error_code": "manual_reservation_email_action_not_allowed"
+  },
+  "manual_reservation_email_inactive": {
+    "message": "Cannot send manual reservation email for an inactive reservation.",
+    "error_code": "manual_reservation_email_inactive"
+  },
+  "manual_reservation_email_paid": {
+    "message": "Cannot send manual reservation email for a paid reservation.",
+    "error_code": "manual_reservation_email_paid"
+  },
+  "manual_sale_email_action_not_allowed": {
+    "message": "This manual sale email action is not allowed in the current state.",
+    "error_code": "manual_sale_email_action_not_allowed"
+  },
+  "manual_sale_email_installment_required": {
+    "message": "An installment must be selected to send this sale email.",
+    "error_code": "manual_sale_email_installment_required"
+  },
+  "modification_request_not_deleted": {
+    "message": "Modification request is not deleted and cannot be restored",
+    "error_code": "modification_request_not_deleted"
+  },
+  "modification_request_not_found": {
+    "message": "Modification request not found",
+    "error_code": "modification_request_not_found"
+  },
+  "no_marketing_booklet": {
+    "message": "Marketing booklet could not be generated for this unit.",
+    "error_code": "no_marketing_booklet"
+  },
+  "paymentPlan_not_found": {
+    "message": "Payment plan not found.",
+    "error_code": "paymentPlan_not_found"
+  },
+  "payment_plan_installment_count_mismatch": {
+    "message": "The number of installments field does not match the number of installment rows.",
+    "error_code": "payment_plan_installment_count_mismatch"
+  },
+  "payment_plan_installment_too_small": {
+    "message": "An installment amount is too small to cover its allocated contract interest for that period.",
+    "error_code": "payment_plan_installment_too_small"
+  },
+  "payment_plan_schedule_invalid": {
+    "message": "Payment plan installment dates do not match the declared plan window or are not strictly increasing.",
+    "error_code": "payment_plan_schedule_invalid"
+  },
+  "payment_plan_start_date_must_match_sale_date": {
+    "message": "Plan start date must match the sale date (same calendar day).",
+    "error_code": "payment_plan_start_date_must_match_sale_date"
+  },
+  "pdf_processing_failed": {
+    "message": "PDF processing failed.",
+    "error_code": "pdf_processing_failed"
+  },
+  "pdf_sanitization_failed": {
+    "message": "PDF sanitization failed",
+    "error_code": "pdf_sanitization_failed"
+  },
+  "project_not_deleted": {
+    "message": "Project is not deleted and cannot be restored",
+    "error_code": "project_not_deleted"
+  },
+  "project_not_found": {
+    "message": "Project not found",
+    "error_code": "project_not_found"
+  },
+  "reservation_already_active": {
+    "message": "This reservation is already active.",
+    "error_code": "reservation_already_active"
+  },
+  "reservation_already_paid": {
+    "message": "Reservation is already paid.",
+    "error_code": "reservation_already_paid"
+  },
+  "reservation_amount_exceeds_sale_total": {
+    "message": "The reservation amount converted into the sale currency cannot exceed the sale total.",
+    "error_code": "reservation_amount_exceeds_sale_total"
+  },
+  "reservation_cannot_be_deleted_as_it_has_a_paid_commission": {
+    "message": "Cannot delete reservation because it has a paid commission.",
+    "error_code": "reservation_cannot_be_deleted_as_it_has_a_paid_commission"
+  },
+  "reservation_cannot_be_edited_beacause_it_is_already_paid": {
+    "message": "Cannot edit a reservation that has been paid in full. Unpay the reservation first.",
+    "error_code": "reservation_cannot_be_edited_beacause_it_is_already_paid"
+  },
+  "reservation_client_missing": {
+    "message": "The reservation has no client assigned.",
+    "error_code": "reservation_client_missing"
+  },
+  "reservation_deposit_data_missing": {
+    "message": "The active reservation is marked as paid but is missing deposit amount or deposit currency. Update the reservation before creating a sale.",
+    "error_code": "reservation_deposit_data_missing"
+  },
+  "reservation_exchange_rate_required": {
+    "message": "An exchange rate is required because the reservation deposit currency differs from the sale currency.",
+    "error_code": "reservation_exchange_rate_required"
+  },
+  "reservation_expiration_date_must_be_in_the_future": {
+    "message": "The reservation expiration date must be in the future.",
+    "error_code": "reservation_expiration_date_must_be_in_the_future"
+  },
+  "reservation_expiration_required": {
+    "message": "A reservation expiration date is required.",
+    "error_code": "reservation_expiration_required"
+  },
+  "reservation_not_deleted": {
+    "message": "Reservation is not deleted and cannot be restored",
+    "error_code": "reservation_not_deleted"
+  },
+  "reservation_not_found": {
+    "message": "Reservation not found",
+    "error_code": "reservation_not_found"
+  },
+  "reservation_payment_cannot_be_reversed_since_it_already_has_a_paid_commission": {
+    "message": "Cannot reverse a reservation payment that has a paid commission. Unpay the commission first.",
+    "error_code": "reservation_payment_cannot_be_reversed_since_it_already_has_a_paid_commission"
+  },
+  "reserve_not_available_for_restore": {
+    "message": "Reservation is not available for restore.",
+    "error_code": "reserve_not_available_for_restore"
+  },
+  "sale_buyer_missing": {
+    "message": "The sale has no buyer assigned.",
+    "error_code": "sale_buyer_missing"
+  },
+  "sale_cannot_be_deleted_as_it_has_a_paid_commission": {
+    "message": "Cannot delete sale because it has a paid commission.",
+    "error_code": "sale_cannot_be_deleted_as_it_has_a_paid_commission"
+  },
+  "sale_exchange_rate_required": {
+    "message": "An exchange rate is required because the unit list price currency differs from the sale currency.",
+    "error_code": "sale_exchange_rate_required"
+  },
+  "sale_not_available_for_restore": {
+    "message": "Sale is not available for restore.",
+    "error_code": "sale_not_available_for_restore"
+  },
+  "sale_not_deleted": {
+    "message": "Sale is not deleted and cannot be restored",
+    "error_code": "sale_not_deleted"
+  },
+  "sale_not_found": {
+    "message": "Sale not found",
+    "error_code": "sale_not_found"
+  },
+  "sale_not_pending_approval": {
+    "message": "The sale is not pending approval.",
+    "error_code": "sale_not_pending_approval"
+  },
+  "unauthorized_to_approve": {
+    "message": "You are not authorized to approve at this stage",
+    "error_code": "unauthorized_to_approve"
+  },
+  "unitTypes_not_found": {
+    "message": "Unit type not found",
+    "error_code": "unitTypes_not_found"
+  },
+  "unit_already_has_active_reservation": {
+    "message": "This unit already has an active reservation.",
+    "error_code": "unit_already_has_active_reservation"
+  },
+  "unit_already_reserved_and_unpaid": {
+    "message": "This unit has an active reservation that is not marked as paid. Complete or cancel the reservation before creating a sale.",
+    "error_code": "unit_already_reserved_and_unpaid"
+  },
+  "unit_already_rented": {
+    "message": "Unit is already rented.",
+    "error_code": "unit_already_rented"
+  },
+  "unit_already_sold": {
+    "message": "Unit is already sold.",
+    "error_code": "unit_already_sold"
+  },
+  "unit_not_available_for_lease": {
+    "message": "Unit is not available for lease.",
+    "error_code": "unit_not_available_for_lease"
+  },
+  "unit_has_active_lease": {
+    "message": "Unit already has an active lease.",
+    "error_code": "unit_has_active_lease"
+  },
+  "lease_not_active": {
+    "message": "Lease is not active.",
+    "error_code": "lease_not_active"
+  },
+  "lease_invalid_date_range": {
+    "message": "Lease end date must be on or after the start date.",
+    "error_code": "lease_invalid_date_range"
+  },
+  "lease_deposit_not_paid": {
+    "message": "Deposit has not been marked as paid.",
+    "error_code": "lease_deposit_not_paid"
+  },
+  "lease_deposit_already_returned": {
+    "message": "Deposit has already been returned.",
+    "error_code": "lease_deposit_already_returned"
+  },
+  "rental_payment_already_paid": {
+    "message": "Rental payment is already paid.",
+    "error_code": "rental_payment_already_paid"
+  },
+  "rental_payment_waived": {
+    "message": "Rental payment was waived and cannot be marked paid.",
+    "error_code": "rental_payment_waived"
+  },
+  "rental_payment_invalid_amount": {
+    "message": "Paid amount is invalid.",
+    "error_code": "rental_payment_invalid_amount"
+  },
+  "unit_already_sold_thus_reservation_payment_cannot_be_reversed": {
+    "message": "Unit is already sold; reservation payment cannot be reversed.",
+    "error_code": "unit_already_sold_thus_reservation_payment_cannot_be_reversed"
+  },
+  "unit_not_available": {
+    "message": "Unit is not available.",
+    "error_code": "unit_not_available"
+  },
+  "unit_not_available_for_reactivation": {
+    "message": "Unit is no longer available; it may be reserved or sold. Cannot reactivate reservation.",
+    "error_code": "unit_not_available_for_reactivation"
+  },
+  "unit_not_available_for_restore": {
+    "message": "Unit is no longer available; it may be reserved or sold. Cannot restore reservation.",
+    "error_code": "unit_not_available_for_restore"
+  },
+  "unit_not_deleted": {
+    "message": "Unit is not deleted and cannot be restored",
+    "error_code": "unit_not_deleted"
+  },
+  "unit_not_found": {
+    "message": "Unit not found",
+    "error_code": "unit_not_found"
+  },
+  "unit_type_in_use": {
+    "message": "Unit type is in use and cannot be deleted.",
+    "error_code": "unit_type_in_use"
+  }
+}
