@@ -6,6 +6,6 @@ import {optionalClosedPolygonCoordinatesZod} from "../../../../../core/helpers/z
 export function editFloorFormSchema(languageCode: string, form: any = null, permissions: any = {}, readPermissions: any = {}) {
     return z.object({
         ...buildEditZodSchema(FloorSchemaDef, languageCode, form, permissions, readPermissions).shape,
-        polygonCoordinates: permissions?.polygonCoordinates ? optionalClosedPolygonCoordinatesZod(form?.["polygonCoordinatesLabel"] || "polygonCoordinates", languageCode) : z.any(),
+        polygonCoordinates: permissions?.polygonCoordinates ? optionalClosedPolygonCoordinatesZod(form?.["polygonCoordinatesLabel"] || "polygonCoordinates", languageCode) : z.any().optional(),
     });
 }
