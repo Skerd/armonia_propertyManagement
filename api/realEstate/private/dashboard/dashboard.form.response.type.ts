@@ -14,6 +14,7 @@ export type UnitsByStatus = {
     unavailable: number;
     reserved: number;
     sold: number;
+    leased: number;
 };
 
 export type PaymentPlansSummary = {

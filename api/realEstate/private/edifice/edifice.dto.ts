@@ -31,6 +31,7 @@ export type EdificeStatistics = {
         reserved: number;
         sold: number;
         unavailable: number;
+        leased: number;
     };
 };
 

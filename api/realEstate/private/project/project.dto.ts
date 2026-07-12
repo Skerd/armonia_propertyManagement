@@ -36,6 +36,7 @@ export type ProjectStatistics = {
         reserved: number;
         sold: number;
         unavailable: number;
+        leased: number;
     };
 }
 

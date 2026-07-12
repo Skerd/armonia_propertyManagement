@@ -29,6 +29,7 @@ export type FloorStatistics = {
         reserved: number;
         sold: number;
         unavailable: number;
+        leased: number;
     };
 };
 
