@@ -18,6 +18,13 @@ export const SnagSchemaDef = {
     resolvedAt:  { type: "date",     required: false },
     photos:      { type: "mediaIdArray", required: false },
     notes:       { type: "string",   required: false },
+    trade:       { type: "string",   required: false },
+    workPackage: { type: "objectId", required: false },
+    rootCause:   { type: "string",   required: false },
+    costImpact:  { type: "number",   required: false },
+    isWarranty:  { type: "boolean",  required: false },
+    isDlp:       { type: "boolean",  required: false },
+    variationOrder: { type: "objectId", required: false },
 } as const;
 
 export type CreateSnagFormType = InferCreateForm<typeof SnagSchemaDef>;

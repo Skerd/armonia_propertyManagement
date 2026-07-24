@@ -37,4 +37,8 @@ export type Constructor = DeletedData & OwnershipData & LifeCycleData & {
     website: string;
     vat: string;
     edifices?: ConstructorEdifice[];
+    partyType?: string;
+    trades?: string;
+    insuranceExpiry?: string;
+    performanceScore?: number;
 };

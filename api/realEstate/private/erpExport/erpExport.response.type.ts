@@ -69,6 +69,65 @@ export type ErpUnitCostRow = {
     paymentStatus: string;
 };
 
+export type ErpBoqItemRow = {
+    id: string;
+    name: string;
+    title: string;
+    projectName?: string;
+    budgetName?: string;
+    wbsCode?: string;
+    trade?: string;
+    plannedQty?: number;
+    plannedRate?: number;
+    plannedAmount?: number;
+    actualAmount?: number;
+    variance?: number;
+    currency: string;
+    status: string;
+};
+
+export type ErpCostCommitmentRow = {
+    id: string;
+    name: string;
+    title: string;
+    projectName?: string;
+    constructorName?: string;
+    committedAmount: number;
+    retentionPercent?: number;
+    issuedAt?: string;
+    currency: string;
+    status: string;
+};
+
+export type ErpProgressClaimRow = {
+    id: string;
+    name: string;
+    title: string;
+    projectName?: string;
+    contractName?: string;
+    claimPeriodStart?: string;
+    claimPeriodEnd?: string;
+    amount: number;
+    certifiedAmount?: number;
+    currency: string;
+    status: string;
+};
+
+export type ErpPermitRow = {
+    id: string;
+    name: string;
+    title: string;
+    projectName?: string;
+    edificeName?: string;
+    permitType: string;
+    authority?: string;
+    referenceNumber?: string;
+    submittedAt?: string;
+    approvedAt?: string;
+    expiresAt?: string;
+    status: string;
+};
+
 export type ErpExportResponse = {
     exportedAt: string;
     dateFrom?: string;
@@ -78,4 +137,8 @@ export type ErpExportResponse = {
     paymentPlanInstallments?: ErpPaymentPlanRow[];
     rentalPayments?: ErpRentalPaymentRow[];
     unitCosts?: ErpUnitCostRow[];
+    boqItems?: ErpBoqItemRow[];
+    costCommitments?: ErpCostCommitmentRow[];
+    progressClaims?: ErpProgressClaimRow[];
+    permits?: ErpPermitRow[];
 };

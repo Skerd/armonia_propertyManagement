@@ -259,6 +259,18 @@
     "message": "Shitja nuk është në pritje të miratimit.",
     "error_code": "sale_not_pending_approval"
   },
+  "design_stage_requires_approved_deliverables": {
+    "message": "Kjo fazë projektimi ka dorëzime të detyrueshme që nuk janë miratuar ende. Miratojini përpara se të përfundoni fazën.",
+    "error_code": "design_stage_requires_approved_deliverables"
+  },
+  "progress_claim_exceeds_contract_value_approve_variation_order_first": {
+    "message": "Certifikimi i kësaj kërkese do të tejkalonte vlerën e kontratës plus urdhrat e variacionit të miratuar. Miratoni fillimisht një urdhër variacioni.",
+    "error_code": "progress_claim_exceeds_contract_value_approve_variation_order_first"
+  },
+  "sale_handover_requires_completed_handover_package": {
+    "message": "Kjo njësi nuk mund të dorëzohet derisa paketa e dorëzimit të jetë përfunduar.",
+    "error_code": "sale_handover_requires_completed_handover_package"
+  },
   "unauthorized_to_approve": {
     "message": "Nuk keni autorizim për të miratuar në këtë fazë",
     "error_code": "unauthorized_to_approve"

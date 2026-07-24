@@ -12,6 +12,16 @@ export type ConstructionUpdate = OwnershipData & DeletedData & LifeCycleData &{
         _id: string;
         name: string
     };
+    milestone?: {
+        _id: string;
+        name?: string;
+        title?: string;
+    };
+    scheduleTask?: {
+        _id: string;
+        name?: string;
+        title?: string;
+    };
     title: string;
     description?: string;
     progressPercent: number;

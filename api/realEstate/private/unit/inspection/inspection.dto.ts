@@ -73,4 +73,6 @@ export type Inspection = DeletedData & OwnershipData & LifeCycleData & {
     cancellationReason?: string;
     clientSignatureMediaId?: {_id: string; url?: string; name?: string;};
     clientSignedAt?: string;
+    checklistTemplate?: {_id: string; name?: string; title?: string};
+    checklistResponsesJson?: string;
 };

@@ -16,4 +16,11 @@ export type Snag = OwnershipData & DeletedData & LifeCycleData & {
     resolvedAt?: string;
     photos?: Media[];
     notes?: string;
+    trade?: string;
+    workPackage?: {_id: string; name?: string; title?: string};
+    rootCause?: string;
+    costImpact?: number;
+    isWarranty?: boolean;
+    isDlp?: boolean;
+    variationOrder?: {_id: string; name?: string; title?: string};
 };

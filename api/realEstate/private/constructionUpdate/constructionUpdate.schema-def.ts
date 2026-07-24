@@ -3,6 +3,8 @@ import type {InferCreateForm, InferEditForm} from "../../../../../core/helpers/s
 export const ConstructionUpdateSchemaDef = {
     project:          { type: "objectId",   required: true  },
     edifice:          { type: "objectId",   required: false },
+    milestone:        { type: "objectId",   required: false },
+    scheduleTask:     { type: "objectId",   required: false },
     title:            { type: "string",     required: true  },
     description:      { type: "string",     required: false },
     progressPercent:  { type: "number",     required: true, min: 0, max: 100 },

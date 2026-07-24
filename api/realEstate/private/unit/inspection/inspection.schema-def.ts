@@ -55,6 +55,8 @@ export const InspectionSchemaDef = {
     findings:                 {type: "embedded",    required: false, items: FindingsCategoriesDef, jsonPreprocess: true},
     clientSignatureMediaId:   {type: "objectId",    required: false},
     clientSignedAt:           {type: "date",        required: false},
+    checklistTemplate:        {type: "objectId",    required: false},
+    checklistResponsesJson:   {type: "string",      required: false},
 } as const;
 
 export type CreateInspectionFormType = InferCreateForm<typeof InspectionSchemaDef>;

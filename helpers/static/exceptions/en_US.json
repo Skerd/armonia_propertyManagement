@@ -259,6 +259,18 @@
     "message": "The sale is not pending approval.",
     "error_code": "sale_not_pending_approval"
   },
+  "design_stage_requires_approved_deliverables": {
+    "message": "This design stage has required deliverables that are not yet approved. Approve them before completing the stage.",
+    "error_code": "design_stage_requires_approved_deliverables"
+  },
+  "progress_claim_exceeds_contract_value_approve_variation_order_first": {
+    "message": "Certifying this claim would exceed the contract value plus approved variation orders. Approve a variation order first.",
+    "error_code": "progress_claim_exceeds_contract_value_approve_variation_order_first"
+  },
+  "sale_handover_requires_completed_handover_package": {
+    "message": "This unit cannot be handed over until its handover package is completed.",
+    "error_code": "sale_handover_requires_completed_handover_package"
+  },
   "unauthorized_to_approve": {
     "message": "You are not authorized to approve at this stage",
     "error_code": "unauthorized_to_approve"
