@@ -271,6 +271,10 @@
     "message": "This unit cannot be handed over until its handover package is completed.",
     "error_code": "sale_handover_requires_completed_handover_package"
   },
+  "propertyManagementConfig_already_exists": {
+    "message": "Property management settings already exist for this company.",
+    "error_code": "propertyManagementConfig_already_exists"
+  },
   "unauthorized_to_approve": {
     "message": "You are not authorized to approve at this stage",
     "error_code": "unauthorized_to_approve"
