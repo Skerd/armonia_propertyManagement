@@ -1,4 +1,6 @@
-/** CRM activity log action codes — labels live under `activityActions` in lead sheet language packs. */
+/** CRM activity log action codes — labels live under `activityActions` in lead sheet language packs.
+ *  Sheet packs also label system/seed codes `created` and `status_update` (not user-selectable here).
+ */
 export const LEAD_ACTIVITY_ACTION_VALUES = [
     "called",
     "emailed",
