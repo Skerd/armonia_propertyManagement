@@ -8,6 +8,8 @@ export const ProjectSchemaDef = {
     videoGallery:                     { type: "mediaIdArray",  required: false },
     mediaFiles:                       { type: "mediaIdArray",  required: false },
     marketingBooklet:                 { type: "mediaId",       required: false },
+    featuredOnHomepage:               { type: "boolean",       required: false },
+    featuredSortOrder:                { type: "number",        required: false, min: 0 },
     saleCommissionRatePercent:        { type: "number",        required: false, min: 0, max: 100 },
     reservationCommissionRatePercent: { type: "number",        required: false, min: 0, max: 100 },
 } as const;

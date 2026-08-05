@@ -10,11 +10,16 @@ export type MarketingUnitPricePerSqm = {
     currency?: MarketingUnitPriceCurrency;
 };
 
+export type MarketingUnitOrientation = "N" | "S" | "E" | "W" | "NE" | "NW" | "SE" | "SW";
+
+export type MarketingUnitConstructionStatus = "planned" | "under_construction" | "ready" | "delivered";
+
 export type MarketingUnitSingleItem = {
     _id: string;
     name: string;
     projectId: string;
     status: string;
+    unitNumber?: string;
     areaSqm?: number;
     bedrooms?: number;
     bathrooms?: number;
@@ -26,6 +31,7 @@ export type MarketingUnitSingleItem = {
     grossAreaSqm?: number;
     netAreaSqm?: number;
     sharedAreaSqm?: number;
+    verandaAreaSqm?: number;
     floorLabel?: string;
     floorLevel?: string | number;
     totalFloorsInEdifice?: number;
@@ -33,6 +39,8 @@ export type MarketingUnitSingleItem = {
     floorPlanImage?: string;
     priceCurrency?: MarketingUnitPriceCurrency;
     unitTypeName?: string;
+    orientation?: MarketingUnitOrientation;
+    constructionStatus?: MarketingUnitConstructionStatus;
     averagePricePerSquareMeter?: MarketingUnitPricePerSqm;
     hasBalcony?: boolean;
     hasTerrace?: boolean;

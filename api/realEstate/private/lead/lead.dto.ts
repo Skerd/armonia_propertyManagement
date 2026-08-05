@@ -18,6 +18,7 @@ export type Lead = DeletedData & OwnershipData & LifeCycleData & {
     phone?: string;
     status?: string;
     source?: string;
+    interest?: string;
     projectInterest?: {_id: string; name?: string};
     unitInterest?: {_id: string; name?: string; unitNumber?: number};
     budget?: number;
