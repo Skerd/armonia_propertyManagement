@@ -15,6 +15,7 @@ export type MarketingProjectCatalogListItem = {
     status?: string;
     unitCount?: number;
     availableUnitCount?: number;
+    soldUnitCount?: number;
     edificeCount?: number;
     floorCount?: number;
     propertyTypes?: MarketingPropertyTypeId[];
