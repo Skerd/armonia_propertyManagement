@@ -40,6 +40,12 @@ export type ProjectStatistics = {
     };
 }
 
+export type ProjectSocialLink = {
+    name: string;
+    link: string;
+    logo?: Media;
+};
+
 export type Project = DeletedData & OwnershipData & LifeCycleData & {
     _id: string,
     name: string,
@@ -51,6 +57,9 @@ export type Project = DeletedData & OwnershipData & LifeCycleData & {
     videoGallery?: Media[],
     mediaFiles?: Media[],
     marketingBooklet?: Media,
+    socialLinks?: ProjectSocialLink[],
+    featuredOnHomepage?: boolean,
+    featuredSortOrder?: number,
     statistics?: ProjectStatistics,
     edificesCoordinates?: ProjectEdificeCoordinate[],
 }

@@ -95,6 +95,7 @@ export type MarketingProjectCatalogSingleItem = {
     latitude?: number;
     longitude?: number;
     floorPlans?: {label: string; url: string}[];
+    socialLinks?: {name: string; link: string; logo?: string}[];
     edificesCoordinates?: MarketingPolygonItem[];
     edifices?: MarketingEdificeCatalogListItem[];
 };

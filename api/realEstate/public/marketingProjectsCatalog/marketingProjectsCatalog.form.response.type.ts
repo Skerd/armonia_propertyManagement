@@ -21,6 +21,7 @@ export type MarketingProjectCatalogListItem = {
     propertyTypes?: MarketingPropertyTypeId[];
     bedroomRange?: {min: number; max: number};
     areaSqmRange?: {min: number; max: number};
+    socialLinks?: {name: string; link: string; logo?: string}[];
 };
 
 export type MarketingProjectsCatalogFilterOptions = {
