@@ -118,6 +118,8 @@ export type Unit = DeletedData & OwnershipData & LifeCycleData & {
         _id: string;
         name?: string;
     };
+    featuredOnHomepage?: boolean;
+    featuredSortOrder?: number;
     statistics?: UnitStatistics;
 }
 

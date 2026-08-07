@@ -75,6 +75,7 @@ export type MarketingProjectCatalogSingleItem = {
     city?: string;
     mainImage?: string;
     imageGallery?: string[];
+    videoGallery?: string[];
     minSharePrice?: number;
     maxSharePrice?: number;
     projectedYieldPercent?: number;

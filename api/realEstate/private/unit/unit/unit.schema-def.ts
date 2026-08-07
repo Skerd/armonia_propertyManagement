@@ -31,6 +31,8 @@ export const UnitSchemaDef = {
     reservationCommissionRatePercent: { type: "number",        required: false, min: 0, max: 100 },
     orientation:                      { type: "enum",          required: false, options: UNIT_ORIENTATION_VALUES},
     constructionStatus:               { type: "enum",          required: false, options: UNIT_CONSTRUCTION_STATUS_VALUES },
+    featuredOnHomepage:               { type: "boolean",       required: false },
+    featuredSortOrder:                { type: "number",        required: false, min: 0 },
 } as const;
 
 export type CreateUnitFormType = InferCreateForm<typeof UnitSchemaDef> & { polygonCoordinates?: {x: number; y: number}[]; };
