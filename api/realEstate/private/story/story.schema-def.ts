@@ -4,6 +4,7 @@ export const StorySchemaDef = {
     project:       { type: "objectId",      required: true  },
     edifice:       { type: "objectId",      required: false },
     unit:          { type: "objectId",      required: false },
+    storyType:     { type: "objectId",      required: true  },
     title:         { type: "string",        required: true  },
     content:       { type: "string",        required: true  },
     excerpt:       { type: "string",        required: false },

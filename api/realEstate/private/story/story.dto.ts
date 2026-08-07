@@ -8,6 +8,11 @@ export type Story = OwnershipData & DeletedData & LifeCycleData & {
         _id: string;
         name: string;
     };
+    storyType?: {
+        _id: string;
+        name: string;
+        slug?: string;
+    };
     edifice?: {
         _id: string;
         name: string;

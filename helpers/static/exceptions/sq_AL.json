@@ -362,5 +362,9 @@
   "unit_type_in_use": {
     "message": "Tipi i njësisë është në përdorim dhe nuk mund të fshihet.",
     "error_code": "unit_type_in_use"
+  },
+  "story_type_in_use": {
+    "message": "Lloji i historisë është në përdorim dhe nuk mund të fshihet.",
+    "error_code": "story_type_in_use"
   }
 }

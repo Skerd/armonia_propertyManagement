@@ -1,3 +1,16 @@
+export type MarketingStoryTypeItem = {
+    _id: string;
+    name: string;
+    slug?: string;
+    sortOrder?: number;
+};
+
+export type MarketingMagazine = {
+    title?: string;
+    description?: string;
+    fileUrl?: string;
+};
+
 export type MarketingStoryItem = {
     _id: string;
     title: string;
@@ -14,9 +27,14 @@ export type MarketingStoryItem = {
     edificeName?: string;
     unitId?: string;
     unitName?: string;
+    storyTypeId?: string;
+    storyTypeName?: string;
+    storyTypeSlug?: string;
 };
 
 export type MarketingStoriesFormResponseType = {
     stories: MarketingStoryItem[];
     total: number;
+    storyTypes?: MarketingStoryTypeItem[];
+    magazine?: MarketingMagazine;
 };

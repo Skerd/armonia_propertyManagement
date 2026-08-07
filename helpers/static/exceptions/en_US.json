@@ -362,5 +362,9 @@
   "unit_type_in_use": {
     "message": "Unit type is in use and cannot be deleted.",
     "error_code": "unit_type_in_use"
+  },
+  "story_type_in_use": {
+    "message": "Story type is in use and cannot be deleted.",
+    "error_code": "story_type_in_use"
   }
 }
