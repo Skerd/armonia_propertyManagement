@@ -9,20 +9,27 @@ export type ContractsHubPagination = {
     limit?: number;
 };
 
-export type ContractsListFormType = ContractsHubPagination & {
-    search?: string;
-    projectId?: string;
-    contractType?: ContractRegistryType;
-    status?: ContractRegistryStatus;
-    signatureDateFrom?: string;
-    signatureDateTo?: string;
+export type ContractsHubHierarchyFilters = {
+    project?: string;
+    edifice?: string;
+    floor?: string;
+    unit?: string;
 };
 
-export type ClientsListFormType = ContractsHubPagination & {
-    search?: string;
-    projectId?: string;
-    unitTypeId?: string;
-    status?: ClientRegistryStatus;
-    valueMin?: number;
-    valueMax?: number;
-};
+export type ContractsListFormType = ContractsHubPagination &
+    ContractsHubHierarchyFilters & {
+        search?: string;
+        contractType?: ContractRegistryType;
+        status?: ContractRegistryStatus;
+        signatureDateFrom?: string;
+        signatureDateTo?: string;
+    };
+
+export type ClientsListFormType = ContractsHubPagination &
+    ContractsHubHierarchyFilters & {
+        search?: string;
+        unitTypeId?: string;
+        status?: ClientRegistryStatus;
+        valueMin?: number;
+        valueMax?: number;
+    };
