@@ -17,10 +17,8 @@ export type ProjectStatistics = {
     totalEdifices?: number;
     totalFloors?: number;
     totalUnits?: number;
-    /** Sum of edifice building footprint (`edifice.totalArea`), not unit areas. */
     totalArea?: number;
     totalInvestmentValue?: EdificeMoneyByCurrency[];
-    /** Listing aggregates rolled up from edifice statistics (same semantics as edifice sheet). */
     totalUnitsArea?: number;
     totalUnitsNetArea?: number;
     totalUnitsSharedArea?: number;
