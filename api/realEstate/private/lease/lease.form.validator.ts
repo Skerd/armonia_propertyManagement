@@ -1,3 +1,4 @@
+import {z} from "zod";
 import {isObjectIdZod} from "../../../../../core/helpers/zodBuilder";
 import {withTableFormValidator} from "../../../../../core/utilities/zod/shared.validator";
 
@@ -8,5 +9,6 @@ export function leaseFormSchema(languageCode: string, form: any = null) {
         edifice: isObjectIdZod(form?.["edificeLabel"] ?? "edifice", languageCode).optional(),
         floor: isObjectIdZod(form?.["floorLabel"] ?? "floor", languageCode).optional(),
         tenant: isObjectIdZod(form?.["tenantLabel"] ?? "tenant", languageCode).optional(),
+        status: z.string().optional(),
     });
 }
