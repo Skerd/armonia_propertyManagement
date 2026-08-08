@@ -1,7 +1,7 @@
 import type {Media} from "../../../../../core/types";
-import type {DeletedData, OwnershipData} from "../../../../../core/types/shared.types";
+import type {DeletedData, LifeCycleData, OwnershipData} from "../../../../../core/types/shared.types";
 
-export type RentalPayment = DeletedData & OwnershipData & {
+export type RentalPayment = DeletedData & OwnershipData & LifeCycleData & {
     _id: string;
     name?: string;
     lease?: {_id: string; name?: string};
