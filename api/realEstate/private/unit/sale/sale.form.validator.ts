@@ -3,6 +3,9 @@ import {withTableFormValidator} from "../../../../../../core/utilities/zod/share
 
 export function saleFormSchema(languageCode: string, form: any = null) {
     return withTableFormValidator(languageCode, form, {
-        edificeId: isObjectIdZod(form?.["edificeIdLabel"] ?? "edificeId", languageCode).optional(),
+        unit: isObjectIdZod(form?.["unitLabel"] ?? "unit", languageCode).optional(),
+        project: isObjectIdZod(form?.["projectLabel"] ?? "project", languageCode).optional(),
+        edifice: isObjectIdZod(form?.["edificeLabel"] ?? "edifice", languageCode).optional(),
+        floor: isObjectIdZod(form?.["floorLabel"] ?? "floor", languageCode).optional(),
     });
 }
