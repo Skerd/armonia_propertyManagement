@@ -14,6 +14,13 @@ export type MarketingUnitOrientation = "N" | "S" | "E" | "W" | "NE" | "NW" | "SE
 
 export type MarketingUnitConstructionStatus = "planned" | "under_construction" | "ready" | "delivered";
 
+export type MarketingUnitPriceHistoryEntry = {
+    price: number;
+    currency?: MarketingUnitPriceCurrency;
+    changedAt?: string;
+    reason?: string;
+};
+
 export type MarketingUnitSingleItem = {
     _id: string;
     name: string;
@@ -48,6 +55,7 @@ export type MarketingUnitSingleItem = {
     hasCityView?: boolean;
     hasLakeView?: boolean;
     hasElevator?: boolean;
+    priceHistory?: MarketingUnitPriceHistoryEntry[];
 };
 
 export type MarketingUnitSingleFormResponseType = {
