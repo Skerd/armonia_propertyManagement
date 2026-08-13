@@ -1,7 +1,7 @@
 import type {InferCreateForm, InferEditForm} from "../../../../../core/helpers/schemaDefBuilder";
 
 export const leadStatusValues = ["new", "contacted", "qualified", "proposal", "negotiation", "won", "lost"] as const;
-export const leadSourceValues  = ["website", "referral", "social", "event", "cold_call", "walk_in", "other"] as const;
+export const leadSourceValues  = ["website", "referral", "social", "event", "cold_call", "walk_in", "chat", "other"] as const;
 export const leadInterestValues = ["partnerships", "investments", "platform_support", "reservation", "other"] as const;
 
 export type LeadStatusValue = typeof leadStatusValues[number];

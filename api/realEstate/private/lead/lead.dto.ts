@@ -24,6 +24,8 @@ export type Lead = DeletedData & OwnershipData & LifeCycleData & {
     budget?: number;
     budgetCurrency?: Currency;
     notes?: string;
+    /** Linked public website chat (`Channel`), when the lead came from chat identify. */
+    chat?: {_id: string; name?: string};
     assignedTo?: {_id: string; name?: string; surname?: string};
     followUpDate?: string;
     convertedAt?: string;

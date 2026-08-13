@@ -1,5 +1,5 @@
 import {z} from "zod";
-import {isEmailZod, isObjectIdZod} from "../../../../../core/helpers/zodBuilder";
+import {isEmailZod, isObjectIdZod, notEmptyZod, stringMaxLengthZod} from "../../../../../core/helpers/zodBuilder";
 import {leadInterestValues} from "../../private/lead/lead.schema-def";
 
 export type MarketingContactFormType = {
@@ -15,11 +15,11 @@ export type MarketingContactFormType = {
 
 export function marketingContactFormSchema(languageCode: string, form: any = null) {
     return z.object({
-        name: z.string().trim().min(1).max(100),
-        surname: z.string().trim().min(1).max(100),
+        name: notEmptyZod(form?.["nameLabel"] || "name", languageCode).and(stringMaxLengthZod(form?.["nameLabel"] || "name", 100, languageCode)),
+        surname: notEmptyZod(form?.["surnameLabel"] || "surname", languageCode).and(stringMaxLengthZod(form?.["surnameLabel"] || "surname", 100, languageCode)),
         email: isEmailZod(form?.["emailLabel"] || "email", languageCode),
-        phone: z.string().trim().min(1).max(40),
-        message: z.string().trim().min(1).max(2000),
+        phone: notEmptyZod(form?.["phoneLabel"] || "phone", languageCode).and(stringMaxLengthZod(form?.["phoneLabel"] || "phone", 40, languageCode)),
+        message: notEmptyZod(form?.["messageLabel"] || "message", languageCode).and(stringMaxLengthZod(form?.["messageLabel"] || "message", 2000, languageCode)),
         interest: z.preprocess(
             (value) => (value === "" || value == null ? undefined : value),
             z.enum(leadInterestValues).optional(),
