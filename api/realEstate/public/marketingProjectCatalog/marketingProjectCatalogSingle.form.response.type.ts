@@ -34,6 +34,12 @@ export type MarketingFloorCatalogListItem = {
     units?: MarketingUnitCatalogListItem[];
 };
 
+export type MarketingEdificePriceHistoryEntry = {
+    price: number;
+    currency?: {symbol?: string; abbreviation?: string};
+    changedAt?: string;
+};
+
 export type MarketingEdificeCatalogListItem = {
     _id: string;
     name: string;
@@ -64,6 +70,7 @@ export type MarketingEdificeCatalogListItem = {
     unitCount?: number;
     availableUnitCount?: number;
     soldUnitCount?: number;
+    priceHistory?: MarketingEdificePriceHistoryEntry[];
     floorsCoordinates?: MarketingPolygonItem[];
     floors?: MarketingFloorCatalogListItem[];
 };
