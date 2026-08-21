@@ -99,11 +99,15 @@ export type ComparisonDatum = {
     percentageChange: number;
 };
 
-/** Single payment alert for dashboard (overdue or due-soon installment). */
+/** Single payment alert for dashboard (overdue or due-soon installment / reservation deposit). */
 export type PaymentAlertItem = {
+    /** Missing on older cached rows — treat as installment. */
+    kind?: "installment" | "reservation";
     unit: { _id: string; unitNumber?: string; name?: string };
+    /** Shared due payload: installment dueDate or reservation expirationDate. */
     installment: { amount: number; dueDate: string };
     daysUntilDue: number;
+    reservationId?: string;
 };
 
 export type DashboardFormResponseType = {
@@ -111,7 +115,7 @@ export type DashboardFormResponseType = {
     revenueByPeriod: PeriodDatum[];
     salesByPeriod: PeriodDatum[];
     recentSales: RecentSaleItem[];
-    /** Overdue and due-soon installments (e.g. for Control Panel). */
+    /** Overdue and due-soon installments and unpaid reservation deposits (e.g. for Control Panel). */
     paymentAlerts?: PaymentAlertItem[];
     comparisons?: {
         revenue?: ComparisonDatum;
