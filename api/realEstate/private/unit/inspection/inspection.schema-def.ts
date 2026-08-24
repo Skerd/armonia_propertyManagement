@@ -20,8 +20,15 @@ export const inspectionValidStatuses = [
 
 export const findingSeverityValues = ["low", "medium", "high", "critical"] as const;
 
+/** Long text / textarea fields (notes, cancellation reason). */
+export const INSPECTION_LONG_TEXT_MAX = 5000;
+/** Finding item notes. */
+export const INSPECTION_FINDING_NOTES_MAX = 2000;
+/** Checklist responses JSON blob. */
+export const INSPECTION_CHECKLIST_JSON_MAX = 50000;
+
 const FindingItemDef = {
-    notes:      {type: "string",        required: true},
+    notes:      {type: "string",        required: true, min: 1, max: INSPECTION_FINDING_NOTES_MAX},
     media:      {type: "mediaIdArray",  required: false},
     severity:   {type: "enum",         required: false, options: findingSeverityValues},
     resolvedAt: {type: "date",         required: false},
@@ -46,8 +53,8 @@ export const InspectionSchemaDef = {
     nextInspectionDate: {type: "date",        required: false},
     type:               {type: "enum",        required: true,  options: inspectionValidTypes},
     status:             {type: "enum",        required: false, options: inspectionValidStatuses},
-    notes:              {type: "string",      required: false},
-    cancellationReason: {type: "string",      required: false},
+    notes:              {type: "string",      required: false, max: INSPECTION_LONG_TEXT_MAX},
+    cancellationReason: {type: "string",      required: false, max: INSPECTION_LONG_TEXT_MAX},
     rating:             {type: "number",      required: false, min: 1, max: 10},
     media:              {type: "mediaIdArray", required: false},
     followUpInspection:       {type: "objectId",    required: false},
@@ -56,7 +63,7 @@ export const InspectionSchemaDef = {
     clientSignatureMediaId:   {type: "objectId",    required: false},
     clientSignedAt:           {type: "date",        required: false},
     checklistTemplate:        {type: "objectId",    required: false},
-    checklistResponsesJson:   {type: "string",      required: false},
+    checklistResponsesJson:   {type: "string",      required: false, max: INSPECTION_CHECKLIST_JSON_MAX},
 } as const;
 
 export type CreateInspectionFormType = InferCreateForm<typeof InspectionSchemaDef>;
