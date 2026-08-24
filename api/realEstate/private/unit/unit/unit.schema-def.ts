@@ -1,11 +1,18 @@
 import type {InferCreateForm, InferEditForm} from "../../../../../../core/helpers/schemaDefBuilder";
 import {UNIT_CONSTRUCTION_STATUS_VALUES, UNIT_ORIENTATION_VALUES} from "./unit.constants";
 
+/** Short single-line labels (name). */
+export const UNIT_SHORT_TEXT_MAX = 128;
+/** Unit number / code. */
+export const UNIT_NUMBER_MAX = 64;
+/** Long text / textarea fields (description). */
+export const UNIT_LONG_TEXT_MAX = 5000;
+
 export const UnitSchemaDef = {
     floor:                            { type: "objectId",      required: true  },
     unitType:                         { type: "objectId",      required: true  },
-    unitNumber:                       { type: "string",        required: true  },
-    name:                             { type: "string",        required: true  },
+    unitNumber:                       { type: "string",        required: true,  min: 1, max: UNIT_NUMBER_MAX },
+    name:                             { type: "string",        required: true,  min: 1, max: UNIT_SHORT_TEXT_MAX },
     area:                             { type: "number",        required: true, min: 0 },
     sharedArea:                       { type: "number",        required: true, min: 0 },
     netArea:                          { type: "number",        required: true, min: 0 },
@@ -14,7 +21,7 @@ export const UnitSchemaDef = {
     priceCurrency:                    { type: "objectId",      required: true  },
     numberOfRooms:                    { type: "number",        required: true, min: 0 },
     numberOfBathrooms:                { type: "number",        required: true, min: 0 },
-    description:                      { type: "string",        required: false },
+    description:                      { type: "string",        required: false, max: UNIT_LONG_TEXT_MAX },
     mainImage:                        { type: "mediaId",       required: false },
     imageGallery:                     { type: "mediaIdArray",  required: false },
     videoGallery:                     { type: "mediaIdArray",  required: false },
