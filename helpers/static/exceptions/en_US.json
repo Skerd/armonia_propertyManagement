@@ -207,6 +207,14 @@
     "message": "An exchange rate is required because the reservation deposit currency differs from the sale currency.",
     "error_code": "reservation_exchange_rate_required"
   },
+  "reservation_date_must_be_before_expiration_date": {
+    "message": "The reservation date must be before the expiration date.",
+    "error_code": "reservation_date_must_be_before_expiration_date"
+  },
+  "reservation_date_must_not_be_in_the_future": {
+    "message": "The reservation date cannot be in the future.",
+    "error_code": "reservation_date_must_not_be_in_the_future"
+  },
   "reservation_expiration_date_must_be_in_the_future": {
     "message": "The reservation expiration date must be in the future.",
     "error_code": "reservation_expiration_date_must_be_in_the_future"

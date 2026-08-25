@@ -207,6 +207,14 @@
     "message": "Kërkohet një kurs këmbimi sepse monedha e depozitos së rezervimit ndryshon nga monedha e shitjes.",
     "error_code": "reservation_exchange_rate_required"
   },
+  "reservation_date_must_be_before_expiration_date": {
+    "message": "Data e rezervimit duhet të jetë para datës së skadimit.",
+    "error_code": "reservation_date_must_be_before_expiration_date"
+  },
+  "reservation_date_must_not_be_in_the_future": {
+    "message": "Data e rezervimit nuk mund të jetë në të ardhmen.",
+    "error_code": "reservation_date_must_not_be_in_the_future"
+  },
   "reservation_expiration_date_must_be_in_the_future": {
     "message": "Data e skadimit të rezervimit duhet të jetë në të ardhmen.",
     "error_code": "reservation_expiration_date_must_be_in_the_future"

@@ -18,12 +18,13 @@ export const ReservationSchemaDef = {
     paymentMethod:       { type: "string",      required: false, max: RESERVATION_SHORT_TEXT_MAX },
     cancellationReason:  { type: "string",      required: false, max: RESERVATION_LONG_TEXT_MAX },
     source:              { type: "enum",        required: false, options: RESERVATION_SOURCE_VALUES },
+    reservationDate:     { type: "date",        required: true,  validation: "notInTheFuture", timezone: "UTC" },
+    expirationDate:      { type: "date",        required: true  },
     // System-managed (Mongoose defaults) — not set via create form
     paid:                { type: "boolean",     required: false },
     isActive:            { type: "boolean",     required: false },
     reservationContract: { type: "mediaIdArray", required: false },
     additionalDocuments: { type: "mediaIdArray", required: false },
-    expirationDate:      { type: "date",        required: false, validation: "notInThePast", timezone: "UTC" },
 } as const;
 
 export type CreateReservationFormType = InferCreateForm<typeof ReservationSchemaDef>;
