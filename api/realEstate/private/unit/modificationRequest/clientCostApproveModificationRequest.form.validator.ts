@@ -1,5 +1,6 @@
 import {z} from "zod";
-import {isEnumZod, isObjectIdZod} from "../../../../../../core/helpers/zodBuilder";
+import {isEnumZod, isObjectIdZod, stringMaxLengthZod} from "../../../../../../core/helpers/zodBuilder";
+import {MODIFICATION_REQUEST_LONG_TEXT_MAX} from "./modificationRequest.schema-def";
 
 const validDecisions = ["approved", "rejected"];
 
@@ -12,6 +13,6 @@ export function clientCostApproveModificationRequestFormSchema(languageCode: str
             validDecisions.map((d) => form?.["decisionEnum"]?.[d] ?? d).join(", "),
             languageCode,
         ),
-        notes: z.string().optional(),
+        notes: stringMaxLengthZod(form?.["notesLabel"] || "notes", MODIFICATION_REQUEST_LONG_TEXT_MAX, languageCode).optional(),
     });
 }
