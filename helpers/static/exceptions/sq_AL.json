@@ -319,10 +319,6 @@
     "message": "Kontrata e qirasë nuk është aktive.",
     "error_code": "lease_not_active"
   },
-  "lease_invalid_date_range": {
-    "message": "Data e mbarimit të qirasë duhet të jetë në ose pas datës së fillimit.",
-    "error_code": "lease_invalid_date_range"
-  },
   "lease_deposit_not_paid": {
     "message": "Depozita nuk është shënuar si e paguar.",
     "error_code": "lease_deposit_not_paid"

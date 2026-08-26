@@ -319,10 +319,6 @@
     "message": "Lease is not active.",
     "error_code": "lease_not_active"
   },
-  "lease_invalid_date_range": {
-    "message": "Lease end date must be on or after the start date.",
-    "error_code": "lease_invalid_date_range"
-  },
   "lease_deposit_not_paid": {
     "message": "Deposit has not been marked as paid.",
     "error_code": "lease_deposit_not_paid"
