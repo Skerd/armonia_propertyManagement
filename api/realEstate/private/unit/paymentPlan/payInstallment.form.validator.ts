@@ -1,3 +1,4 @@
+import {z} from "zod";
 import {greaterThanOrEqualZod, isObjectIdZod, stringMaxLengthZod} from "../../../../../../core/helpers/zodBuilder";
 import {SALE_LONG_TEXT_MAX, SALE_SHORT_TEXT_MAX} from "../sale/sale.schema-def";
 
