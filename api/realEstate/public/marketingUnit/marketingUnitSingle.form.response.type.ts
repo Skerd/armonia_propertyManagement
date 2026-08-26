@@ -25,6 +25,8 @@ export type MarketingUnitSingleItem = {
     _id: string;
     name: string;
     projectId: string;
+    projectName?: string;
+    edificeName?: string;
     status: string;
     unitNumber?: string;
     areaSqm?: number;
