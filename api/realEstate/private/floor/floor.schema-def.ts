@@ -25,11 +25,11 @@ export const FloorSchemaDef = {
         itemMin: 1,
         itemMax: FLOOR_SHARED_SPACE_ITEM_MAX,
     },
-    mainImage:        { type: "mediaId",      required: true  },
-    imageGallery:     { type: "mediaIdArray", required: false },
-    videoGallery:     { type: "mediaIdArray", required: false },
+    mainImage:        { type: "mediaId",      required: true,  publicAccess: true },
+    imageGallery:     { type: "mediaIdArray", required: false, publicAccess: true },
+    videoGallery:     { type: "mediaIdArray", required: false, publicAccess: true },
     mediaFiles:       { type: "mediaIdArray", required: false },
-    marketingBooklet: { type: "mediaId",      required: false },
+    marketingBooklet: { type: "mediaId",      required: false, publicAccess: true },
 } as const;
 
 export type CreateFloorFormType = InferCreateForm<typeof FloorSchemaDef> & { polygonCoordinates?: {x: number; y: number}[]; };

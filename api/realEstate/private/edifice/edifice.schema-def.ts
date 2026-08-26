@@ -17,11 +17,11 @@ export const EDIFICE_FACILITY_MAX_ITEMS = 30;
 export const EdificeSchemaDef = {
     name:                         { type: "string",        required: true,  min: 1, max: EDIFICE_SHORT_TEXT_MAX },
     project:                      { type: "objectId",      required: true  },
-    mainImage:                    { type: "mediaId",       required: true  },
-    imageGallery:                 { type: "mediaIdArray",  required: false },
-    videoGallery:                 { type: "mediaIdArray",  required: false },
+    mainImage:                    { type: "mediaId",       required: true,  publicAccess: true },
+    imageGallery:                 { type: "mediaIdArray",  required: false, publicAccess: true },
+    videoGallery:                 { type: "mediaIdArray",  required: false, publicAccess: true },
     mediaFiles:                   { type: "mediaIdArray",  required: false },
-    marketingBooklet:             { type: "mediaId",       required: false },
+    marketingBooklet:             { type: "mediaId",       required: false, publicAccess: true },
     address:                      {
         type: "embedded",
         required: true,
