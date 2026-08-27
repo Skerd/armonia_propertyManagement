@@ -1,0 +1,374 @@
+{
+  "at_least_one_installment_required": {
+    "message": "Mindestens eine Rate ist erforderlich.",
+    "error_code": "at_least_one_installment_required"
+  },
+  "cannot_cancel_paid_reservation": {
+    "message": "Eine vollständig bezahlte Reservation kann nicht storniert werden. Heben Sie zuerst die Zahlung der Reservation auf.",
+    "error_code": "cannot_cancel_paid_reservation"
+  },
+  "cannot_edit_after_delivery": {
+    "message": "Ein bereits gelieferter Änderungsantrag kann nicht bearbeitet werden",
+    "error_code": "cannot_edit_after_delivery"
+  },
+  "client_has_no_email": {
+    "message": "Für den Kunden ist keine E-Mail-Adresse hinterlegt.",
+    "error_code": "client_has_no_email"
+  },
+  "commission_splits_exceed_total": {
+    "message": "Die Kommissionsaufteilungen überschreiten den gesamten Kommissionsbetrag.",
+    "error_code": "commission_splits_exceed_total"
+  },
+  "constructor_not_found": {
+    "message": "Bauunternehmen nicht gefunden",
+    "error_code": "constructor_not_found"
+  },
+  "derived_sale_price_below_zero": {
+    "message": "Der Einheitspreis minus Reservationsabzug und lokalem Rabatt darf keinen negativen Endpreis ergeben.",
+    "error_code": "derived_sale_price_below_zero"
+  },
+  "down_payment_exceeds_final_price": {
+    "message": "Die Anzahlung darf den vom Server berechneten endgültigen Verkaufspreis nicht überschreiten.",
+    "error_code": "down_payment_exceeds_final_price"
+  },
+  "edifice_not_deleted": {
+    "message": "Das Gebäude ist nicht gelöscht und kann nicht wiederhergestellt werden",
+    "error_code": "edifice_not_deleted"
+  },
+  "edifice_not_found": {
+    "message": "Gebäude nicht gefunden",
+    "error_code": "edifice_not_found"
+  },
+  "file_required": {
+    "message": "Eine Datei ist erforderlich, um fortzufahren.",
+    "error_code": "file_required"
+  },
+  "final_price_cannot_be_negative": {
+    "message": "Der endgültige Verkaufspreis darf nicht negativ sein.",
+    "error_code": "final_price_cannot_be_negative"
+  },
+  "floor_not_deleted": {
+    "message": "Das Geschoss ist nicht gelöscht und kann nicht wiederhergestellt werden",
+    "error_code": "floor_not_deleted"
+  },
+  "floor_not_found": {
+    "message": "Geschoss nicht gefunden",
+    "error_code": "floor_not_found"
+  },
+  "follow_up_inspection_already_has_follower": {
+    "message": "Die ausgewählte Inspektion hat bereits eine verknüpfte Folgeinspektion. Überschreiben nicht möglich.",
+    "error_code": "follow_up_inspection_already_has_follower"
+  },
+  "inspection_not_deleted": {
+    "message": "Die Inspektion ist nicht gelöscht und kann nicht wiederhergestellt werden",
+    "error_code": "inspection_not_deleted"
+  },
+  "inspection_not_found": {
+    "message": "Inspektion nicht gefunden",
+    "error_code": "inspection_not_found"
+  },
+  "installment_not_found": {
+    "message": "Rate nicht gefunden.",
+    "error_code": "installment_not_found"
+  },
+  "installments_required": {
+    "message": "Raten sind erforderlich.",
+    "error_code": "installments_required"
+  },
+  "invalid_connected_units": {
+    "message": "Die ausgewählten verbundenen Einheiten sind ungültig.",
+    "error_code": "invalid_connected_units"
+  },
+  "invalid_installments_format": {
+    "message": "Das Ratenformat ist ungültig.",
+    "error_code": "invalid_installments_format"
+  },
+  "invalid_status_for_approval": {
+    "message": "Der Status des Änderungsantrags stimmt nicht mit der Freigabestufe überein",
+    "error_code": "invalid_status_for_approval"
+  },
+  "invalid_status_for_cancel_scheduled": {
+    "message": "Der Inspektionsstatus erlaubt das Stornieren einer geplanten Inspektion nicht.",
+    "error_code": "invalid_status_for_cancel_scheduled"
+  },
+  "invalid_status_for_client_approval": {
+    "message": "Der Status des Änderungsantrags erlaubt keine Kundenfreigabe.",
+    "error_code": "invalid_status_for_client_approval"
+  },
+  "invalid_status_for_deliver": {
+    "message": "Der Status des Änderungsantrags erlaubt keine Lieferung.",
+    "error_code": "invalid_status_for_deliver"
+  },
+  "invalid_status_for_finance": {
+    "message": "Der Status des Änderungsantrags erlaubt keine Finanzfreigabe.",
+    "error_code": "invalid_status_for_finance"
+  },
+  "invalid_status_transition": {
+    "message": "Ungültiger Statusübergang für den Änderungsantrag.",
+    "error_code": "invalid_status_transition"
+  },
+  "manual_reservation_email_action_not_allowed": {
+    "message": "Diese manuelle Reservations-E-Mail-Aktion ist im aktuellen Status nicht erlaubt.",
+    "error_code": "manual_reservation_email_action_not_allowed"
+  },
+  "manual_reservation_email_inactive": {
+    "message": "Manuelle Reservations-E-Mail kann für eine inaktive Reservation nicht gesendet werden.",
+    "error_code": "manual_reservation_email_inactive"
+  },
+  "manual_reservation_email_paid": {
+    "message": "Manuelle Reservations-E-Mail kann für eine bezahlte Reservation nicht gesendet werden.",
+    "error_code": "manual_reservation_email_paid"
+  },
+  "manual_sale_email_action_not_allowed": {
+    "message": "Diese manuelle Verkaufs-E-Mail-Aktion ist im aktuellen Status nicht erlaubt.",
+    "error_code": "manual_sale_email_action_not_allowed"
+  },
+  "manual_sale_email_installment_required": {
+    "message": "Eine Rate muss ausgewählt werden, um diese Verkaufs-E-Mail zu senden.",
+    "error_code": "manual_sale_email_installment_required"
+  },
+  "modification_request_not_deleted": {
+    "message": "Der Änderungsantrag ist nicht gelöscht und kann nicht wiederhergestellt werden",
+    "error_code": "modification_request_not_deleted"
+  },
+  "modification_request_not_found": {
+    "message": "Änderungsantrag nicht gefunden",
+    "error_code": "modification_request_not_found"
+  },
+  "no_marketing_booklet": {
+    "message": "Das Marketingheft konnte für diese Einheit nicht erzeugt werden.",
+    "error_code": "no_marketing_booklet"
+  },
+  "paymentPlan_not_found": {
+    "message": "Zahlungsplan nicht gefunden.",
+    "error_code": "paymentPlan_not_found"
+  },
+  "payment_plan_installment_count_mismatch": {
+    "message": "Das Feld Anzahl Raten stimmt nicht mit der Anzahl der Ratenzeilen überein.",
+    "error_code": "payment_plan_installment_count_mismatch"
+  },
+  "payment_plan_installment_too_small": {
+    "message": "Ein Ratenbetrag ist zu klein, um die zugewiesenen Vertragszinsen für diesen Zeitraum zu decken.",
+    "error_code": "payment_plan_installment_too_small"
+  },
+  "payment_plan_schedule_invalid": {
+    "message": "Die Ratendaten des Zahlungsplans stimmen nicht mit dem deklarierten Zeitfenster überein oder sind nicht streng aufsteigend.",
+    "error_code": "payment_plan_schedule_invalid"
+  },
+  "payment_plan_start_date_must_match_sale_date": {
+    "message": "Das Planstartdatum muss mit dem Verkaufsdatum übereinstimmen (gleicher Kalendertag).",
+    "error_code": "payment_plan_start_date_must_match_sale_date"
+  },
+  "pdf_processing_failed": {
+    "message": "PDF-Verarbeitung fehlgeschlagen.",
+    "error_code": "pdf_processing_failed"
+  },
+  "pdf_sanitization_failed": {
+    "message": "PDF-Bereinigung fehlgeschlagen",
+    "error_code": "pdf_sanitization_failed"
+  },
+  "project_not_deleted": {
+    "message": "Das Projekt ist nicht gelöscht und kann nicht wiederhergestellt werden",
+    "error_code": "project_not_deleted"
+  },
+  "project_not_found": {
+    "message": "Projekt nicht gefunden",
+    "error_code": "project_not_found"
+  },
+  "reservation_already_active": {
+    "message": "Diese Reservation ist bereits aktiv.",
+    "error_code": "reservation_already_active"
+  },
+  "reservation_already_paid": {
+    "message": "Die Reservation ist bereits bezahlt.",
+    "error_code": "reservation_already_paid"
+  },
+  "reservation_amount_exceeds_sale_total": {
+    "message": "Der in die Verkaufswährung umgerechnete Reservationsbetrag darf die Verkaufssumme nicht überschreiten.",
+    "error_code": "reservation_amount_exceeds_sale_total"
+  },
+  "reservation_cannot_be_deleted_as_it_has_a_paid_commission": {
+    "message": "Die Reservation kann nicht gelöscht werden, weil eine bezahlte Kommission vorliegt.",
+    "error_code": "reservation_cannot_be_deleted_as_it_has_a_paid_commission"
+  },
+  "reservation_cannot_be_edited_beacause_it_is_already_paid": {
+    "message": "Eine vollständig bezahlte Reservation kann nicht bearbeitet werden. Heben Sie zuerst die Zahlung der Reservation auf.",
+    "error_code": "reservation_cannot_be_edited_beacause_it_is_already_paid"
+  },
+  "reservation_client_missing": {
+    "message": "Der Reservation ist kein Kunde zugewiesen.",
+    "error_code": "reservation_client_missing"
+  },
+  "reservation_deposit_data_missing": {
+    "message": "Die aktive Reservation ist als bezahlt markiert, aber Anzahlungsbetrag oder Anzahlungswährung fehlen. Aktualisieren Sie die Reservation, bevor Sie einen Verkauf erstellen.",
+    "error_code": "reservation_deposit_data_missing"
+  },
+  "reservation_exchange_rate_required": {
+    "message": "Ein Wechselkurs ist erforderlich, weil die Währung der Reservations-Anzahlung von der Verkaufswährung abweicht.",
+    "error_code": "reservation_exchange_rate_required"
+  },
+  "reservation_date_must_be_before_expiration_date": {
+    "message": "Das Reservationsdatum muss vor dem Ablaufdatum liegen.",
+    "error_code": "reservation_date_must_be_before_expiration_date"
+  },
+  "reservation_date_must_not_be_in_the_future": {
+    "message": "Das Reservationsdatum darf nicht in der Zukunft liegen.",
+    "error_code": "reservation_date_must_not_be_in_the_future"
+  },
+  "reservation_expiration_date_must_be_in_the_future": {
+    "message": "Das Ablaufdatum der Reservation muss in der Zukunft liegen.",
+    "error_code": "reservation_expiration_date_must_be_in_the_future"
+  },
+  "reservation_expiration_required": {
+    "message": "Ein Ablaufdatum der Reservation ist erforderlich.",
+    "error_code": "reservation_expiration_required"
+  },
+  "reservation_not_deleted": {
+    "message": "Die Reservation ist nicht gelöscht und kann nicht wiederhergestellt werden",
+    "error_code": "reservation_not_deleted"
+  },
+  "reservation_not_found": {
+    "message": "Reservation nicht gefunden",
+    "error_code": "reservation_not_found"
+  },
+  "reservation_payment_cannot_be_reversed_since_it_already_has_a_paid_commission": {
+    "message": "Eine Reservationszahlung mit bezahlter Kommission kann nicht storniert werden. Heben Sie zuerst die Kommissionszahlung auf.",
+    "error_code": "reservation_payment_cannot_be_reversed_since_it_already_has_a_paid_commission"
+  },
+  "reserve_not_available_for_restore": {
+    "message": "Die Reservation steht nicht zur Wiederherstellung zur Verfügung.",
+    "error_code": "reserve_not_available_for_restore"
+  },
+  "sale_buyer_missing": {
+    "message": "Dem Verkauf ist kein Käufer zugewiesen.",
+    "error_code": "sale_buyer_missing"
+  },
+  "sale_cannot_be_deleted_as_it_has_a_paid_commission": {
+    "message": "Der Verkauf kann nicht gelöscht werden, weil eine bezahlte Kommission vorliegt.",
+    "error_code": "sale_cannot_be_deleted_as_it_has_a_paid_commission"
+  },
+  "sale_exchange_rate_required": {
+    "message": "Ein Wechselkurs ist erforderlich, weil die Währung des Listenpreises der Einheit von der Verkaufswährung abweicht.",
+    "error_code": "sale_exchange_rate_required"
+  },
+  "sale_not_available_for_restore": {
+    "message": "Der Verkauf steht nicht zur Wiederherstellung zur Verfügung.",
+    "error_code": "sale_not_available_for_restore"
+  },
+  "sale_not_deleted": {
+    "message": "Der Verkauf ist nicht gelöscht und kann nicht wiederhergestellt werden",
+    "error_code": "sale_not_deleted"
+  },
+  "sale_not_found": {
+    "message": "Verkauf nicht gefunden",
+    "error_code": "sale_not_found"
+  },
+  "sale_not_pending_approval": {
+    "message": "Der Verkauf ist nicht zur Freigabe hängig.",
+    "error_code": "sale_not_pending_approval"
+  },
+  "design_stage_requires_approved_deliverables": {
+    "message": "Diese Entwurfsphase hat erforderliche Lieferobjekte, die noch nicht freigegeben sind. Geben Sie sie frei, bevor Sie die Phase abschliessen.",
+    "error_code": "design_stage_requires_approved_deliverables"
+  },
+  "progress_claim_exceeds_contract_value_approve_variation_order_first": {
+    "message": "Die Zertifizierung dieses Anspruchs würde den Vertragswert plus genehmigte Nachtragsaufträge überschreiten. Genehmigen Sie zuerst einen Nachtragsauftrag.",
+    "error_code": "progress_claim_exceeds_contract_value_approve_variation_order_first"
+  },
+  "sale_handover_requires_completed_handover_package": {
+    "message": "Diese Einheit kann nicht übergeben werden, bis das Übergabepaket abgeschlossen ist.",
+    "error_code": "sale_handover_requires_completed_handover_package"
+  },
+  "propertyManagementConfig_already_exists": {
+    "message": "Immobilienverwaltungseinstellungen existieren bereits für dieses Unternehmen.",
+    "error_code": "propertyManagementConfig_already_exists"
+  },
+  "unauthorized_to_approve": {
+    "message": "Sie sind nicht berechtigt, in dieser Phase freizugeben",
+    "error_code": "unauthorized_to_approve"
+  },
+  "unitTypes_not_found": {
+    "message": "Einheitstyp nicht gefunden",
+    "error_code": "unitTypes_not_found"
+  },
+  "unit_already_has_active_reservation": {
+    "message": "Diese Einheit hat bereits eine aktive Reservation.",
+    "error_code": "unit_already_has_active_reservation"
+  },
+  "unit_already_reserved_and_unpaid": {
+    "message": "Diese Einheit hat eine aktive Reservation, die nicht als bezahlt markiert ist. Schliessen oder stornieren Sie die Reservation, bevor Sie einen Verkauf erstellen.",
+    "error_code": "unit_already_reserved_and_unpaid"
+  },
+  "unit_already_rented": {
+    "message": "Die Einheit ist bereits vermietet.",
+    "error_code": "unit_already_rented"
+  },
+  "unit_already_sold": {
+    "message": "Die Einheit ist bereits verkauft.",
+    "error_code": "unit_already_sold"
+  },
+  "unit_not_available_for_lease": {
+    "message": "Die Einheit ist nicht zur Vermietung verfügbar.",
+    "error_code": "unit_not_available_for_lease"
+  },
+  "unit_has_active_lease": {
+    "message": "Die Einheit hat bereits einen aktiven Mietvertrag.",
+    "error_code": "unit_has_active_lease"
+  },
+  "lease_not_active": {
+    "message": "Der Mietvertrag ist nicht aktiv.",
+    "error_code": "lease_not_active"
+  },
+  "lease_deposit_not_paid": {
+    "message": "Die Anzahlung wurde nicht als bezahlt markiert.",
+    "error_code": "lease_deposit_not_paid"
+  },
+  "lease_deposit_already_returned": {
+    "message": "Die Anzahlung wurde bereits zurückerstattet.",
+    "error_code": "lease_deposit_already_returned"
+  },
+  "rental_payment_already_paid": {
+    "message": "Die Mietzahlung ist bereits bezahlt.",
+    "error_code": "rental_payment_already_paid"
+  },
+  "rental_payment_waived": {
+    "message": "Die Mietzahlung wurde erlassen und kann nicht als bezahlt markiert werden.",
+    "error_code": "rental_payment_waived"
+  },
+  "rental_payment_invalid_amount": {
+    "message": "Der bezahlte Betrag ist ungültig.",
+    "error_code": "rental_payment_invalid_amount"
+  },
+  "unit_already_sold_thus_reservation_payment_cannot_be_reversed": {
+    "message": "Die Einheit ist bereits verkauft; die Reservationszahlung kann nicht storniert werden.",
+    "error_code": "unit_already_sold_thus_reservation_payment_cannot_be_reversed"
+  },
+  "unit_not_available": {
+    "message": "Die Einheit ist nicht verfügbar.",
+    "error_code": "unit_not_available"
+  },
+  "unit_not_available_for_reactivation": {
+    "message": "Die Einheit ist nicht mehr verfügbar; sie kann reserviert oder verkauft sein. Reservation kann nicht reaktiviert werden.",
+    "error_code": "unit_not_available_for_reactivation"
+  },
+  "unit_not_available_for_restore": {
+    "message": "Die Einheit ist nicht mehr verfügbar; sie kann reserviert oder verkauft sein. Reservation kann nicht wiederhergestellt werden.",
+    "error_code": "unit_not_available_for_restore"
+  },
+  "unit_not_deleted": {
+    "message": "Die Einheit ist nicht gelöscht und kann nicht wiederhergestellt werden",
+    "error_code": "unit_not_deleted"
+  },
+  "unit_not_found": {
+    "message": "Einheit nicht gefunden",
+    "error_code": "unit_not_found"
+  },
+  "unit_type_in_use": {
+    "message": "Der Einheitstyp ist in Verwendung und kann nicht gelöscht werden.",
+    "error_code": "unit_type_in_use"
+  },
+  "story_type_in_use": {
+    "message": "Der Geschosstyp ist in Verwendung und kann nicht gelöscht werden.",
+    "error_code": "story_type_in_use"
+  }
+}
