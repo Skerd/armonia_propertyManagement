@@ -319,6 +319,10 @@
     "message": "Der Mietvertrag ist nicht aktiv.",
     "error_code": "lease_not_active"
   },
+  "lease_deposit_already_paid": {
+    "message": "Die Anzahlung wurde bereits als bezahlt markiert.",
+    "error_code": "lease_deposit_already_paid"
+  },
   "lease_deposit_not_paid": {
     "message": "Die Anzahlung wurde nicht als bezahlt markiert.",
     "error_code": "lease_deposit_not_paid"

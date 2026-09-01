@@ -319,6 +319,10 @@
     "message": "La locazione non è attiva.",
     "error_code": "lease_not_active"
   },
+  "lease_deposit_already_paid": {
+    "message": "L'acconto è già stato contrassegnato come pagato.",
+    "error_code": "lease_deposit_already_paid"
+  },
   "lease_deposit_not_paid": {
     "message": "L'acconto non è stato contrassegnato come pagato.",
     "error_code": "lease_deposit_not_paid"

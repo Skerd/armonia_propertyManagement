@@ -319,6 +319,10 @@
     "message": "Kontrata e qirasë nuk është aktive.",
     "error_code": "lease_not_active"
   },
+  "lease_deposit_already_paid": {
+    "message": "Depozita është shënuar tashmë si e paguar.",
+    "error_code": "lease_deposit_already_paid"
+  },
   "lease_deposit_not_paid": {
     "message": "Depozita nuk është shënuar si e paguar.",
     "error_code": "lease_deposit_not_paid"

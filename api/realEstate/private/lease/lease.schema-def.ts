@@ -6,7 +6,7 @@ export const LEASE_SHORT_TEXT_MAX = 128;
 export const LEASE_LONG_TEXT_MAX = 5000;
 
 // Validators extend the builder output for fields it cannot express:
-//  - status — server/action-managed (excluded from SchemaDef; see excludePaths on Mongoose validate)
+//  - status/depositPaid — server/action-managed (excluded from SchemaDef; see excludePaths on Mongoose validate)
 //  - terminationDate/depositReturnedAt — date strings
 //  - monthlyRent/depositAmount — Decimal128 in Mongoose; treated as number in forms
 export const leaseStatusValues = ["active", "expired", "terminated"] as const;
@@ -20,10 +20,9 @@ export const LeaseSchemaDef = {
     monthlyRent:       { type: "number",   required: true, min: 0 },
     rentCurrency:      { type: "objectId", required: true  },
     depositAmount:     { type: "number",   required: false, min: 0 },
-    depositPaid:       { type: "boolean",  required: false },
     terminationReason: { type: "string",   required: false, max: LEASE_LONG_TEXT_MAX },
     notes:             { type: "string",   required: false, max: LEASE_LONG_TEXT_MAX },
-    contractMedia:     { type: "mediaId",  required: false },
+    contractMedia:     { type: "mediaId",  required: true },
 } as const;
 
 export type CreateLeaseFormType = InferCreateForm<typeof LeaseSchemaDef>;

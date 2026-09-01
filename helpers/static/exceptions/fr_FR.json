@@ -319,6 +319,10 @@
     "message": "Le bail n'est pas actif.",
     "error_code": "lease_not_active"
   },
+  "lease_deposit_already_paid": {
+    "message": "L'acompte a déjà été marqué comme payé.",
+    "error_code": "lease_deposit_already_paid"
+  },
   "lease_deposit_not_paid": {
     "message": "L'acompte n'a pas été marqué comme payé.",
     "error_code": "lease_deposit_not_paid"

@@ -319,6 +319,10 @@
     "message": "Lease is not active.",
     "error_code": "lease_not_active"
   },
+  "lease_deposit_already_paid": {
+    "message": "Deposit has already been marked as paid.",
+    "error_code": "lease_deposit_already_paid"
+  },
   "lease_deposit_not_paid": {
     "message": "Deposit has not been marked as paid.",
     "error_code": "lease_deposit_not_paid"
