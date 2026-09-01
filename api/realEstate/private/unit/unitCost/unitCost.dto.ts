@@ -1,6 +1,7 @@
 import type {Media} from "../../../../../../core/types";
 import type {DeletedData, LifeCycleData, OwnershipData} from "../../../../../../core/types/shared.types";
 import {Currency} from "../../../../../../core/database/types";
+import type {UnitCostPaymentStatus, UnitCostVerificationStatus} from "./unitCost.constants";
 
 export type UnitCostExpenditureItem = {
     title: string;
@@ -40,8 +41,8 @@ export type UnitCost = DeletedData & OwnershipData & LifeCycleData & {
     purchaseDate: string;
     paymentDate?: string;
     notes?: string;
-    verificationStatus: string;
-    paymentStatus: string;
+    verificationStatus: UnitCostVerificationStatus;
+    paymentStatus: UnitCostPaymentStatus;
     tag?: string;
     currency?: Currency;
     invoiceNumber?: string;
@@ -59,5 +60,4 @@ export type UnitCost = DeletedData & OwnershipData & LifeCycleData & {
     /** Sum of amount × pricePerUnit over expenditureItems (server-derived). */
     documentSubtotal?: number;
     budgetedAmount?: number;
-    budgetCurrency?: {_id: string; name?: string; symbol?: string; abbreviation?: string};
 };
