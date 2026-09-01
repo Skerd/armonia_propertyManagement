@@ -9,11 +9,11 @@ export const FLOOR_SHARED_SPACE_ITEM_MAX = 128;
 /** Max items in the shared spaces list. */
 export const FLOOR_SHARED_SPACE_MAX_ITEMS = 30;
 
+// totalUnits is server-computed from the unit count — not part of the writable form.
 export const FloorSchemaDef = {
     name:             { type: "string",        required: true,  min: 1, max: FLOOR_SHORT_TEXT_MAX },
     edifice:          { type: "objectId",      required: true  },
     levelNumber:      { type: "number",        required: true  },
-    totalUnits:       { type: "number",        required: true,  min: 0 },
     area:             { type: "number",        required: true,  min: 0 },
     isAccessible:     { type: "boolean",       required: false },
     hasEmergencyExit: { type: "boolean",       required: false },
