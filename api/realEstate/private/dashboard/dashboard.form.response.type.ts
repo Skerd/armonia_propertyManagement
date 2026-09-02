@@ -37,6 +37,14 @@ export type SalesByPaymentType = {
     payment_plan: number;
 };
 
+export type RentalsSummary = {
+    collectedAmount: RevenueByCurrency[];
+    outstandingAmount: RevenueByCurrency[];
+    overdueAmount: RevenueByCurrency[];
+    overdueCount: number;
+    activeLeases: number;
+};
+
 export type DashboardSummary = {
     totalRevenue: RevenueByCurrency[];
     totalSales: number;
@@ -75,6 +83,7 @@ export type DashboardSummary = {
     pendingVerificationUnitCosts: RevenueByCurrency[];
     /** Count of unit cost documents (non-deleted) for units in dashboard scope */
     totalUnitCostDocuments: number;
+    rentals: RentalsSummary;
 };
 
 export type PeriodDatum = {
@@ -102,7 +111,7 @@ export type ComparisonDatum = {
 /** Single payment alert for dashboard (overdue or due-soon installment / reservation deposit). */
 export type PaymentAlertItem = {
     /** Missing on older cached rows — treat as installment. */
-    kind?: "installment" | "reservation";
+    kind?: "installment" | "reservation" | "rent";
     unit: { _id: string; unitNumber?: string; name?: string };
     /** Shared due payload: installment dueDate or reservation expirationDate. */
     installment: { amount: number; dueDate: string };

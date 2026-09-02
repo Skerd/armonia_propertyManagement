@@ -38,3 +38,10 @@ export function rentalPaymentsListFormSchema(languageCode: string) {
         dueDateTo: z.string().trim().optional(),
     });
 }
+
+export function rentalsCalendarFormSchema(languageCode: string) {
+    return z.object({
+        ...hierarchyShape(languageCode),
+        month: z.string().regex(/^\d{4}-\d{2}$/),
+    });
+}

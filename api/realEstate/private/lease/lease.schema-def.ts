@@ -20,6 +20,8 @@ export const LeaseSchemaDef = {
     monthlyRent:       { type: "number",   required: true, min: 0 },
     rentCurrency:      { type: "objectId", required: true  },
     depositAmount:     { type: "number",   required: false, min: 0 },
+    lateFeePercentage: { type: "number",   required: false, min: 0, max: 100 },
+    gracePeriodDays:   { type: "number",   required: false, min: 0 },
     terminationReason: { type: "string",   required: false, max: LEASE_LONG_TEXT_MAX },
     notes:             { type: "string",   required: false, max: LEASE_LONG_TEXT_MAX },
     contractMedia:     { type: "mediaId",  required: true },

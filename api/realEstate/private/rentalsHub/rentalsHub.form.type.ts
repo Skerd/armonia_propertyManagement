@@ -25,3 +25,11 @@ export type RentalPaymentsListFormType = {
     dueDateFrom?: string;
     dueDateTo?: string;
 };
+
+export type RentalsCalendarFormType = {
+    month: string;
+    project?: string;
+    edifice?: string;
+    floor?: string;
+    unit?: string;
+};

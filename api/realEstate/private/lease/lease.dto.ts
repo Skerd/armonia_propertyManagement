@@ -11,6 +11,8 @@ export type Lease = DeletedData & OwnershipData & LifeCycleData & {
     monthlyRent: number;
     rentCurrency?: {_id: string; name?: string; symbol?: string};
     depositAmount?: number;
+    lateFeePercentage?: number;
+    gracePeriodDays?: number;
     depositPaid?: boolean;
     depositReturnedAt?: string;
     status?: string;

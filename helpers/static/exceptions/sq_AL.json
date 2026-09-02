@@ -343,6 +343,46 @@
     "message": "Shuma e paguar nuk është e vlefshme.",
     "error_code": "rental_payment_invalid_amount"
   },
+  "rental_payment_overpay": {
+    "message": "Shuma e paguar tejkalon mbetjen e këtij muaji.",
+    "error_code": "rental_payment_overpay"
+  },
+  "rental_payment_exceeds_open_due": {
+    "message": "Shuma e paguar tejkalon qiranë e hapur të kësaj kontrate.",
+    "error_code": "rental_payment_exceeds_open_due"
+  },
+  "rental_payment_duplicate_due": {
+    "message": "Ekziston tashmë një rresht qiraje për këtë datë pagese.",
+    "error_code": "rental_payment_duplicate_due"
+  },
+  "rental_payment_no_open_due": {
+    "message": "Nuk ka qira të hapur për këtë kontratë.",
+    "error_code": "rental_payment_no_open_due"
+  },
+  "rental_payment_amount_locked": {
+    "message": "Shuma dhe data e pagesës nuk mund të ndryshohen pas regjistrimit të një pagese.",
+    "error_code": "rental_payment_amount_locked"
+  },
+  "lease_end_before_collected_rent": {
+    "message": "Nuk mund të shkurtohet kontrata para një muaji qiraje të inkasuar.",
+    "error_code": "lease_end_before_collected_rent"
+  },
+  "lease_term_too_long": {
+    "message": "Afati i kontratës nuk mund të kalojë 600 muaj.",
+    "error_code": "lease_term_too_long"
+  },
+  "lease_start_after_collected_rent": {
+    "message": "Nuk mund të ndryshohet data e fillimit pasi qiraja është inkasuar.",
+    "error_code": "lease_start_after_collected_rent"
+  },
+  "lease_currency_change_with_payments": {
+    "message": "Nuk mund të ndryshohet monedha e qirasë pasi ekzistojnë rreshta pagese.",
+    "error_code": "lease_currency_change_with_payments"
+  },
+  "lease_unit_immutable": {
+    "message": "Njësia e qirasë nuk mund të ndryshohet pas krijimit.",
+    "error_code": "lease_unit_immutable"
+  },
   "unit_already_sold_thus_reservation_payment_cannot_be_reversed": {
     "message": "Njësia është shitur tashmë; pagesa e rezervimit nuk mund të zhbhet.",
     "error_code": "unit_already_sold_thus_reservation_payment_cannot_be_reversed"

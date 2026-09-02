@@ -7,6 +7,8 @@ export type RentalPaymentRegistryRow = {
     dueDate?: string;
     amount?: number;
     paidAmount?: number;
+    remaining?: number;
+    lateFeeAmount?: number;
     paidDate?: string;
     currency?: {_id: string; name?: string; symbol?: string};
     lease?: {_id: string; name?: string};

@@ -343,6 +343,46 @@
     "message": "Paid amount is invalid.",
     "error_code": "rental_payment_invalid_amount"
   },
+  "rental_payment_overpay": {
+    "message": "Paid amount exceeds the remaining due for this month.",
+    "error_code": "rental_payment_overpay"
+  },
+  "rental_payment_exceeds_open_due": {
+    "message": "Paid amount exceeds the remaining open rent on this lease.",
+    "error_code": "rental_payment_exceeds_open_due"
+  },
+  "rental_payment_duplicate_due": {
+    "message": "A rent row already exists for this due date.",
+    "error_code": "rental_payment_duplicate_due"
+  },
+  "rental_payment_no_open_due": {
+    "message": "There is no open rent due on this lease.",
+    "error_code": "rental_payment_no_open_due"
+  },
+  "rental_payment_amount_locked": {
+    "message": "Amount and due date cannot be changed after a payment has been recorded.",
+    "error_code": "rental_payment_amount_locked"
+  },
+  "lease_end_before_collected_rent": {
+    "message": "Cannot shorten the lease to a date before a collected rent month.",
+    "error_code": "lease_end_before_collected_rent"
+  },
+  "lease_term_too_long": {
+    "message": "Lease term cannot exceed 600 months.",
+    "error_code": "lease_term_too_long"
+  },
+  "lease_start_after_collected_rent": {
+    "message": "Cannot change the start date after rent has been collected.",
+    "error_code": "lease_start_after_collected_rent"
+  },
+  "lease_currency_change_with_payments": {
+    "message": "Cannot change rent currency after payment rows exist.",
+    "error_code": "lease_currency_change_with_payments"
+  },
+  "lease_unit_immutable": {
+    "message": "The leased unit cannot be changed after create.",
+    "error_code": "lease_unit_immutable"
+  },
   "unit_already_sold_thus_reservation_payment_cannot_be_reversed": {
     "message": "Unit is already sold; reservation payment cannot be reversed.",
     "error_code": "unit_already_sold_thus_reservation_payment_cannot_be_reversed"
