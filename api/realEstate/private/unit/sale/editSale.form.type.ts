@@ -2,6 +2,7 @@ export type EditSaleFormType = {
     _id: string;
     notes?: string;
     transactionReference?: string;
+    localDiscount?: number;
     // FEAT-004 — handover tracking
     handoverDate?: string | null;
     handedOverBy?: string | null;

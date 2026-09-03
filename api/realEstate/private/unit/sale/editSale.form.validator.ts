@@ -1,5 +1,5 @@
 import {z} from "zod";
-import {isObjectIdZod, stringMaxLengthZod} from "../../../../../../core/helpers/zodBuilder";
+import {inBetweenRangeZod, isObjectIdZod, stringMaxLengthZod} from "../../../../../../core/helpers/zodBuilder";
 import {SALE_LONG_TEXT_MAX, SALE_SHORT_TEXT_MAX} from "./sale.schema-def";
 
 export function editSaleFormSchema(languageCode: string, form: any = null) {
@@ -7,6 +7,7 @@ export function editSaleFormSchema(languageCode: string, form: any = null) {
         _id:                   isObjectIdZod(form?.["_idLabel"] || "_id", languageCode),
         notes:                 stringMaxLengthZod(form?.["notesLabel"] || "notes", SALE_LONG_TEXT_MAX, languageCode).optional().nullable(),
         transactionReference:  stringMaxLengthZod(form?.["transactionReferenceLabel"] || "transactionReference", SALE_SHORT_TEXT_MAX, languageCode).optional().nullable(),
+        localDiscount:         inBetweenRangeZod(form?.["localDiscountLabel"] || "localDiscount", 0, 100, languageCode).optional(),
         // FEAT-004 — handover tracking
         handoverDate:          z.string().optional().nullable(),
         handedOverBy:          z.string().optional().nullable(),

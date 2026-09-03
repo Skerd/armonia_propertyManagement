@@ -14,5 +14,13 @@ export type CreateCashSaleFormType = {
     transactionReference: string;
     reservationExchangeRate?: number;
     saleExchangeRate?: number;
+    handoverDate?: string;
+    handedOverBy?: string;
+    handoverNotes?: string;
+    handoverCertificate?: string;
+    titleTransferDate?: string;
+    deedNumber?: string;
+    notaryName?: string;
+    titleTransferCertificate?: string;
 };
 
