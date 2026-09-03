@@ -98,5 +98,5 @@ export function createSaleFormSchema(languageCode: string, form: any = null) {
                 maxField: form?.["endDateLabel"] || "endDate",
             },
         )(schema) as z.ZodObject<any>,
-    );
+    ) as z.ZodObject<any>;
 }
