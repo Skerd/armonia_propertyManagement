@@ -97,6 +97,7 @@ export type Sale = DeletedData & OwnershipData & LifeCycleData & {
     handoverCertificate?: Media;
     handedOverBy?: {_id: string; name?: string; surname?: string};
     handoverNotes?: string;
+    handoverCompletedAt?: string;
     // FEAT-014 — title transfer tracking
     titleTransferDate?: string;
     deedNumber?: string;

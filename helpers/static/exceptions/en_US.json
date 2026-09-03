@@ -275,6 +275,14 @@
     "message": "Certifying this claim would exceed the contract value plus approved variation orders. Approve a variation order first.",
     "error_code": "progress_claim_exceeds_contract_value_approve_variation_order_first"
   },
+  "sale_handover_already_completed": {
+    "message": "This sale handover is already completed.",
+    "error_code": "sale_handover_already_completed"
+  },
+  "sale_handover_not_recorded": {
+    "message": "This sale has no handover to complete.",
+    "error_code": "sale_handover_not_recorded"
+  },
   "sale_handover_requires_completed_handover_package": {
     "message": "This unit cannot be handed over until its handover package is completed.",
     "error_code": "sale_handover_requires_completed_handover_package"

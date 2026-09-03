@@ -275,6 +275,14 @@
     "message": "Certifier cette créance dépasserait la valeur du contrat plus les ordres de variation approuvés. Approuvez d'abord un ordre de variation.",
     "error_code": "progress_claim_exceeds_contract_value_approve_variation_order_first"
   },
+  "sale_handover_already_completed": {
+    "message": "Cette remise de vente est déjà terminée.",
+    "error_code": "sale_handover_already_completed"
+  },
+  "sale_handover_not_recorded": {
+    "message": "Cette vente n’a pas de remise à terminer.",
+    "error_code": "sale_handover_not_recorded"
+  },
   "sale_handover_requires_completed_handover_package": {
     "message": "Cette unité ne peut pas être remise tant que son dossier de remise n'est pas terminé.",
     "error_code": "sale_handover_requires_completed_handover_package"

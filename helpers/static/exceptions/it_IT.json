@@ -275,6 +275,14 @@
     "message": "Certificare questa richiesta supererebbe il valore del contratto più gli ordini di variante approvati. Approvare prima un ordine di variante.",
     "error_code": "progress_claim_exceeds_contract_value_approve_variation_order_first"
   },
+  "sale_handover_already_completed": {
+    "message": "Questa consegna della vendita è già completata.",
+    "error_code": "sale_handover_already_completed"
+  },
+  "sale_handover_not_recorded": {
+    "message": "Questa vendita non ha una consegna da completare.",
+    "error_code": "sale_handover_not_recorded"
+  },
   "sale_handover_requires_completed_handover_package": {
     "message": "Questa unità non può essere consegnata finché il pacchetto di consegna non è completato.",
     "error_code": "sale_handover_requires_completed_handover_package"

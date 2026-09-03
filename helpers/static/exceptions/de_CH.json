@@ -275,6 +275,14 @@
     "message": "Die Zertifizierung dieses Anspruchs würde den Vertragswert plus genehmigte Nachtragsaufträge überschreiten. Genehmigen Sie zuerst einen Nachtragsauftrag.",
     "error_code": "progress_claim_exceeds_contract_value_approve_variation_order_first"
   },
+  "sale_handover_already_completed": {
+    "message": "Diese Verkaufsübergabe ist bereits abgeschlossen.",
+    "error_code": "sale_handover_already_completed"
+  },
+  "sale_handover_not_recorded": {
+    "message": "Dieser Verkauf hat keine Übergabe zum Abschliessen.",
+    "error_code": "sale_handover_not_recorded"
+  },
   "sale_handover_requires_completed_handover_package": {
     "message": "Diese Einheit kann nicht übergeben werden, bis das Übergabepaket abgeschlossen ist.",
     "error_code": "sale_handover_requires_completed_handover_package"

@@ -275,6 +275,14 @@
     "message": "Certifikimi i kësaj kërkese do të tejkalonte vlerën e kontratës plus urdhrat e variacionit të miratuar. Miratoni fillimisht një urdhër variacioni.",
     "error_code": "progress_claim_exceeds_contract_value_approve_variation_order_first"
   },
+  "sale_handover_already_completed": {
+    "message": "Ky dorëzim i shitjes është tashmë i përfunduar.",
+    "error_code": "sale_handover_already_completed"
+  },
+  "sale_handover_not_recorded": {
+    "message": "Kjo shitje nuk ka dorëzim për t’u përfunduar.",
+    "error_code": "sale_handover_not_recorded"
+  },
   "sale_handover_requires_completed_handover_package": {
     "message": "Kjo njësi nuk mund të dorëzohet derisa paketa e dorëzimit të jetë përfunduar.",
     "error_code": "sale_handover_requires_completed_handover_package"
