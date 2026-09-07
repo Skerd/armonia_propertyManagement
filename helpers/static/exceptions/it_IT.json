@@ -95,17 +95,37 @@
     "message": "Lo stato della richiesta di modifica non consente l'approvazione del cliente.",
     "error_code": "invalid_status_for_client_approval"
   },
+  "invalid_status_for_addDueDiligenceStep": {
+    "message": "Un passaggio di due diligence può essere aggiunto solo mentre la particella è in due diligence.",
+    "error_code": "invalid_status_for_addDueDiligenceStep"
+  },
+  "invalid_status_for_concludeDueDiligence": {
+    "message": "La due diligence può essere conclusa solo mentre la particella è in due diligence.",
+    "error_code": "invalid_status_for_concludeDueDiligence"
+  },
   "invalid_status_for_deliver": {
     "message": "Lo stato della richiesta di modifica non consente la consegna.",
     "error_code": "invalid_status_for_deliver"
+  },
+  "invalid_status_for_dispose": {
+    "message": "Questa particella non può essere dismessa nello stato attuale.",
+    "error_code": "invalid_status_for_dispose"
   },
   "invalid_status_for_finance": {
     "message": "Lo stato della richiesta di modifica non consente l'approvazione finanziaria.",
     "error_code": "invalid_status_for_finance"
   },
+  "invalid_status_for_startDueDiligence": {
+    "message": "La due diligence non può iniziare per questa particella nello stato attuale.",
+    "error_code": "invalid_status_for_startDueDiligence"
+  },
   "invalid_status_transition": {
     "message": "Transizione di stato non valida per la richiesta di modifica.",
     "error_code": "invalid_status_transition"
+  },
+  "landParcel_not_found": {
+    "message": "Particella non trovata.",
+    "error_code": "landParcel_not_found"
   },
   "manual_reservation_email_action_not_allowed": {
     "message": "Questa azione email manuale di prenotazione non è consentita nello stato attuale.",

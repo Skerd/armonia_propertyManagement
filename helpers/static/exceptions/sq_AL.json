@@ -95,17 +95,37 @@
     "message": "Statusi i kërkesës së ndryshimit nuk lejon miratimin nga klienti.",
     "error_code": "invalid_status_for_client_approval"
   },
+  "invalid_status_for_addDueDiligenceStep": {
+    "message": "Një hap due diligence mund të shtohet vetëm kur parcela është në due diligence.",
+    "error_code": "invalid_status_for_addDueDiligenceStep"
+  },
+  "invalid_status_for_concludeDueDiligence": {
+    "message": "Due diligence mund të përfundojë vetëm kur parcela është në due diligence.",
+    "error_code": "invalid_status_for_concludeDueDiligence"
+  },
   "invalid_status_for_deliver": {
     "message": "Statusi i kërkesës së ndryshimit nuk lejon dorëzimin.",
     "error_code": "invalid_status_for_deliver"
+  },
+  "invalid_status_for_dispose": {
+    "message": "Kjo parcelë nuk mund të hiqet nga përdorimi në statusin aktual.",
+    "error_code": "invalid_status_for_dispose"
   },
   "invalid_status_for_finance": {
     "message": "Statusi i kërkesës së ndryshimit nuk lejon miratimin financiar.",
     "error_code": "invalid_status_for_finance"
   },
+  "invalid_status_for_startDueDiligence": {
+    "message": "Due diligence nuk mund të fillojë për këtë parcelë në statusin aktual.",
+    "error_code": "invalid_status_for_startDueDiligence"
+  },
   "invalid_status_transition": {
     "message": "Kalim i pavlefshëm statusi për kërkesën e ndryshimit.",
     "error_code": "invalid_status_transition"
+  },
+  "landParcel_not_found": {
+    "message": "Parcela e tokës nuk u gjet.",
+    "error_code": "landParcel_not_found"
   },
   "manual_reservation_email_action_not_allowed": {
     "message": "Ky veprim manual i email-it të rezervimit nuk lejohet në gjendjen aktuale.",

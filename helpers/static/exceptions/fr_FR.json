@@ -95,17 +95,37 @@
     "message": "Le statut de la demande de modification n'autorise pas l'approbation du client.",
     "error_code": "invalid_status_for_client_approval"
   },
+  "invalid_status_for_addDueDiligenceStep": {
+    "message": "Une étape de due diligence ne peut être ajoutée que lorsque la parcelle est en due diligence.",
+    "error_code": "invalid_status_for_addDueDiligenceStep"
+  },
+  "invalid_status_for_concludeDueDiligence": {
+    "message": "La due diligence ne peut être conclue que lorsque la parcelle est en due diligence.",
+    "error_code": "invalid_status_for_concludeDueDiligence"
+  },
   "invalid_status_for_deliver": {
     "message": "Le statut de la demande de modification n'autorise pas la livraison.",
     "error_code": "invalid_status_for_deliver"
+  },
+  "invalid_status_for_dispose": {
+    "message": "Cette parcelle ne peut pas être cédée dans son statut actuel.",
+    "error_code": "invalid_status_for_dispose"
   },
   "invalid_status_for_finance": {
     "message": "Le statut de la demande de modification n'autorise pas l'approbation financière.",
     "error_code": "invalid_status_for_finance"
   },
+  "invalid_status_for_startDueDiligence": {
+    "message": "La due diligence ne peut pas démarrer pour cette parcelle dans son statut actuel.",
+    "error_code": "invalid_status_for_startDueDiligence"
+  },
   "invalid_status_transition": {
     "message": "Transition de statut invalide pour la demande de modification.",
     "error_code": "invalid_status_transition"
+  },
+  "landParcel_not_found": {
+    "message": "Parcelle introuvable.",
+    "error_code": "landParcel_not_found"
   },
   "manual_reservation_email_action_not_allowed": {
     "message": "Cette action d'e-mail manuel de réservation n'est pas autorisée dans l'état actuel.",

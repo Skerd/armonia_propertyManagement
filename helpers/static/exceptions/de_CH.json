@@ -95,17 +95,37 @@
     "message": "Der Status des Änderungsantrags erlaubt keine Kundenfreigabe.",
     "error_code": "invalid_status_for_client_approval"
   },
+  "invalid_status_for_addDueDiligenceStep": {
+    "message": "Ein Due-Diligence-Schritt kann nur hinzugefügt werden, solange das Grundstück in Due Diligence ist.",
+    "error_code": "invalid_status_for_addDueDiligenceStep"
+  },
+  "invalid_status_for_concludeDueDiligence": {
+    "message": "Die Due Diligence kann nur abgeschlossen werden, solange das Grundstück in Due Diligence ist.",
+    "error_code": "invalid_status_for_concludeDueDiligence"
+  },
   "invalid_status_for_deliver": {
     "message": "Der Status des Änderungsantrags erlaubt keine Lieferung.",
     "error_code": "invalid_status_for_deliver"
+  },
+  "invalid_status_for_dispose": {
+    "message": "Dieses Grundstück kann im aktuellen Status nicht veräußert werden.",
+    "error_code": "invalid_status_for_dispose"
   },
   "invalid_status_for_finance": {
     "message": "Der Status des Änderungsantrags erlaubt keine Finanzfreigabe.",
     "error_code": "invalid_status_for_finance"
   },
+  "invalid_status_for_startDueDiligence": {
+    "message": "Für dieses Grundstück kann im aktuellen Status keine Due Diligence gestartet werden.",
+    "error_code": "invalid_status_for_startDueDiligence"
+  },
   "invalid_status_transition": {
     "message": "Ungültiger Statusübergang für den Änderungsantrag.",
     "error_code": "invalid_status_transition"
+  },
+  "landParcel_not_found": {
+    "message": "Grundstück nicht gefunden.",
+    "error_code": "landParcel_not_found"
   },
   "manual_reservation_email_action_not_allowed": {
     "message": "Diese manuelle Reservations-E-Mail-Aktion ist im aktuellen Status nicht erlaubt.",

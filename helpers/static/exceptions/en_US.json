@@ -95,17 +95,37 @@
     "message": "The modification request status does not allow client approval.",
     "error_code": "invalid_status_for_client_approval"
   },
+  "invalid_status_for_addDueDiligenceStep": {
+    "message": "A due-diligence step can only be added while the land parcel is under due diligence.",
+    "error_code": "invalid_status_for_addDueDiligenceStep"
+  },
+  "invalid_status_for_concludeDueDiligence": {
+    "message": "Due diligence can only be concluded while the land parcel is under due diligence.",
+    "error_code": "invalid_status_for_concludeDueDiligence"
+  },
   "invalid_status_for_deliver": {
     "message": "Modification request status does not allow delivery.",
     "error_code": "invalid_status_for_deliver"
+  },
+  "invalid_status_for_dispose": {
+    "message": "This land parcel cannot be disposed in its current status.",
+    "error_code": "invalid_status_for_dispose"
   },
   "invalid_status_for_finance": {
     "message": "Modification request status does not allow finance approval.",
     "error_code": "invalid_status_for_finance"
   },
+  "invalid_status_for_startDueDiligence": {
+    "message": "This land parcel cannot start due diligence in its current status.",
+    "error_code": "invalid_status_for_startDueDiligence"
+  },
   "invalid_status_transition": {
     "message": "Invalid status transition for modification request.",
     "error_code": "invalid_status_transition"
+  },
+  "landParcel_not_found": {
+    "message": "Land parcel not found.",
+    "error_code": "landParcel_not_found"
   },
   "manual_reservation_email_action_not_allowed": {
     "message": "This manual reservation email action is not allowed in the current state.",
