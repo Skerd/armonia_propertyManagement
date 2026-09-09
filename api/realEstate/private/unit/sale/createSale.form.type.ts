@@ -8,7 +8,7 @@ export type CreateCashSaleFormType = {
     localDiscount?: number;
     saleCurrency: string;
     buyer: string;
-    purchaseContract: string;
+    purchaseContract?: string;
     additionalDocuments?: string[];
     notes?: string;
     transactionReference: string;

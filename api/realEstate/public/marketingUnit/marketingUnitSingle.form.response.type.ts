@@ -38,6 +38,7 @@ export type MarketingUnitSingleItem = {
     mainImage?: string;
     imageGallery?: string[];
     videoGallery?: string[];
+    marketingBooklet?: string;
     description?: string;
     grossAreaSqm?: number;
     netAreaSqm?: number;

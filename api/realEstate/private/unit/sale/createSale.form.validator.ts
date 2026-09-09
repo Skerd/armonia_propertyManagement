@@ -19,7 +19,9 @@ export function createCashSaleFormSchema(languageCode: string, form: any = null)
         ),
         notes: stringMaxLengthZod(form?.["notesLabel"] || "notes", SALE_LONG_TEXT_MAX, languageCode).optional(),
 
-        purchaseContract: form ? isArrayOfFilesZod(form?.["purchaseContractLabel"] || "purchaseContract", languageCode, 1) : isObjectIdZod(form?.["purchaseContractLabel"] || "purchaseContract", languageCode),
+        purchaseContract: form
+            ? isArrayOfFilesZod(form?.["purchaseContractLabel"] || "purchaseContract", languageCode).optional()
+            : isObjectIdZod(form?.["purchaseContractLabel"] || "purchaseContract", languageCode).optional(),
         additionalDocuments: form ? isArrayOfFilesZod(form?.["additionalDocumentsLabel"] || "additionalDocuments", languageCode).optional() : isArrayOfObjectIdsZod(form?.["additionalDocumentsLabel"] || "additionalDocuments", languageCode).optional(),
 
         reservationExchangeRate: !!form ? greaterThanZod(form?.["reservationExchangeRateLabel"] || "reservationExchangeRate", 0, languageCode) : z.string().optional(),

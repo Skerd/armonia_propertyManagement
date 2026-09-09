@@ -1,5 +1,5 @@
 // No form types are exported from this SchemaDef because:
-//  - the create form type (CreateCashSaleFormType) has buyer/purchaseContract/transactionReference
+//  - the create form type (CreateCashSaleFormType) has buyer/transactionReference
 //    as required fields that are optional in Mongoose (computed/context-dependent)
 //  - paymentType is required in Mongoose but set by the API endpoint, not by the form
 //  - finalPrice is required in Mongoose but computed server-side from pricing logic
