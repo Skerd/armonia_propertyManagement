@@ -115,6 +115,34 @@
     "message": "Lo stato della richiesta di modifica non consente l'approvazione finanziaria.",
     "error_code": "invalid_status_for_finance"
   },
+  "invalid_status_for_markContacted": {
+    "message": "Questo lead non può essere contrassegnato come contattato nello stato attuale.",
+    "error_code": "invalid_status_for_markContacted"
+  },
+  "invalid_status_for_markLost": {
+    "message": "Questo lead non può essere contrassegnato come perso nello stato attuale.",
+    "error_code": "invalid_status_for_markLost"
+  },
+  "invalid_status_for_markNegotiation": {
+    "message": "Questo lead deve essere almeno qualificato con una proposta prima della negoziazione.",
+    "error_code": "invalid_status_for_markNegotiation"
+  },
+  "invalid_status_for_markProposal": {
+    "message": "Questo lead deve essere qualificato prima di registrare una proposta.",
+    "error_code": "invalid_status_for_markProposal"
+  },
+  "invalid_status_for_markWon": {
+    "message": "Questo lead non può essere contrassegnato come vinto nello stato attuale.",
+    "error_code": "invalid_status_for_markWon"
+  },
+  "invalid_status_for_qualify": {
+    "message": "Questo lead non può essere qualificato nello stato attuale.",
+    "error_code": "invalid_status_for_qualify"
+  },
+  "invalid_status_for_reopen": {
+    "message": "Solo un lead perso può essere riaperto.",
+    "error_code": "invalid_status_for_reopen"
+  },
   "invalid_status_for_startDueDiligence": {
     "message": "La due diligence non può iniziare per questa particella nello stato attuale.",
     "error_code": "invalid_status_for_startDueDiligence"
@@ -126,6 +154,14 @@
   "landParcel_not_found": {
     "message": "Particella non trovata.",
     "error_code": "landParcel_not_found"
+  },
+  "lead_contact_required": {
+    "message": "Aggiungi un'email o un telefono prima di far avanzare questo lead.",
+    "error_code": "lead_contact_required"
+  },
+  "lead_qualify_required": {
+    "message": "Imposta un interesse e un progetto o un'unità prima di qualificare questo lead.",
+    "error_code": "lead_qualify_required"
   },
   "manual_reservation_email_action_not_allowed": {
     "message": "Questa azione email manuale di prenotazione non è consentita nello stato attuale.",
@@ -334,6 +370,14 @@
   "unit_already_sold": {
     "message": "L'unità è già venduta.",
     "error_code": "unit_already_sold"
+  },
+  "unit_cannot_mark_available": {
+    "message": "Solo le unità non disponibili possono essere segnate come disponibili.",
+    "error_code": "unit_cannot_mark_available"
+  },
+  "unit_cannot_mark_unavailable": {
+    "message": "Solo le unità disponibili possono essere segnate come non disponibili. Le unità prenotate, vendute o affittate non possono essere tolte dal mercato in questo modo.",
+    "error_code": "unit_cannot_mark_unavailable"
   },
   "unit_not_available_for_lease": {
     "message": "L'unità non è disponibile per la locazione.",

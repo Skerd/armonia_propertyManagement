@@ -115,6 +115,34 @@
     "message": "Modification request status does not allow finance approval.",
     "error_code": "invalid_status_for_finance"
   },
+  "invalid_status_for_markContacted": {
+    "message": "This lead cannot be marked contacted in its current status.",
+    "error_code": "invalid_status_for_markContacted"
+  },
+  "invalid_status_for_markLost": {
+    "message": "This lead cannot be marked lost in its current status.",
+    "error_code": "invalid_status_for_markLost"
+  },
+  "invalid_status_for_markNegotiation": {
+    "message": "This lead must be at least qualified with a proposal before negotiation.",
+    "error_code": "invalid_status_for_markNegotiation"
+  },
+  "invalid_status_for_markProposal": {
+    "message": "This lead must be qualified before a proposal can be recorded.",
+    "error_code": "invalid_status_for_markProposal"
+  },
+  "invalid_status_for_markWon": {
+    "message": "This lead cannot be marked won in its current status.",
+    "error_code": "invalid_status_for_markWon"
+  },
+  "invalid_status_for_qualify": {
+    "message": "This lead cannot be qualified in its current status.",
+    "error_code": "invalid_status_for_qualify"
+  },
+  "invalid_status_for_reopen": {
+    "message": "Only a lost lead can be reopened.",
+    "error_code": "invalid_status_for_reopen"
+  },
   "invalid_status_for_startDueDiligence": {
     "message": "This land parcel cannot start due diligence in its current status.",
     "error_code": "invalid_status_for_startDueDiligence"
@@ -126,6 +154,14 @@
   "landParcel_not_found": {
     "message": "Land parcel not found.",
     "error_code": "landParcel_not_found"
+  },
+  "lead_contact_required": {
+    "message": "Add an email or phone number before moving this lead past new.",
+    "error_code": "lead_contact_required"
+  },
+  "lead_qualify_required": {
+    "message": "Set an interest and a project or unit before qualifying this lead.",
+    "error_code": "lead_qualify_required"
   },
   "manual_reservation_email_action_not_allowed": {
     "message": "This manual reservation email action is not allowed in the current state.",
@@ -334,6 +370,14 @@
   "unit_already_sold": {
     "message": "Unit is already sold.",
     "error_code": "unit_already_sold"
+  },
+  "unit_cannot_mark_available": {
+    "message": "Only unavailable units can be marked available.",
+    "error_code": "unit_cannot_mark_available"
+  },
+  "unit_cannot_mark_unavailable": {
+    "message": "Only available units can be marked unavailable. Reserved, sold, or rented units cannot be taken off the market this way.",
+    "error_code": "unit_cannot_mark_unavailable"
   },
   "unit_not_available_for_lease": {
     "message": "Unit is not available for lease.",

@@ -29,5 +29,6 @@ export type Lead = DeletedData & OwnershipData & LifeCycleData & {
     assignedTo?: {_id: string; name?: string; surname?: string};
     followUpDate?: string;
     convertedAt?: string;
+    lostReason?: string;
     activityLog?: LeadActivityEntry[];
 };

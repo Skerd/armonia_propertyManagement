@@ -1,3 +1,10 @@
+/** Long text / textarea fields on commission actions (notes, payment reference). */
+export const COMMISSION_LONG_TEXT_MAX = 5000;
+/** Optional label on a payout split row. */
+export const COMMISSION_SPLIT_LABEL_MAX = 128;
+/** Max split rows accepted by setSplits. */
+export const COMMISSION_SPLITS_MAX = 20;
+
 // No form types are exported from this SchemaDef because:
 //  - commission has no user-facing create/edit forms
 //  - all fields are set programmatically by the API when a sale/reservation is recorded

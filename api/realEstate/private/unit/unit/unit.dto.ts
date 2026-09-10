@@ -57,6 +57,7 @@ export type Unit = DeletedData & OwnershipData & LifeCycleData & {
     marketingBooklet?: Media;
     polygonCoordinates?: PolygonCoordinates[];
     status: UnitStatus;
+    unavailableNotes?: string;
     connectedUnits?: {
         _id: string;
         name?: string;

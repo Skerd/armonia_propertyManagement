@@ -1,7 +1,7 @@
 import type {DeletedData, LifeCycleData, OwnershipData} from "../../../../../core/types/shared.types";
 import {Currency} from "../../../../../core/database/types";
 
-export type CommissionStatus = "pending" | "pending_approval" | "paid" | "voided";
+export type CommissionStatus = "pending" | "pending_approval" | "approved" | "paid" | "voided";
 
 export type CommissionSourceType = "sale" | "reservation";
 

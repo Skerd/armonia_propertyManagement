@@ -22,7 +22,6 @@ export const LeadSchemaDef = {
     lastName:        { type: "string",   required: false, max: LEAD_SHORT_TEXT_MAX },
     email:           { type: "string",   required: false, format: "email" },
     phone:           { type: "string",   required: false, max: LEAD_PHONE_MAX },
-    status:          { type: "enum",     required: false, options: leadStatusValues },
     source:          { type: "enum",     required: false, options: leadSourceValues },
     interest:        { type: "enum",     required: false, options: leadInterestValues },
     projectInterest: { type: "objectId", required: false },

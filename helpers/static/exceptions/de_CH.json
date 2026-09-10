@@ -115,6 +115,34 @@
     "message": "Der Status des Änderungsantrags erlaubt keine Finanzfreigabe.",
     "error_code": "invalid_status_for_finance"
   },
+  "invalid_status_for_markContacted": {
+    "message": "Dieser Lead kann im aktuellen Status nicht als kontaktiert markiert werden.",
+    "error_code": "invalid_status_for_markContacted"
+  },
+  "invalid_status_for_markLost": {
+    "message": "Dieser Lead kann im aktuellen Status nicht als verloren markiert werden.",
+    "error_code": "invalid_status_for_markLost"
+  },
+  "invalid_status_for_markNegotiation": {
+    "message": "Dieser Lead muss mindestens qualifiziert sein und ein Angebot haben, bevor verhandelt wird.",
+    "error_code": "invalid_status_for_markNegotiation"
+  },
+  "invalid_status_for_markProposal": {
+    "message": "Dieser Lead muss qualifiziert sein, bevor ein Angebot erfasst werden kann.",
+    "error_code": "invalid_status_for_markProposal"
+  },
+  "invalid_status_for_markWon": {
+    "message": "Dieser Lead kann im aktuellen Status nicht als gewonnen markiert werden.",
+    "error_code": "invalid_status_for_markWon"
+  },
+  "invalid_status_for_qualify": {
+    "message": "Dieser Lead kann im aktuellen Status nicht qualifiziert werden.",
+    "error_code": "invalid_status_for_qualify"
+  },
+  "invalid_status_for_reopen": {
+    "message": "Nur ein verlorener Lead kann wiedereröffnet werden.",
+    "error_code": "invalid_status_for_reopen"
+  },
   "invalid_status_for_startDueDiligence": {
     "message": "Für dieses Grundstück kann im aktuellen Status keine Due Diligence gestartet werden.",
     "error_code": "invalid_status_for_startDueDiligence"
@@ -126,6 +154,14 @@
   "landParcel_not_found": {
     "message": "Grundstück nicht gefunden.",
     "error_code": "landParcel_not_found"
+  },
+  "lead_contact_required": {
+    "message": "Erfassen Sie eine E-Mail oder Telefonnummer, bevor dieser Lead den Status Neu verlässt.",
+    "error_code": "lead_contact_required"
+  },
+  "lead_qualify_required": {
+    "message": "Setzen Sie ein Interesse und ein Projekt oder eine Einheit, bevor Sie diesen Lead qualifizieren.",
+    "error_code": "lead_qualify_required"
   },
   "manual_reservation_email_action_not_allowed": {
     "message": "Diese manuelle Reservations-E-Mail-Aktion ist im aktuellen Status nicht erlaubt.",
@@ -334,6 +370,14 @@
   "unit_already_sold": {
     "message": "Die Einheit ist bereits verkauft.",
     "error_code": "unit_already_sold"
+  },
+  "unit_cannot_mark_available": {
+    "message": "Nur nicht verfügbare Einheiten können als verfügbar markiert werden.",
+    "error_code": "unit_cannot_mark_available"
+  },
+  "unit_cannot_mark_unavailable": {
+    "message": "Nur verfügbare Einheiten können als nicht verfügbar markiert werden. Reservierte, verkaufte oder vermietete Einheiten können so nicht vom Markt genommen werden.",
+    "error_code": "unit_cannot_mark_unavailable"
   },
   "unit_not_available_for_lease": {
     "message": "Die Einheit ist nicht zur Vermietung verfügbar.",

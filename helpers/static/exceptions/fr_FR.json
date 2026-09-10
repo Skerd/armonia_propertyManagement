@@ -115,6 +115,34 @@
     "message": "Le statut de la demande de modification n'autorise pas l'approbation financière.",
     "error_code": "invalid_status_for_finance"
   },
+  "invalid_status_for_markContacted": {
+    "message": "Ce prospect ne peut pas être marqué contacté dans son statut actuel.",
+    "error_code": "invalid_status_for_markContacted"
+  },
+  "invalid_status_for_markLost": {
+    "message": "Ce prospect ne peut pas être marqué perdu dans son statut actuel.",
+    "error_code": "invalid_status_for_markLost"
+  },
+  "invalid_status_for_markNegotiation": {
+    "message": "Ce prospect doit être au moins qualifié avec une proposition avant la négociation.",
+    "error_code": "invalid_status_for_markNegotiation"
+  },
+  "invalid_status_for_markProposal": {
+    "message": "Ce prospect doit être qualifié avant d'enregistrer une proposition.",
+    "error_code": "invalid_status_for_markProposal"
+  },
+  "invalid_status_for_markWon": {
+    "message": "Ce prospect ne peut pas être marqué gagné dans son statut actuel.",
+    "error_code": "invalid_status_for_markWon"
+  },
+  "invalid_status_for_qualify": {
+    "message": "Ce prospect ne peut pas être qualifié dans son statut actuel.",
+    "error_code": "invalid_status_for_qualify"
+  },
+  "invalid_status_for_reopen": {
+    "message": "Seul un prospect perdu peut être rouvert.",
+    "error_code": "invalid_status_for_reopen"
+  },
   "invalid_status_for_startDueDiligence": {
     "message": "La due diligence ne peut pas démarrer pour cette parcelle dans son statut actuel.",
     "error_code": "invalid_status_for_startDueDiligence"
@@ -126,6 +154,14 @@
   "landParcel_not_found": {
     "message": "Parcelle introuvable.",
     "error_code": "landParcel_not_found"
+  },
+  "lead_contact_required": {
+    "message": "Ajoutez un e-mail ou un téléphone avant de faire avancer ce prospect.",
+    "error_code": "lead_contact_required"
+  },
+  "lead_qualify_required": {
+    "message": "Définissez un intérêt et un projet ou une unité avant de qualifier ce prospect.",
+    "error_code": "lead_qualify_required"
   },
   "manual_reservation_email_action_not_allowed": {
     "message": "Cette action d'e-mail manuel de réservation n'est pas autorisée dans l'état actuel.",
@@ -334,6 +370,14 @@
   "unit_already_sold": {
     "message": "L'unité est déjà vendue.",
     "error_code": "unit_already_sold"
+  },
+  "unit_cannot_mark_available": {
+    "message": "Seules les unités indisponibles peuvent être marquées disponibles.",
+    "error_code": "unit_cannot_mark_available"
+  },
+  "unit_cannot_mark_unavailable": {
+    "message": "Seules les unités disponibles peuvent être marquées indisponibles. Les unités réservées, vendues ou louées ne peuvent pas être retirées du marché de cette façon.",
+    "error_code": "unit_cannot_mark_unavailable"
   },
   "unit_not_available_for_lease": {
     "message": "L'unité n'est pas disponible à la location.",

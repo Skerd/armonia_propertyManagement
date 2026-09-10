@@ -115,6 +115,34 @@
     "message": "Statusi i kërkesës së ndryshimit nuk lejon miratimin financiar.",
     "error_code": "invalid_status_for_finance"
   },
+  "invalid_status_for_markContacted": {
+    "message": "Ky lead nuk mund të shënohet i kontaktuar në statusin aktual.",
+    "error_code": "invalid_status_for_markContacted"
+  },
+  "invalid_status_for_markLost": {
+    "message": "Ky lead nuk mund të shënohet i humbur në statusin aktual.",
+    "error_code": "invalid_status_for_markLost"
+  },
+  "invalid_status_for_markNegotiation": {
+    "message": "Ky lead duhet të jetë të paktën i kualifikuar me një propozim para negociatës.",
+    "error_code": "invalid_status_for_markNegotiation"
+  },
+  "invalid_status_for_markProposal": {
+    "message": "Ky lead duhet të kualifikohet para se të regjistrohet një propozim.",
+    "error_code": "invalid_status_for_markProposal"
+  },
+  "invalid_status_for_markWon": {
+    "message": "Ky lead nuk mund të shënohet i fituar në statusin aktual.",
+    "error_code": "invalid_status_for_markWon"
+  },
+  "invalid_status_for_qualify": {
+    "message": "Ky lead nuk mund të kualifikohet në statusin aktual.",
+    "error_code": "invalid_status_for_qualify"
+  },
+  "invalid_status_for_reopen": {
+    "message": "Vetëm një lead i humbur mund të rihapet.",
+    "error_code": "invalid_status_for_reopen"
+  },
   "invalid_status_for_startDueDiligence": {
     "message": "Due diligence nuk mund të fillojë për këtë parcelë në statusin aktual.",
     "error_code": "invalid_status_for_startDueDiligence"
@@ -126,6 +154,14 @@
   "landParcel_not_found": {
     "message": "Parcela e tokës nuk u gjet.",
     "error_code": "landParcel_not_found"
+  },
+  "lead_contact_required": {
+    "message": "Shto email ose telefon para se ta zhvendosësh këtë lead nga i ri.",
+    "error_code": "lead_contact_required"
+  },
+  "lead_qualify_required": {
+    "message": "Vendos një interes dhe një projekt ose njësi para se ta kualifikosh këtë lead.",
+    "error_code": "lead_qualify_required"
   },
   "manual_reservation_email_action_not_allowed": {
     "message": "Ky veprim manual i email-it të rezervimit nuk lejohet në gjendjen aktuale.",
@@ -334,6 +370,14 @@
   "unit_already_sold": {
     "message": "Njësia është shitur tashmë.",
     "error_code": "unit_already_sold"
+  },
+  "unit_cannot_mark_available": {
+    "message": "Vetëm njësitë e padisponueshme mund të shënohen si të disponueshme.",
+    "error_code": "unit_cannot_mark_available"
+  },
+  "unit_cannot_mark_unavailable": {
+    "message": "Vetëm njësitë e disponueshme mund të shënohen si të padisponueshme. Njësitë e rezervuara, të shitura ose me qira nuk mund të hiqen nga tregu në këtë mënyrë.",
+    "error_code": "unit_cannot_mark_unavailable"
   },
   "unit_not_available_for_lease": {
     "message": "Njësia nuk është e disponueshme për qira.",
