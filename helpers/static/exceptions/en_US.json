@@ -95,21 +95,9 @@
     "message": "The modification request status does not allow client approval.",
     "error_code": "invalid_status_for_client_approval"
   },
-  "invalid_status_for_addDueDiligenceStep": {
-    "message": "A due-diligence step can only be added while the land parcel is under due diligence.",
-    "error_code": "invalid_status_for_addDueDiligenceStep"
-  },
-  "invalid_status_for_concludeDueDiligence": {
-    "message": "Due diligence can only be concluded while the land parcel is under due diligence.",
-    "error_code": "invalid_status_for_concludeDueDiligence"
-  },
   "invalid_status_for_deliver": {
     "message": "Modification request status does not allow delivery.",
     "error_code": "invalid_status_for_deliver"
-  },
-  "invalid_status_for_dispose": {
-    "message": "This land parcel cannot be disposed in its current status.",
-    "error_code": "invalid_status_for_dispose"
   },
   "invalid_status_for_finance": {
     "message": "Modification request status does not allow finance approval.",
@@ -143,17 +131,9 @@
     "message": "Only a lost lead can be reopened.",
     "error_code": "invalid_status_for_reopen"
   },
-  "invalid_status_for_startDueDiligence": {
-    "message": "This land parcel cannot start due diligence in its current status.",
-    "error_code": "invalid_status_for_startDueDiligence"
-  },
   "invalid_status_transition": {
     "message": "Invalid status transition for modification request.",
     "error_code": "invalid_status_transition"
-  },
-  "landParcel_not_found": {
-    "message": "Land parcel not found.",
-    "error_code": "landParcel_not_found"
   },
   "lead_contact_required": {
     "message": "Add an email or phone number before moving this lead past new.",
@@ -322,14 +302,6 @@
   "sale_not_pending_approval": {
     "message": "The sale is not pending approval.",
     "error_code": "sale_not_pending_approval"
-  },
-  "design_stage_requires_approved_deliverables": {
-    "message": "This design stage has required deliverables that are not yet approved. Approve them before completing the stage.",
-    "error_code": "design_stage_requires_approved_deliverables"
-  },
-  "progress_claim_exceeds_contract_value_approve_variation_order_first": {
-    "message": "Certifying this claim would exceed the contract value plus approved variation orders. Approve a variation order first.",
-    "error_code": "progress_claim_exceeds_contract_value_approve_variation_order_first"
   },
   "sale_handover_already_completed": {
     "message": "This sale handover is already completed.",

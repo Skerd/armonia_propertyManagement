@@ -95,21 +95,9 @@
     "message": "Der Status des Änderungsantrags erlaubt keine Kundenfreigabe.",
     "error_code": "invalid_status_for_client_approval"
   },
-  "invalid_status_for_addDueDiligenceStep": {
-    "message": "Ein Due-Diligence-Schritt kann nur hinzugefügt werden, solange das Grundstück in Due Diligence ist.",
-    "error_code": "invalid_status_for_addDueDiligenceStep"
-  },
-  "invalid_status_for_concludeDueDiligence": {
-    "message": "Die Due Diligence kann nur abgeschlossen werden, solange das Grundstück in Due Diligence ist.",
-    "error_code": "invalid_status_for_concludeDueDiligence"
-  },
   "invalid_status_for_deliver": {
     "message": "Der Status des Änderungsantrags erlaubt keine Lieferung.",
     "error_code": "invalid_status_for_deliver"
-  },
-  "invalid_status_for_dispose": {
-    "message": "Dieses Grundstück kann im aktuellen Status nicht veräußert werden.",
-    "error_code": "invalid_status_for_dispose"
   },
   "invalid_status_for_finance": {
     "message": "Der Status des Änderungsantrags erlaubt keine Finanzfreigabe.",
@@ -143,17 +131,9 @@
     "message": "Nur ein verlorener Lead kann wiedereröffnet werden.",
     "error_code": "invalid_status_for_reopen"
   },
-  "invalid_status_for_startDueDiligence": {
-    "message": "Für dieses Grundstück kann im aktuellen Status keine Due Diligence gestartet werden.",
-    "error_code": "invalid_status_for_startDueDiligence"
-  },
   "invalid_status_transition": {
     "message": "Ungültiger Statusübergang für den Änderungsantrag.",
     "error_code": "invalid_status_transition"
-  },
-  "landParcel_not_found": {
-    "message": "Grundstück nicht gefunden.",
-    "error_code": "landParcel_not_found"
   },
   "lead_contact_required": {
     "message": "Erfassen Sie eine E-Mail oder Telefonnummer, bevor dieser Lead den Status Neu verlässt.",
@@ -322,14 +302,6 @@
   "sale_not_pending_approval": {
     "message": "Der Verkauf ist nicht zur Freigabe hängig.",
     "error_code": "sale_not_pending_approval"
-  },
-  "design_stage_requires_approved_deliverables": {
-    "message": "Diese Entwurfsphase hat erforderliche Lieferobjekte, die noch nicht freigegeben sind. Geben Sie sie frei, bevor Sie die Phase abschliessen.",
-    "error_code": "design_stage_requires_approved_deliverables"
-  },
-  "progress_claim_exceeds_contract_value_approve_variation_order_first": {
-    "message": "Die Zertifizierung dieses Anspruchs würde den Vertragswert plus genehmigte Nachtragsaufträge überschreiten. Genehmigen Sie zuerst einen Nachtragsauftrag.",
-    "error_code": "progress_claim_exceeds_contract_value_approve_variation_order_first"
   },
   "sale_handover_already_completed": {
     "message": "Diese Verkaufsübergabe ist bereits abgeschlossen.",

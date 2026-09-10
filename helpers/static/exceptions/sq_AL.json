@@ -95,21 +95,9 @@
     "message": "Statusi i kërkesës së ndryshimit nuk lejon miratimin nga klienti.",
     "error_code": "invalid_status_for_client_approval"
   },
-  "invalid_status_for_addDueDiligenceStep": {
-    "message": "Një hap due diligence mund të shtohet vetëm kur parcela është në due diligence.",
-    "error_code": "invalid_status_for_addDueDiligenceStep"
-  },
-  "invalid_status_for_concludeDueDiligence": {
-    "message": "Due diligence mund të përfundojë vetëm kur parcela është në due diligence.",
-    "error_code": "invalid_status_for_concludeDueDiligence"
-  },
   "invalid_status_for_deliver": {
     "message": "Statusi i kërkesës së ndryshimit nuk lejon dorëzimin.",
     "error_code": "invalid_status_for_deliver"
-  },
-  "invalid_status_for_dispose": {
-    "message": "Kjo parcelë nuk mund të hiqet nga përdorimi në statusin aktual.",
-    "error_code": "invalid_status_for_dispose"
   },
   "invalid_status_for_finance": {
     "message": "Statusi i kërkesës së ndryshimit nuk lejon miratimin financiar.",
@@ -143,17 +131,9 @@
     "message": "Vetëm një lead i humbur mund të rihapet.",
     "error_code": "invalid_status_for_reopen"
   },
-  "invalid_status_for_startDueDiligence": {
-    "message": "Due diligence nuk mund të fillojë për këtë parcelë në statusin aktual.",
-    "error_code": "invalid_status_for_startDueDiligence"
-  },
   "invalid_status_transition": {
     "message": "Kalim i pavlefshëm statusi për kërkesën e ndryshimit.",
     "error_code": "invalid_status_transition"
-  },
-  "landParcel_not_found": {
-    "message": "Parcela e tokës nuk u gjet.",
-    "error_code": "landParcel_not_found"
   },
   "lead_contact_required": {
     "message": "Shto email ose telefon para se ta zhvendosësh këtë lead nga i ri.",
@@ -322,14 +302,6 @@
   "sale_not_pending_approval": {
     "message": "Shitja nuk është në pritje të miratimit.",
     "error_code": "sale_not_pending_approval"
-  },
-  "design_stage_requires_approved_deliverables": {
-    "message": "Kjo fazë projektimi ka dorëzime të detyrueshme që nuk janë miratuar ende. Miratojini përpara se të përfundoni fazën.",
-    "error_code": "design_stage_requires_approved_deliverables"
-  },
-  "progress_claim_exceeds_contract_value_approve_variation_order_first": {
-    "message": "Certifikimi i kësaj kërkese do të tejkalonte vlerën e kontratës plus urdhrat e variacionit të miratuar. Miratoni fillimisht një urdhër variacioni.",
-    "error_code": "progress_claim_exceeds_contract_value_approve_variation_order_first"
   },
   "sale_handover_already_completed": {
     "message": "Ky dorëzim i shitjes është tashmë i përfunduar.",

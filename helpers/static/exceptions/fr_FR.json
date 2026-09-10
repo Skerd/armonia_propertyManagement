@@ -95,21 +95,9 @@
     "message": "Le statut de la demande de modification n'autorise pas l'approbation du client.",
     "error_code": "invalid_status_for_client_approval"
   },
-  "invalid_status_for_addDueDiligenceStep": {
-    "message": "Une étape de due diligence ne peut être ajoutée que lorsque la parcelle est en due diligence.",
-    "error_code": "invalid_status_for_addDueDiligenceStep"
-  },
-  "invalid_status_for_concludeDueDiligence": {
-    "message": "La due diligence ne peut être conclue que lorsque la parcelle est en due diligence.",
-    "error_code": "invalid_status_for_concludeDueDiligence"
-  },
   "invalid_status_for_deliver": {
     "message": "Le statut de la demande de modification n'autorise pas la livraison.",
     "error_code": "invalid_status_for_deliver"
-  },
-  "invalid_status_for_dispose": {
-    "message": "Cette parcelle ne peut pas être cédée dans son statut actuel.",
-    "error_code": "invalid_status_for_dispose"
   },
   "invalid_status_for_finance": {
     "message": "Le statut de la demande de modification n'autorise pas l'approbation financière.",
@@ -143,17 +131,9 @@
     "message": "Seul un prospect perdu peut être rouvert.",
     "error_code": "invalid_status_for_reopen"
   },
-  "invalid_status_for_startDueDiligence": {
-    "message": "La due diligence ne peut pas démarrer pour cette parcelle dans son statut actuel.",
-    "error_code": "invalid_status_for_startDueDiligence"
-  },
   "invalid_status_transition": {
     "message": "Transition de statut invalide pour la demande de modification.",
     "error_code": "invalid_status_transition"
-  },
-  "landParcel_not_found": {
-    "message": "Parcelle introuvable.",
-    "error_code": "landParcel_not_found"
   },
   "lead_contact_required": {
     "message": "Ajoutez un e-mail ou un téléphone avant de faire avancer ce prospect.",
@@ -322,14 +302,6 @@
   "sale_not_pending_approval": {
     "message": "La vente n'est pas en attente d'approbation.",
     "error_code": "sale_not_pending_approval"
-  },
-  "design_stage_requires_approved_deliverables": {
-    "message": "Cette étape de conception a des livrables obligatoires non encore approuvés. Approuvez-les avant de terminer l'étape.",
-    "error_code": "design_stage_requires_approved_deliverables"
-  },
-  "progress_claim_exceeds_contract_value_approve_variation_order_first": {
-    "message": "Certifier cette créance dépasserait la valeur du contrat plus les ordres de variation approuvés. Approuvez d'abord un ordre de variation.",
-    "error_code": "progress_claim_exceeds_contract_value_approve_variation_order_first"
   },
   "sale_handover_already_completed": {
     "message": "Cette remise de vente est déjà terminée.",
