@@ -30,8 +30,6 @@ export const UnitCostSchemaDef = {
     // schema path literally named "constructor" because plain JS objects inherit
     // Object.prototype.constructor, which collides with Mongoose's internal path bookkeeping.
     constructorRef:              { type: "objectId",      required: false },
-    boqItem:                     { type: "objectId",      required: false },
-    costCommitment:              { type: "objectId",      required: false },
     notes:                       { type: "string",        required: false },
     tag:                         { type: "string",        required: false },
     invoiceNumber:               { type: "string",        required: false },

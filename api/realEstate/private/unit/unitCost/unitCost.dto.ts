@@ -53,8 +53,6 @@ export type UnitCost = DeletedData & OwnershipData & LifeCycleData & {
         title?: string
     };
     constructorRef?: {_id: string; name?: string};
-    boqItem?: {_id: string; name?: string; title?: string};
-    costCommitment?: {_id: string; name?: string; title?: string};
     invoiceMedia: Media[];
     expenditureItems: UnitCostExpenditureItem[];
     /** Sum of amount × pricePerUnit over expenditureItems (server-derived). */
