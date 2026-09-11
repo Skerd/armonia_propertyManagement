@@ -331,6 +331,14 @@
     "message": "Il trasferimento del titolo è già stato registrato per questa unità. Il pacchetto di consegna non può più essere modificato.",
     "error_code": "handover_package_title_already_transferred"
   },
+  "handover_package_already_exists_for_scope": {
+    "message": "Esiste già un pacchetto di consegna per questo progetto, edificio, piano o unità.",
+    "error_code": "handover_package_already_exists_for_scope"
+  },
+  "handover_package_ancestry_mismatch": {
+    "message": "Progetto, edificio, piano e unità non formano una gerarchia valida.",
+    "error_code": "handover_package_ancestry_mismatch"
+  },
   "sale_title_transfer_package_required": {
     "message": "Il trasferimento del titolo richiede un pacchetto di consegna completato per questa unità.",
     "error_code": "sale_title_transfer_package_required"

@@ -331,6 +331,14 @@
     "message": "Die Eigentumsübertragung für diese Einheit ist bereits erfasst. Das Übergabepaket kann nicht mehr geändert werden.",
     "error_code": "handover_package_title_already_transferred"
   },
+  "handover_package_already_exists_for_scope": {
+    "message": "Für dieses Projekt, Gebäude, diese Etage oder Einheit existiert bereits ein Übergabepaket.",
+    "error_code": "handover_package_already_exists_for_scope"
+  },
+  "handover_package_ancestry_mismatch": {
+    "message": "Projekt, Gebäude, Etage und Einheit bilden keine gültige Hierarchie.",
+    "error_code": "handover_package_ancestry_mismatch"
+  },
   "sale_title_transfer_package_required": {
     "message": "Die Eigentumsübertragung erfordert ein abgeschlossenes Übergabepaket für diese Einheit.",
     "error_code": "sale_title_transfer_package_required"

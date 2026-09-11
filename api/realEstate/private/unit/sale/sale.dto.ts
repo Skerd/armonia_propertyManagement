@@ -1,7 +1,7 @@
 import type {Media} from "../../../../../../core/types";
 import type {DeletedData, LifeCycleData, OwnershipData} from "../../../../../../core/types/shared.types";
 import type {ApprovalStage} from "../modificationRequest/modificationRequest.dto";
-import type {HandoverPackage} from "../../handoverPackage/handoverPackage.dto";
+import type {HandoverPackage, SaleHandoverChecklistItem} from "../../handoverPackage/handoverPackage.dto";
 
 export type Sale = DeletedData & OwnershipData & LifeCycleData & {
     _id: string;
@@ -104,6 +104,8 @@ export type Sale = DeletedData & OwnershipData & LifeCycleData & {
     deedNumber?: string;
     notaryName?: string;
     titleTransferCertificate?: Media;
-    handoverPackage?: HandoverPackage;
+    handoverChecklistItems?: SaleHandoverChecklistItem[];
+    handoverConfigs?: HandoverPackage[];
+    handoverChecklistComplete?: boolean;
     requiresHandoverPackageForHandover?: boolean;
 };

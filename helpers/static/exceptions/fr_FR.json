@@ -331,6 +331,14 @@
     "message": "Le transfert de titre a déjà été enregistré pour cette unité. Le dossier de remise ne peut plus être modifié.",
     "error_code": "handover_package_title_already_transferred"
   },
+  "handover_package_already_exists_for_scope": {
+    "message": "Un dossier de remise existe déjà pour ce projet, cet édifice, cet étage ou cette unité.",
+    "error_code": "handover_package_already_exists_for_scope"
+  },
+  "handover_package_ancestry_mismatch": {
+    "message": "Le projet, l’édifice, l’étage et l’unité ne forment pas une hiérarchie valide.",
+    "error_code": "handover_package_ancestry_mismatch"
+  },
   "sale_title_transfer_package_required": {
     "message": "Le transfert de titre nécessite un dossier de remise terminé pour cette unité.",
     "error_code": "sale_title_transfer_package_required"

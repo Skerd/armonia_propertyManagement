@@ -331,6 +331,14 @@
     "message": "Title transfer has already been recorded for this unit. The handover package can no longer be changed.",
     "error_code": "handover_package_title_already_transferred"
   },
+  "handover_package_already_exists_for_scope": {
+    "message": "A handover package already exists for this project, edifice, floor, or unit.",
+    "error_code": "handover_package_already_exists_for_scope"
+  },
+  "handover_package_ancestry_mismatch": {
+    "message": "The selected project, edifice, floor, and unit do not form a valid hierarchy.",
+    "error_code": "handover_package_ancestry_mismatch"
+  },
   "sale_title_transfer_package_required": {
     "message": "Title transfer requires a completed handover package for this unit.",
     "error_code": "sale_title_transfer_package_required"

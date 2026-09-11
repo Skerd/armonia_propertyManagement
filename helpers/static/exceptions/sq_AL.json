@@ -331,6 +331,14 @@
     "message": "Transferimi i titullit është regjistruar tashmë për këtë njësi. Paketa e dorëzimit nuk mund të ndryshohet më.",
     "error_code": "handover_package_title_already_transferred"
   },
+  "handover_package_already_exists_for_scope": {
+    "message": "Një paketë dorëzimi ekziston tashmë për këtë projekt, ndërtesë, kat ose njësi.",
+    "error_code": "handover_package_already_exists_for_scope"
+  },
+  "handover_package_ancestry_mismatch": {
+    "message": "Projekti, ndërtesa, kati dhe njësia nuk formojnë një hierarki të vlefshme.",
+    "error_code": "handover_package_ancestry_mismatch"
+  },
   "sale_title_transfer_package_required": {
     "message": "Transferimi i titullit kërkon një paketë dorëzimi të përfunduar për këtë njësi.",
     "error_code": "sale_title_transfer_package_required"

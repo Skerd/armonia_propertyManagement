@@ -1,7 +1,10 @@
 import type {InferCreateForm, InferEditForm} from "../../../../../core/helpers/schemaDefBuilder";
 
-export const handoverPackageStatusValues = ["draft", "in_progress", "completed"] as const;
-export type HandoverPackageStatusValue = typeof handoverPackageStatusValues[number];
+export const handoverConfigScopeValues = ["project", "edifice", "floor", "unit"] as const;
+export type HandoverConfigScopeValue = typeof handoverConfigScopeValues[number];
+
+export const handoverChecklistSourceScopeValues = [...handoverConfigScopeValues, "retained"] as const;
+export type HandoverChecklistSourceScopeValue = typeof handoverChecklistSourceScopeValues[number];
 
 export const handoverItemImportanceValues = ["low", "medium", "high"] as const;
 export type HandoverItemImportanceValue = typeof handoverItemImportanceValues[number];
@@ -22,7 +25,7 @@ export const HandoverPackageSchemaDef = {
     project:     {type: "objectId", required: true},
     edifice:     {type: "objectId", required: false},
     floor:       {type: "objectId", required: false},
-    unit:        {type: "objectId", required: true},
+    unit:        {type: "objectId", required: false},
     title:       {type: "string", required: true, min: 1, max: HANDOVER_PACKAGE_TITLE_MAX},
     description: {type: "string", required: false, max: HANDOVER_PACKAGE_LONG_TEXT_MAX},
     notes:       {type: "string", required: false, max: HANDOVER_PACKAGE_LONG_TEXT_MAX},
