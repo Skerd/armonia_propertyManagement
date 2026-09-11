@@ -4,6 +4,8 @@ import type {InferCreateForm, InferEditForm} from "../../../../../core/helpers/s
 export const RENTAL_PAYMENT_SHORT_TEXT_MAX = 128;
 /** Long text / textarea fields (notes). */
 export const RENTAL_PAYMENT_LONG_TEXT_MAX = 5000;
+/** Attachments allowed on a single payment-receipt slice. */
+export const RENTAL_PAYMENT_RECEIPT_MEDIA_MAX = 5;
 
 // status and unit are server-managed (excluded from SchemaDef; see excludePaths on Mongoose validate).
 // amount is Decimal128 in Mongoose; treated as number in forms.

@@ -143,6 +143,10 @@
     "message": "Imposta un interesse e un progetto o un'unità prima di qualificare questo lead.",
     "error_code": "lead_qualify_required"
   },
+  "manual_rent_email_action_not_allowed": {
+    "message": "Questa email di promemoria affitto non è consentita per la data di scadenza attuale.",
+    "error_code": "manual_rent_email_action_not_allowed"
+  },
   "manual_reservation_email_action_not_allowed": {
     "message": "Questa azione email manuale di prenotazione non è consentita nello stato attuale.",
     "error_code": "manual_reservation_email_action_not_allowed"
@@ -314,6 +318,30 @@
   "sale_handover_requires_completed_handover_package": {
     "message": "Questa unità non può essere consegnata finché il pacchetto di consegna non è completato.",
     "error_code": "sale_handover_requires_completed_handover_package"
+  },
+  "handover_package_already_exists_for_unit": {
+    "message": "Esiste già un pacchetto di consegna per questa unità. Modifica il pacchetto esistente per aggiungere o rimuovere voci.",
+    "error_code": "handover_package_already_exists_for_unit"
+  },
+  "handover_package_unit_not_sold": {
+    "message": "Un pacchetto di consegna può essere creato solo per un'unità venduta.",
+    "error_code": "handover_package_unit_not_sold"
+  },
+  "handover_package_title_already_transferred": {
+    "message": "Il trasferimento del titolo è già stato registrato per questa unità. Il pacchetto di consegna non può più essere modificato.",
+    "error_code": "handover_package_title_already_transferred"
+  },
+  "sale_title_transfer_package_required": {
+    "message": "Il trasferimento del titolo richiede un pacchetto di consegna completato per questa unità.",
+    "error_code": "sale_title_transfer_package_required"
+  },
+  "sale_title_transfer_package_in_progress": {
+    "message": "Il trasferimento del titolo è bloccato finché il pacchetto di consegna non è completato.",
+    "error_code": "sale_title_transfer_package_in_progress"
+  },
+  "sale_title_transfer_already_recorded": {
+    "message": "Il trasferimento del titolo è già stato registrato per questa vendita.",
+    "error_code": "sale_title_transfer_already_recorded"
   },
   "propertyManagementConfig_already_exists": {
     "message": "Le impostazioni di property management esistono già per questa azienda.",

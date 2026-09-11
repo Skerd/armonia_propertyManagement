@@ -14,7 +14,14 @@ export type RentalPayment = DeletedData & OwnershipData & LifeCycleData & {
     paidAmount?: number;
     remaining: number;
     lateFeeAmount?: number;
-    paymentReceipts?: {amount: number; paidDate: string; notes?: string}[];
+    paymentReceipts?: {
+        amount: number;
+        paidDate: string;
+        notes?: string;
+        currency?: {_id: string; name?: string; symbol?: string};
+        media?: Media[];
+    }[];
+    paymentReceiptsMedia?: Media[];
     notes?: string;
     receiptMedia?: Media;
 };

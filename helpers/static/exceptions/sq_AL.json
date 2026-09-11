@@ -143,6 +143,10 @@
     "message": "Vendos një interes dhe një projekt ose njësi para se ta kualifikosh këtë lead.",
     "error_code": "lead_qualify_required"
   },
+  "manual_rent_email_action_not_allowed": {
+    "message": "Ky email kujtese qiraje nuk lejohet për datën aktuale të maturimit.",
+    "error_code": "manual_rent_email_action_not_allowed"
+  },
   "manual_reservation_email_action_not_allowed": {
     "message": "Ky veprim manual i email-it të rezervimit nuk lejohet në gjendjen aktuale.",
     "error_code": "manual_reservation_email_action_not_allowed"
@@ -314,6 +318,30 @@
   "sale_handover_requires_completed_handover_package": {
     "message": "Kjo njësi nuk mund të dorëzohet derisa paketa e dorëzimit të jetë përfunduar.",
     "error_code": "sale_handover_requires_completed_handover_package"
+  },
+  "handover_package_already_exists_for_unit": {
+    "message": "Ekziston tashmë një paketë dorëzimi për këtë njësi. Ndryshoni paketën ekzistuese për të shtuar ose hequr zëra.",
+    "error_code": "handover_package_already_exists_for_unit"
+  },
+  "handover_package_unit_not_sold": {
+    "message": "Paketa e dorëzimit mund të krijohet vetëm për një njësi të shitur.",
+    "error_code": "handover_package_unit_not_sold"
+  },
+  "handover_package_title_already_transferred": {
+    "message": "Transferimi i titullit është regjistruar tashmë për këtë njësi. Paketa e dorëzimit nuk mund të ndryshohet më.",
+    "error_code": "handover_package_title_already_transferred"
+  },
+  "sale_title_transfer_package_required": {
+    "message": "Transferimi i titullit kërkon një paketë dorëzimi të përfunduar për këtë njësi.",
+    "error_code": "sale_title_transfer_package_required"
+  },
+  "sale_title_transfer_package_in_progress": {
+    "message": "Transferimi i titullit është i bllokuar derisa paketa e dorëzimit të përfundojë.",
+    "error_code": "sale_title_transfer_package_in_progress"
+  },
+  "sale_title_transfer_already_recorded": {
+    "message": "Transferimi i titullit është regjistruar tashmë për këtë shitje.",
+    "error_code": "sale_title_transfer_already_recorded"
   },
   "propertyManagementConfig_already_exists": {
     "message": "Cilësimet e menaxhimit të pronës ekzistojnë tashmë për këtë kompani.",

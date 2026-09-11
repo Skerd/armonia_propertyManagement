@@ -143,6 +143,10 @@
     "message": "Définissez un intérêt et un projet ou une unité avant de qualifier ce prospect.",
     "error_code": "lead_qualify_required"
   },
+  "manual_rent_email_action_not_allowed": {
+    "message": "Cet e-mail de rappel de loyer n’est pas autorisé pour la date d’échéance actuelle.",
+    "error_code": "manual_rent_email_action_not_allowed"
+  },
   "manual_reservation_email_action_not_allowed": {
     "message": "Cette action d'e-mail manuel de réservation n'est pas autorisée dans l'état actuel.",
     "error_code": "manual_reservation_email_action_not_allowed"
@@ -314,6 +318,30 @@
   "sale_handover_requires_completed_handover_package": {
     "message": "Cette unité ne peut pas être remise tant que son dossier de remise n'est pas terminé.",
     "error_code": "sale_handover_requires_completed_handover_package"
+  },
+  "handover_package_already_exists_for_unit": {
+    "message": "Un dossier de remise existe déjà pour cette unité. Modifiez le dossier existant pour ajouter ou retirer des éléments.",
+    "error_code": "handover_package_already_exists_for_unit"
+  },
+  "handover_package_unit_not_sold": {
+    "message": "Un dossier de remise ne peut être créé que pour une unité vendue.",
+    "error_code": "handover_package_unit_not_sold"
+  },
+  "handover_package_title_already_transferred": {
+    "message": "Le transfert de titre a déjà été enregistré pour cette unité. Le dossier de remise ne peut plus être modifié.",
+    "error_code": "handover_package_title_already_transferred"
+  },
+  "sale_title_transfer_package_required": {
+    "message": "Le transfert de titre nécessite un dossier de remise terminé pour cette unité.",
+    "error_code": "sale_title_transfer_package_required"
+  },
+  "sale_title_transfer_package_in_progress": {
+    "message": "Le transfert de titre est bloqué tant que le dossier de remise n'est pas terminé.",
+    "error_code": "sale_title_transfer_package_in_progress"
+  },
+  "sale_title_transfer_already_recorded": {
+    "message": "Le transfert de titre a déjà été enregistré pour cette vente.",
+    "error_code": "sale_title_transfer_already_recorded"
   },
   "propertyManagementConfig_already_exists": {
     "message": "Les paramètres de gestion immobilière existent déjà pour cette entreprise.",

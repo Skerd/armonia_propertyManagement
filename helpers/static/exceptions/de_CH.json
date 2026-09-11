@@ -143,6 +143,10 @@
     "message": "Setzen Sie ein Interesse und ein Projekt oder eine Einheit, bevor Sie diesen Lead qualifizieren.",
     "error_code": "lead_qualify_required"
   },
+  "manual_rent_email_action_not_allowed": {
+    "message": "Diese Miet-Erinnerungs-E-Mail ist für das aktuelle Fälligkeitsdatum nicht erlaubt.",
+    "error_code": "manual_rent_email_action_not_allowed"
+  },
   "manual_reservation_email_action_not_allowed": {
     "message": "Diese manuelle Reservations-E-Mail-Aktion ist im aktuellen Status nicht erlaubt.",
     "error_code": "manual_reservation_email_action_not_allowed"
@@ -314,6 +318,30 @@
   "sale_handover_requires_completed_handover_package": {
     "message": "Diese Einheit kann nicht übergeben werden, bis das Übergabepaket abgeschlossen ist.",
     "error_code": "sale_handover_requires_completed_handover_package"
+  },
+  "handover_package_already_exists_for_unit": {
+    "message": "Für diese Einheit existiert bereits ein Übergabepaket. Bearbeiten Sie das bestehende Paket, um Positionen hinzuzufügen oder zu entfernen.",
+    "error_code": "handover_package_already_exists_for_unit"
+  },
+  "handover_package_unit_not_sold": {
+    "message": "Ein Übergabepaket kann nur für eine verkaufte Einheit erstellt werden.",
+    "error_code": "handover_package_unit_not_sold"
+  },
+  "handover_package_title_already_transferred": {
+    "message": "Die Eigentumsübertragung für diese Einheit ist bereits erfasst. Das Übergabepaket kann nicht mehr geändert werden.",
+    "error_code": "handover_package_title_already_transferred"
+  },
+  "sale_title_transfer_package_required": {
+    "message": "Die Eigentumsübertragung erfordert ein abgeschlossenes Übergabepaket für diese Einheit.",
+    "error_code": "sale_title_transfer_package_required"
+  },
+  "sale_title_transfer_package_in_progress": {
+    "message": "Die Eigentumsübertragung ist gesperrt, bis das Übergabepaket abgeschlossen ist.",
+    "error_code": "sale_title_transfer_package_in_progress"
+  },
+  "sale_title_transfer_already_recorded": {
+    "message": "Die Eigentumsübertragung wurde für diesen Verkauf bereits erfasst.",
+    "error_code": "sale_title_transfer_already_recorded"
   },
   "propertyManagementConfig_already_exists": {
     "message": "Immobilienverwaltungseinstellungen existieren bereits für dieses Unternehmen.",

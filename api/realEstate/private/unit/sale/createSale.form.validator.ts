@@ -26,20 +26,6 @@ export function createCashSaleFormSchema(languageCode: string, form: any = null)
 
         reservationExchangeRate: !!form ? greaterThanZod(form?.["reservationExchangeRateLabel"] || "reservationExchangeRate", 0, languageCode) : z.string().optional(),
         saleExchangeRate: !!form ? greaterThanZod(form?.["saleExchangeRateLabel"] || "saleExchangeRate", 0, languageCode) : z.string().optional(),
-
-        handoverDate: z.union([notInTheFutureZod(form?.["handoverDateLabel"] || "handoverDate", "UTC", languageCode), z.literal("")]).optional(),
-        handedOverBy: z.union([isObjectIdZod(form?.["handedOverByLabel"] || "handedOverBy", languageCode), z.literal("")]).optional(),
-        handoverNotes: stringMaxLengthZod(form?.["handoverNotesLabel"] || "handoverNotes", SALE_LONG_TEXT_MAX, languageCode).optional(),
-        handoverCertificate: form
-            ? isArrayOfFilesZod(form?.["handoverCertificateLabel"] || "handoverCertificate", languageCode).optional()
-            : isObjectIdZod(form?.["handoverCertificateLabel"] || "handoverCertificate", languageCode).optional(),
-
-        titleTransferDate: z.union([notInTheFutureZod(form?.["titleTransferDateLabel"] || "titleTransferDate", "UTC", languageCode), z.literal("")]).optional(),
-        deedNumber: stringMaxLengthZod(form?.["deedNumberLabel"] || "deedNumber", SALE_SHORT_TEXT_MAX, languageCode).optional(),
-        notaryName: stringMaxLengthZod(form?.["notaryNameLabel"] || "notaryName", SALE_SHORT_TEXT_MAX, languageCode).optional(),
-        titleTransferCertificate: form
-            ? isArrayOfFilesZod(form?.["titleTransferCertificateLabel"] || "titleTransferCertificate", languageCode).optional()
-            : isObjectIdZod(form?.["titleTransferCertificateLabel"] || "titleTransferCertificate", languageCode).optional(),
     });
 }
 
