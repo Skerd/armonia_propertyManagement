@@ -1,6 +1,8 @@
 import type {Media} from "../../../../../../core/types";
 import type {DeletedData, LifeCycleData, OwnershipData} from "../../../../../../core/types/shared.types";
-import type {InspectionChecklistItemImportanceValue} from "../../../inspectionChecklistTemplate/inspectionChecklistTemplate.schema-def";
+import {
+    InspectionChecklistItemImportanceValue
+} from "../../inspectionChecklistTemplate/inspectionChecklistTemplate.schema-def";
 
 export type InspectionFindingItem = {
     notes: string;
