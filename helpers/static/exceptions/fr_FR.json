@@ -91,6 +91,14 @@
     "message": "Le statut de l'inspection n'autorise pas l'annulation d'une inspection planifiée.",
     "error_code": "invalid_status_for_cancel_scheduled"
   },
+  "invalid_status_for_update_inspection_checklist": {
+    "message": "La checklist d'inspection ne peut plus être mise à jour une fois l'inspection terminée ou annulée.",
+    "error_code": "invalid_status_for_update_inspection_checklist"
+  },
+  "inspection_checklist_incomplete": {
+    "message": "Tous les éléments de la checklist doivent être cochés avant de terminer l'inspection.",
+    "error_code": "inspection_checklist_incomplete"
+  },
   "invalid_status_for_client_approval": {
     "message": "Le statut de la demande de modification n'autorise pas l'approbation du client.",
     "error_code": "invalid_status_for_client_approval"

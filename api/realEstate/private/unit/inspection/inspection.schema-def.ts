@@ -24,8 +24,6 @@ export const findingSeverityValues = ["low", "medium", "high", "critical"] as co
 export const INSPECTION_LONG_TEXT_MAX = 5000;
 /** Finding item notes. */
 export const INSPECTION_FINDING_NOTES_MAX = 2000;
-/** Checklist responses JSON blob. */
-export const INSPECTION_CHECKLIST_JSON_MAX = 50000;
 
 const FindingItemDef = {
     notes:      {type: "string",        required: true, min: 1, max: INSPECTION_FINDING_NOTES_MAX},
@@ -63,7 +61,6 @@ export const InspectionSchemaDef = {
     clientSignatureMediaId:   {type: "objectId",    required: false},
     clientSignedAt:           {type: "date",        required: false},
     checklistTemplate:        {type: "objectId",    required: false},
-    checklistResponsesJson:   {type: "string",      required: false, max: INSPECTION_CHECKLIST_JSON_MAX},
 } as const;
 
 export type CreateInspectionFormType = InferCreateForm<typeof InspectionSchemaDef>;

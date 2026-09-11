@@ -91,6 +91,14 @@
     "message": "Der Inspektionsstatus erlaubt das Stornieren einer geplanten Inspektion nicht.",
     "error_code": "invalid_status_for_cancel_scheduled"
   },
+  "invalid_status_for_update_inspection_checklist": {
+    "message": "Die Inspektions-Checkliste kann nach Abschluss oder Stornierung nicht mehr geändert werden.",
+    "error_code": "invalid_status_for_update_inspection_checklist"
+  },
+  "inspection_checklist_incomplete": {
+    "message": "Alle Checklistenpunkte müssen erledigt sein, bevor die Inspektion abgeschlossen werden kann.",
+    "error_code": "inspection_checklist_incomplete"
+  },
   "invalid_status_for_client_approval": {
     "message": "Der Status des Änderungsantrags erlaubt keine Kundenfreigabe.",
     "error_code": "invalid_status_for_client_approval"

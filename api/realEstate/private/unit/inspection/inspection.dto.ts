@@ -1,5 +1,6 @@
 import type {Media} from "../../../../../../core/types";
 import type {DeletedData, LifeCycleData, OwnershipData} from "../../../../../../core/types/shared.types";
+import type {InspectionChecklistItemImportanceValue} from "../../../inspectionChecklistTemplate/inspectionChecklistTemplate.schema-def";
 
 export type InspectionFindingItem = {
     notes: string;
@@ -17,6 +18,20 @@ export type InspectionFindings = {
     safetyConcerns?: InspectionFindingItem[];
     cosmeticIssues?: InspectionFindingItem[];
     otherObservations?: InspectionFindingItem[];
+};
+
+export type InspectionChecklistItem = {
+    _id?: string;
+    sourceTemplateId?: string;
+    sourceItemId?: string;
+    name: string;
+    description?: string;
+    instructions?: string;
+    importance?: InspectionChecklistItemImportanceValue;
+    completed?: boolean;
+    completedAt?: string;
+    completedBy?: {_id: string; name?: string; surname?: string};
+    retained?: boolean;
 };
 
 export type Inspection = DeletedData & OwnershipData & LifeCycleData & {
@@ -74,5 +89,6 @@ export type Inspection = DeletedData & OwnershipData & LifeCycleData & {
     clientSignatureMediaId?: {_id: string; url?: string; name?: string;};
     clientSignedAt?: string;
     checklistTemplate?: {_id: string; name?: string; title?: string};
-    checklistResponsesJson?: string;
+    checklistItems?: InspectionChecklistItem[];
+    checklistComplete?: boolean;
 };

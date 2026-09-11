@@ -91,6 +91,14 @@
     "message": "The inspection status does not allow cancelling a scheduled inspection.",
     "error_code": "invalid_status_for_cancel_scheduled"
   },
+  "invalid_status_for_update_inspection_checklist": {
+    "message": "The inspection checklist cannot be updated after the inspection is completed or cancelled.",
+    "error_code": "invalid_status_for_update_inspection_checklist"
+  },
+  "inspection_checklist_incomplete": {
+    "message": "All checklist items must be completed before this inspection can be marked completed.",
+    "error_code": "inspection_checklist_incomplete"
+  },
   "invalid_status_for_client_approval": {
     "message": "The modification request status does not allow client approval.",
     "error_code": "invalid_status_for_client_approval"

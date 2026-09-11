@@ -91,6 +91,14 @@
     "message": "Statusi i inspektimit nuk lejon anulimin e një inspektimi të planifikuar.",
     "error_code": "invalid_status_for_cancel_scheduled"
   },
+  "invalid_status_for_update_inspection_checklist": {
+    "message": "Lista e kontrollit nuk mund të përditësohet pasi inspektimi është përfunduar ose anuluar.",
+    "error_code": "invalid_status_for_update_inspection_checklist"
+  },
+  "inspection_checklist_incomplete": {
+    "message": "Të gjithë zërat e listës së kontrollit duhet të përfundohen para se inspektimi të shënohet i përfunduar.",
+    "error_code": "inspection_checklist_incomplete"
+  },
   "invalid_status_for_client_approval": {
     "message": "Statusi i kërkesës së ndryshimit nuk lejon miratimin nga klienti.",
     "error_code": "invalid_status_for_client_approval"
