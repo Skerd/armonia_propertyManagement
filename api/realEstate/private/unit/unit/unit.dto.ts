@@ -2,6 +2,7 @@ import type {Media, PolygonCoordinates} from "../../../../../../core/types";
 import type {DeletedData, LifeCycleData, OwnershipData} from "../../../../../../core/types/shared.types";
 import {UnitStatus} from "./unit.constants";
 import {Currency} from "../../../../../../core/database/types";
+import type {EffectivePriceVisibility, PriceVisibility} from "../../priceVisibility.constants";
 
 export type UnitMoneyByCurrency = {
     currency?: Currency;
@@ -121,7 +122,9 @@ export type Unit = DeletedData & OwnershipData & LifeCycleData & {
     };
     featuredOnHomepage?: boolean;
     featuredSortOrder?: number;
-    showPriceOnRequest?: boolean;
+    priceVisibility?: PriceVisibility;
+    /** Resolved public price visibility (single-record reads only). */
+    effectivePriceVisibility?: EffectivePriceVisibility;
     statistics?: UnitStatistics;
 }
 

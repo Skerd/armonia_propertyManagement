@@ -1,5 +1,6 @@
 import type {InferCreateForm, InferEditForm} from "../../../../../core/helpers/schemaDefBuilder";
 import {EDIFICE_ENERGY_CLASS_VALUES} from "./edifice.constants";
+import {PRICE_VISIBILITY_VALUES} from "../priceVisibility.constants";
 
 /** Short single-line labels (name). */
 export const EDIFICE_SHORT_TEXT_MAX = 128;
@@ -70,7 +71,7 @@ export const EdificeSchemaDef = {
     actualCompletionDate:         { type: "date",          required: false },
     buildingPermitNumber:         { type: "string",        required: false, max: EDIFICE_PERMIT_NUMBER_MAX },
     energyClass:                  { type: "enum",          required: false, options: EDIFICE_ENERGY_CLASS_VALUES },
-    showPriceOnRequest:           { type: "boolean",       required: false },
+    priceVisibility:              { type: "enum",          required: false, options: PRICE_VISIBILITY_VALUES },
 } as const;
 
 export type CreateEdificeFormType = InferCreateForm<typeof EdificeSchemaDef> & { polygonCoordinates?: {x: number; y: number}[]; };

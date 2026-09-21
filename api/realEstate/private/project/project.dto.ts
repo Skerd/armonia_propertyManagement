@@ -1,6 +1,7 @@
 import type { Media } from "../../../../../core/types";
 import {DeletedData, LifeCycleData, OwnershipData} from "../../../../../core/types/shared.types";
 import type {EdificeMoneyByCurrency} from "../edifice/edifice.dto";
+import type {EffectivePriceVisibility, PriceVisibility} from "../priceVisibility.constants";
 
 export type ProjectEdificeCoordinate = {
     polygonCoordinates: {x: number; y: number}[];
@@ -61,7 +62,9 @@ export type Project = DeletedData & OwnershipData & LifeCycleData & {
     socialLinks?: ProjectSocialLink[],
     featuredOnHomepage?: boolean,
     featuredSortOrder?: number,
-    showPriceOnRequest?: boolean,
+    priceVisibility?: PriceVisibility,
+    /** Resolved public price visibility (single-record reads only). */
+    effectivePriceVisibility?: EffectivePriceVisibility,
     statistics?: ProjectStatistics,
     edificesCoordinates?: ProjectEdificeCoordinate[],
 }

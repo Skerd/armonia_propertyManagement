@@ -1,4 +1,5 @@
 import type {InferCreateForm, InferEditForm} from "../../../../../core/helpers/schemaDefBuilder";
+import {PRICE_VISIBILITY_VALUES} from "../priceVisibility.constants";
 
 /** Short single-line labels (name). */
 export const FLOOR_SHORT_TEXT_MAX = 128;
@@ -30,7 +31,7 @@ export const FloorSchemaDef = {
     videoGallery:     { type: "mediaIdArray", required: false, publicAccess: true },
     mediaFiles:       { type: "mediaIdArray", required: false },
     marketingBooklet: { type: "mediaId",      required: false, publicAccess: true },
-    showPriceOnRequest: { type: "boolean",    required: false },
+    priceVisibility:  { type: "enum",         required: false, options: PRICE_VISIBILITY_VALUES },
 } as const;
 
 export type CreateFloorFormType = InferCreateForm<typeof FloorSchemaDef> & { polygonCoordinates?: {x: number; y: number}[]; };

@@ -1,4 +1,5 @@
 import type {InferCreateForm, InferEditForm} from "../../../../../core/helpers/schemaDefBuilder";
+import {PRICE_VISIBILITY_VALUES} from "../priceVisibility.constants";
 
 /** Short single-line labels (name, titles, social link names). */
 export const PROJECT_SHORT_TEXT_MAX = 128;
@@ -27,7 +28,7 @@ export const ProjectSchemaDef = {
     socialLinks:                      { type: "embeddedArray", required: false, items: ProjectSocialLinkItemDef, maxItems: 20 },
     featuredOnHomepage:               { type: "boolean",       required: false },
     featuredSortOrder:                { type: "number",        required: false, min: 0 },
-    showPriceOnRequest:               { type: "boolean",       required: false },
+    priceVisibility:                  { type: "enum",          required: false, options: PRICE_VISIBILITY_VALUES },
     saleCommissionRatePercent:        { type: "number",        required: false, min: 0, max: 100 },
     reservationCommissionRatePercent: { type: "number",        required: false, min: 0, max: 100 },
 } as const;

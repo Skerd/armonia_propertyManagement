@@ -1,5 +1,6 @@
 import type {InferCreateForm, InferEditForm} from "../../../../../../core/helpers/schemaDefBuilder";
 import {UNIT_CONSTRUCTION_STATUS_VALUES, UNIT_ORIENTATION_VALUES} from "./unit.constants";
+import {PRICE_VISIBILITY_VALUES} from "../../priceVisibility.constants";
 
 /** Short single-line labels (name). */
 export const UNIT_SHORT_TEXT_MAX = 128;
@@ -40,7 +41,7 @@ export const UnitSchemaDef = {
     constructionStatus:               { type: "enum",          required: false, options: UNIT_CONSTRUCTION_STATUS_VALUES },
     featuredOnHomepage:               { type: "boolean",       required: false },
     featuredSortOrder:                { type: "number",        required: false, min: 0 },
-    showPriceOnRequest:               { type: "boolean",       required: false },
+    priceVisibility:                  { type: "enum",          required: false, options: PRICE_VISIBILITY_VALUES },
 } as const;
 
 export type CreateUnitFormType = InferCreateForm<typeof UnitSchemaDef> & { polygonCoordinates?: {x: number; y: number}[]; };

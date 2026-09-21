@@ -1,6 +1,7 @@
 import {Media, PolygonCoordinates} from "../../../../../core/types";
 import type {DeletedData, LifeCycleData, OwnershipData} from "../../../../../core/types/shared.types";
 import {Currency} from "../../../../../core/database/types";
+import type {EffectivePriceVisibility, PriceVisibility} from "../priceVisibility.constants";
 
 export type EdificeFloorCoordinate = {
     polygonCoordinates: PolygonCoordinates[];
@@ -98,5 +99,7 @@ export type Edifice = DeletedData & OwnershipData & LifeCycleData & {
     actualCompletionDate?: Date;
     buildingPermitNumber?: string;
     energyClass?: string;
-    showPriceOnRequest?: boolean;
+    priceVisibility?: PriceVisibility;
+    /** Resolved public price visibility (single-record reads only). */
+    effectivePriceVisibility?: EffectivePriceVisibility;
 };
