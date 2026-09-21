@@ -33,6 +33,8 @@ export type MarketingUnitSingleItem = {
     bedrooms?: number;
     bathrooms?: number;
     price?: number;
+    /** True when the price is hidden by "show price on request" (unit or any parent). */
+    priceOnRequest?: boolean;
     sharePrice?: number;
     projectedYield?: number;
     mainImage?: string;

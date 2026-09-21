@@ -70,6 +70,7 @@ export const EdificeSchemaDef = {
     actualCompletionDate:         { type: "date",          required: false },
     buildingPermitNumber:         { type: "string",        required: false, max: EDIFICE_PERMIT_NUMBER_MAX },
     energyClass:                  { type: "enum",          required: false, options: EDIFICE_ENERGY_CLASS_VALUES },
+    showPriceOnRequest:           { type: "boolean",       required: false },
 } as const;
 
 export type CreateEdificeFormType = InferCreateForm<typeof EdificeSchemaDef> & { polygonCoordinates?: {x: number; y: number}[]; };

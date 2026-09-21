@@ -30,6 +30,7 @@ export const FloorSchemaDef = {
     videoGallery:     { type: "mediaIdArray", required: false, publicAccess: true },
     mediaFiles:       { type: "mediaIdArray", required: false },
     marketingBooklet: { type: "mediaId",      required: false, publicAccess: true },
+    showPriceOnRequest: { type: "boolean",    required: false },
 } as const;
 
 export type CreateFloorFormType = InferCreateForm<typeof FloorSchemaDef> & { polygonCoordinates?: {x: number; y: number}[]; };

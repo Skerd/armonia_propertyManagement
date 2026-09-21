@@ -18,6 +18,8 @@ export type MarketingUnitCatalogListItem = {
     bedrooms?: number;
     bathrooms?: number;
     price?: number;
+    /** True when the price is hidden by "show price on request" (unit or any parent). */
+    priceOnRequest?: boolean;
     mainImage?: string;
     propertyType?: MarketingPropertyTypeId;
     floorLabel?: string;
@@ -63,6 +65,8 @@ export type MarketingEdificeCatalogListItem = {
     pricePerSqm?: number;
     verandaPricePerSqm?: number;
     saleCurrency?: string;
+    /** True when the edifice's prices (per m² and history) are hidden by "show price on request". */
+    priceOnRequest?: boolean;
     energyClass?: string;
     expectedCompletionYear?: number;
     constructionStartYear?: number;

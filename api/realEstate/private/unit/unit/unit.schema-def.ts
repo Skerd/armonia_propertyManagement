@@ -40,6 +40,7 @@ export const UnitSchemaDef = {
     constructionStatus:               { type: "enum",          required: false, options: UNIT_CONSTRUCTION_STATUS_VALUES },
     featuredOnHomepage:               { type: "boolean",       required: false },
     featuredSortOrder:                { type: "number",        required: false, min: 0 },
+    showPriceOnRequest:               { type: "boolean",       required: false },
 } as const;
 
 export type CreateUnitFormType = InferCreateForm<typeof UnitSchemaDef> & { polygonCoordinates?: {x: number; y: number}[]; };

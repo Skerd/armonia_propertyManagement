@@ -57,6 +57,7 @@ export type Floor = DeletedData & OwnershipData & LifeCycleData & {
         _id: string;
         name?: string;
     };
+    showPriceOnRequest?: boolean;
     statistics?: FloorStatistics;
     unitsCoordinates?: FloorUnitCoordinate[];
 };

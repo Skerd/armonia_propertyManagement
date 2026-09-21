@@ -7,6 +7,8 @@ export type MarketingFeaturedUnitItem = {
     bedrooms?: number;
     bathrooms?: number;
     price?: number;
+    /** True when the price is hidden by "show price on request" (unit or any parent). */
+    priceOnRequest?: boolean;
     mainImage?: string;
     imageGallery?: string[];
     propertyType?: "apartment" | "studio" | "penthouse" | "commercial" | "villa";

@@ -61,6 +61,7 @@ export type Project = DeletedData & OwnershipData & LifeCycleData & {
     socialLinks?: ProjectSocialLink[],
     featuredOnHomepage?: boolean,
     featuredSortOrder?: number,
+    showPriceOnRequest?: boolean,
     statistics?: ProjectStatistics,
     edificesCoordinates?: ProjectEdificeCoordinate[],
 }

@@ -98,4 +98,5 @@ export type Edifice = DeletedData & OwnershipData & LifeCycleData & {
     actualCompletionDate?: Date;
     buildingPermitNumber?: string;
     energyClass?: string;
+    showPriceOnRequest?: boolean;
 };

@@ -27,6 +27,7 @@ export const ProjectSchemaDef = {
     socialLinks:                      { type: "embeddedArray", required: false, items: ProjectSocialLinkItemDef, maxItems: 20 },
     featuredOnHomepage:               { type: "boolean",       required: false },
     featuredSortOrder:                { type: "number",        required: false, min: 0 },
+    showPriceOnRequest:               { type: "boolean",       required: false },
     saleCommissionRatePercent:        { type: "number",        required: false, min: 0, max: 100 },
     reservationCommissionRatePercent: { type: "number",        required: false, min: 0, max: 100 },
 } as const;

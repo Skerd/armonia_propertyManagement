@@ -121,6 +121,7 @@ export type Unit = DeletedData & OwnershipData & LifeCycleData & {
     };
     featuredOnHomepage?: boolean;
     featuredSortOrder?: number;
+    showPriceOnRequest?: boolean;
     statistics?: UnitStatistics;
 }
 
