@@ -2,7 +2,7 @@ export type MarketingFeaturedUnitItem = {
     _id: string;
     name: string;
     unitNumber?: string;
-    status: "available" | "reserved" | "sold";
+    status: "available" | "reserved" | "sold" | "unavailable";
     areaSqm?: number;
     bedrooms?: number;
     bathrooms?: number;

@@ -1,6 +1,6 @@
 import type {Media, PolygonCoordinates} from "../../../../../core/types";
 import type {DeletedData, LifeCycleData, OwnershipData} from "../../../../../core/types/shared.types";
-import {EdificeMoneyByCurrency, EdificeStatistics} from "../edifice/edifice.dto";
+import {EdificeMoneyByCurrency} from "../edifice/edifice.dto";
 
 export type FloorUnitCoordinate = {
     polygonCoordinates: PolygonCoordinates[];

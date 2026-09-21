@@ -8,7 +8,7 @@ export type MarketingPolygonItem = {
     polygonCoordinates: MarketingPolygonCoordinate[];
 };
 
-export type MarketingUnitCatalogStatus = "available" | "reserved" | "sold";
+export type MarketingUnitCatalogStatus = "available" | "reserved" | "sold" | "unavailable";
 
 export type MarketingUnitCatalogListItem = {
     _id: string;
