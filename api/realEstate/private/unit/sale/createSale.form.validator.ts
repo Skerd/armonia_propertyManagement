@@ -16,7 +16,7 @@ export function createCashSaleFormSchema(languageCode: string, form: any = null)
         localDiscount: inBetweenRangeZod(form?.["localDiscountLabel"] || "localDiscount", 0, 100, languageCode).optional(),
         transactionReference: notEmptyZod(form?.["transactionReferenceLabel"] || "transactionReference", languageCode).pipe(
             stringMaxLengthZod(form?.["transactionReferenceLabel"] || "transactionReference", SALE_SHORT_TEXT_MAX, languageCode),
-        ),
+        ).optional(),
         notes: stringMaxLengthZod(form?.["notesLabel"] || "notes", SALE_LONG_TEXT_MAX, languageCode).optional(),
 
         purchaseContract: form
