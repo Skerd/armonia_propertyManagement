@@ -9,6 +9,15 @@ export type FloorUnitCoordinate = {
     name: string;
 };
 
+export type EffectiveRateSource = "floor" | "edifice";
+
+export type FloorEffectivePricing = {
+    pricePerMeterSquared: number | null;
+    verandaPricePerMeterSquared: number | null;
+    source: {pricePerMeterSquared: EffectiveRateSource; verandaPricePerMeterSquared: EffectiveRateSource};
+    saleCurrency?: {_id: string; symbol?: string; name?: string};
+};
+
 export type FloorStatistics = {
     totalUnits?: number;
     totalUnitsArea?: number;
@@ -61,6 +70,11 @@ export type Floor = DeletedData & OwnershipData & LifeCycleData & {
     priceVisibility?: PriceVisibility;
     /** Resolved public price visibility (single-record reads only). */
     effectivePriceVisibility?: EffectivePriceVisibility;
+    /** Floor override of the edifice sale rate; empty = follows the edifice. */
+    pricePerMeterSquared?: number | null;
+    verandaPricePerMeterSquared?: number | null;
+    /** Rates actually applied to this floor's units (single-record reads only). */
+    effectivePricing?: FloorEffectivePricing;
     statistics?: FloorStatistics;
     unitsCoordinates?: FloorUnitCoordinate[];
 };

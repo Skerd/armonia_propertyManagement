@@ -32,6 +32,9 @@ export const FloorSchemaDef = {
     mediaFiles:       { type: "mediaIdArray", required: false },
     marketingBooklet: { type: "mediaId",      required: false, publicAccess: true },
     priceVisibility:  { type: "enum",         required: false, options: PRICE_VISIBILITY_VALUES },
+    // Empty = follows the edifice rate; a value overrides it for this floor's units.
+    pricePerMeterSquared:        { type: "number", required: false, min: 0 },
+    verandaPricePerMeterSquared: { type: "number", required: false, min: 0 },
 } as const;
 
 export type CreateFloorFormType = InferCreateForm<typeof FloorSchemaDef> & { polygonCoordinates?: {x: number; y: number}[]; };
