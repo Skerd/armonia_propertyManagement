@@ -462,5 +462,9 @@
   "story_type_in_use": {
     "message": "Der Geschosstyp ist in Verwendung und kann nicht gelöscht werden.",
     "error_code": "story_type_in_use"
+  },
+  "no_notification_recipients": {
+    "message": "Für diese Benachrichtigungen sind keine aktiven Empfänger eingerichtet. Fügen Sie Benutzer unter Verkauf & Übergabe → Benachrichtigungen hinzu.",
+    "error_code": "no_notification_recipients"
   }
 }

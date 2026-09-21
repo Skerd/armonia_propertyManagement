@@ -502,5 +502,9 @@
   "story_type_in_use": {
     "message": "Story type is in use and cannot be deleted.",
     "error_code": "story_type_in_use"
+  },
+  "no_notification_recipients": {
+    "message": "No active recipients are set up for these notifications. Add users under Sales & handover → Notifications.",
+    "error_code": "no_notification_recipients"
   }
 }

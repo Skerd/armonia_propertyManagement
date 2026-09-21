@@ -502,5 +502,9 @@
   "story_type_in_use": {
     "message": "Lloji i historisë është në përdorim dhe nuk mund të fshihet.",
     "error_code": "story_type_in_use"
+  },
+  "no_notification_recipients": {
+    "message": "Nuk ka marrës aktivë për këto njoftime. Shtoni përdorues te Shitjet dhe dorëzimi → Njoftimet.",
+    "error_code": "no_notification_recipients"
   }
 }

@@ -4,6 +4,8 @@ import type {InferCreateForm, InferEditForm} from "../../../../../core/helpers/s
 export const PropertyManagementConfigSchemaDef = {
     requiresSaleApproval: {type: "boolean", required: false},
     requiresHandoverPackageForHandover: {type: "boolean", required: false},
+    notifyOnSales: {type: "objectIdArray", required: false},
+    notifyOnReservations: {type: "objectIdArray", required: false},
 } as const;
 
 export type CreatePropertyManagementConfigFormType = InferCreateForm<typeof PropertyManagementConfigSchemaDef>;

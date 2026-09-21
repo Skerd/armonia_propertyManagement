@@ -462,5 +462,9 @@
   "story_type_in_use": {
     "message": "Il tipo di piano è in uso e non può essere eliminato.",
     "error_code": "story_type_in_use"
+  },
+  "no_notification_recipients": {
+    "message": "Nessun destinatario attivo è configurato per queste notifiche. Aggiungi utenti in Vendite e consegna → Notifiche.",
+    "error_code": "no_notification_recipients"
   }
 }

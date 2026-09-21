@@ -462,5 +462,9 @@
   "story_type_in_use": {
     "message": "Le type d'étage est utilisé et ne peut pas être supprimé.",
     "error_code": "story_type_in_use"
+  },
+  "no_notification_recipients": {
+    "message": "Aucun destinataire actif n’est configuré pour ces notifications. Ajoutez des utilisateurs dans Ventes et remise → Notifications.",
+    "error_code": "no_notification_recipients"
   }
 }
