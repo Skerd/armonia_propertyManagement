@@ -10,14 +10,14 @@ const paginationShape = {
     limit: z.coerce.number().int().min(1).max(100).optional(),
 };
 
-const hierarchyShape = (languageCode: string) => ({
+const hierarchyShape = (languageCode: string | undefined) => ({
     project: isObjectIdZod("project", languageCode).optional(),
     edifice: isObjectIdZod("edifice", languageCode).optional(),
     floor: isObjectIdZod("floor", languageCode).optional(),
     unit: isObjectIdZod("unit", languageCode).optional(),
 });
 
-export function leasesListFormSchema(languageCode: string) {
+export function leasesListFormSchema(languageCode: string | undefined) {
     return z.object({
         ...paginationShape,
         ...hierarchyShape(languageCode),
@@ -28,7 +28,7 @@ export function leasesListFormSchema(languageCode: string) {
     });
 }
 
-export function rentalPaymentsListFormSchema(languageCode: string) {
+export function rentalPaymentsListFormSchema(languageCode: string | undefined) {
     return z.object({
         ...paginationShape,
         ...hierarchyShape(languageCode),
@@ -40,7 +40,7 @@ export function rentalPaymentsListFormSchema(languageCode: string) {
     });
 }
 
-export function rentalsCalendarFormSchema(languageCode: string) {
+export function rentalsCalendarFormSchema(languageCode: string | undefined) {
     return z.object({
         ...hierarchyShape(languageCode),
         month: z.string().regex(/^\d{4}-\d{2}$/),
