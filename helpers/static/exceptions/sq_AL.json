@@ -506,5 +506,13 @@
   "no_notification_recipients": {
     "message": "Nuk ka marrës aktivë për këto njoftime. Shtoni përdorues te Shitjet dhe dorëzimi → Njoftimet.",
     "error_code": "no_notification_recipients"
+  },
+  "construction_progress_not_found": {
+    "message": "Raporti i ecurisë së punimeve nuk u gjet.",
+    "error_code": "construction_progress_not_found"
+  },
+  "no_clients_to_notify": {
+    "message": "Nuk ka klientë për t’u njoftuar: asnjë njësi në këtë projekt ose ndërtesë nuk ka blerës ose rezervim aktiv.",
+    "error_code": "no_clients_to_notify"
   }
 }

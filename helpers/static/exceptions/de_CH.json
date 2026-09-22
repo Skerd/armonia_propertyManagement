@@ -466,5 +466,13 @@
   "no_notification_recipients": {
     "message": "Für diese Benachrichtigungen sind keine aktiven Empfänger eingerichtet. Fügen Sie Benutzer unter Verkauf & Übergabe → Benachrichtigungen hinzu.",
     "error_code": "no_notification_recipients"
+  },
+  "construction_progress_not_found": {
+    "message": "Baufortschrittsbericht nicht gefunden.",
+    "error_code": "construction_progress_not_found"
+  },
+  "no_clients_to_notify": {
+    "message": "Es gibt keine Kunden zu benachrichtigen: Keine Einheit in diesem Projekt oder Gebäude hat einen Käufer oder eine aktive Reservation.",
+    "error_code": "no_clients_to_notify"
   }
 }

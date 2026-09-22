@@ -466,5 +466,13 @@
   "no_notification_recipients": {
     "message": "Aucun destinataire actif n’est configuré pour ces notifications. Ajoutez des utilisateurs dans Ventes et remise → Notifications.",
     "error_code": "no_notification_recipients"
+  },
+  "construction_progress_not_found": {
+    "message": "Rapport d’avancement introuvable.",
+    "error_code": "construction_progress_not_found"
+  },
+  "no_clients_to_notify": {
+    "message": "Aucun client à notifier : aucun lot de ce projet ou bâtiment n’a d’acheteur ni de réservation active.",
+    "error_code": "no_clients_to_notify"
   }
 }

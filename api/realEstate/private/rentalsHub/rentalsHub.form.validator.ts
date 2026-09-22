@@ -32,6 +32,7 @@ export function rentalPaymentsListFormSchema(languageCode: string) {
     return z.object({
         ...paginationShape,
         ...hierarchyShape(languageCode),
+        payment: isObjectIdZod("payment", languageCode).optional(),
         search: z.string().trim().optional(),
         status: z.enum(RENTAL_PAYMENT_REGISTRY_STATUS_VALUES).optional(),
         dueDateFrom: z.string().trim().optional(),

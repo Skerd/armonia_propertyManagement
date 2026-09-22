@@ -466,5 +466,13 @@
   "no_notification_recipients": {
     "message": "Nessun destinatario attivo è configurato per queste notifiche. Aggiungi utenti in Vendite e consegna → Notifiche.",
     "error_code": "no_notification_recipients"
+  },
+  "construction_progress_not_found": {
+    "message": "Rapporto di avanzamento lavori non trovato.",
+    "error_code": "construction_progress_not_found"
+  },
+  "no_clients_to_notify": {
+    "message": "Nessun cliente da notificare: nessuna unità di questo progetto o edificio ha un acquirente o una prenotazione attiva.",
+    "error_code": "no_clients_to_notify"
   }
 }

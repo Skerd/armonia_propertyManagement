@@ -21,6 +21,7 @@ export type RentalPaymentsListFormType = {
     edifice?: string;
     floor?: string;
     unit?: string;
+    payment?: string;
     status?: RentalPaymentRegistryStatus;
     dueDateFrom?: string;
     dueDateTo?: string;

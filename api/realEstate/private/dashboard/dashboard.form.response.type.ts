@@ -108,15 +108,28 @@ export type ComparisonDatum = {
     percentageChange: number;
 };
 
+/** Client / buyer / tenant shown on payment-alert cards. */
+export type PaymentAlertClient = {
+    _id: string;
+    name?: string;
+    surname?: string;
+};
+
 /** Single payment alert for dashboard (overdue or due-soon installment / reservation deposit). */
 export type PaymentAlertItem = {
     /** Missing on older cached rows — treat as installment. */
     kind?: "installment" | "reservation" | "rent";
     unit: { _id: string; unitNumber?: string; name?: string };
+    /** Buyer (sale installment), reservation client, or lease tenant. */
+    client?: PaymentAlertClient;
     /** Shared due payload: installment dueDate or reservation expirationDate. */
     installment: { amount: number; dueDate: string };
     daysUntilDue: number;
     reservationId?: string;
+    /** Sale id for installment alerts (payment-plan drill-down). */
+    saleId?: string;
+    /** Rental payment id for rent alerts. */
+    rentalPaymentId?: string;
 };
 
 export type DashboardFormResponseType = {

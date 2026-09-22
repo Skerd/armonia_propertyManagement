@@ -506,5 +506,13 @@
   "no_notification_recipients": {
     "message": "No active recipients are set up for these notifications. Add users under Sales & handover → Notifications.",
     "error_code": "no_notification_recipients"
+  },
+  "construction_progress_not_found": {
+    "message": "Construction progress report not found.",
+    "error_code": "construction_progress_not_found"
+  },
+  "no_clients_to_notify": {
+    "message": "There are no clients to notify: no unit in this project or building has a buyer or an active reservation.",
+    "error_code": "no_clients_to_notify"
   }
 }
