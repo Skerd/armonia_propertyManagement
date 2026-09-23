@@ -23,6 +23,10 @@
     "message": "Der Massenversand von Kampagnen ist in dieser Umgebung deaktiviert.",
     "error_code": "ad_campaign_send_disabled"
   },
+  "adCampaignTemplate_not_found": {
+    "message": "Kampagnenvorlage nicht gefunden",
+    "error_code": "adCampaignTemplate_not_found"
+  },
   "at_least_one_installment_required": {
     "message": "Mindestens eine Rate ist erforderlich.",
     "error_code": "at_least_one_installment_required"

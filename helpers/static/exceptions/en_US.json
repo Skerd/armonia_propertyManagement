@@ -23,6 +23,10 @@
     "message": "Bulk campaign sending is disabled in this environment.",
     "error_code": "ad_campaign_send_disabled"
   },
+  "adCampaignTemplate_not_found": {
+    "message": "Campaign template not found",
+    "error_code": "adCampaignTemplate_not_found"
+  },
   "at_least_one_installment_required": {
     "message": "At least one installment is required.",
     "error_code": "at_least_one_installment_required"

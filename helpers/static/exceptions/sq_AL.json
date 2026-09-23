@@ -23,6 +23,10 @@
     "message": "Dërgimi masiv i fushatave është çaktivizuar në këtë mjedis.",
     "error_code": "ad_campaign_send_disabled"
   },
+  "adCampaignTemplate_not_found": {
+    "message": "Shablloni i fushatës nuk u gjet",
+    "error_code": "adCampaignTemplate_not_found"
+  },
   "at_least_one_installment_required": {
     "message": "Kërkohet të paktën një këst.",
     "error_code": "at_least_one_installment_required"

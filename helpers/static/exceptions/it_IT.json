@@ -23,6 +23,10 @@
     "message": "L'invio massivo di campagne è disattivato in questo ambiente.",
     "error_code": "ad_campaign_send_disabled"
   },
+  "adCampaignTemplate_not_found": {
+    "message": "Modello di campagna non trovato",
+    "error_code": "adCampaignTemplate_not_found"
+  },
   "at_least_one_installment_required": {
     "message": "È richiesta almeno una rata.",
     "error_code": "at_least_one_installment_required"

@@ -23,6 +23,10 @@
     "message": "L'envoi de campagnes en masse est désactivé dans cet environnement.",
     "error_code": "ad_campaign_send_disabled"
   },
+  "adCampaignTemplate_not_found": {
+    "message": "Modèle de campagne introuvable",
+    "error_code": "adCampaignTemplate_not_found"
+  },
   "at_least_one_installment_required": {
     "message": "Au moins une échéance est requise.",
     "error_code": "at_least_one_installment_required"
