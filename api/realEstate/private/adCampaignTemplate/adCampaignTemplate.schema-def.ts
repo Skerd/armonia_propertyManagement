@@ -21,7 +21,6 @@ export const AdCampaignTemplateSchemaDef = {
     subject:      { type: "string",  required: true,  min: 1, max: AD_CAMPAIGN_SUBJECT_MAX },
     previewText:  { type: "string",  required: false, max: AD_CAMPAIGN_SUBJECT_MAX },
     bodyHtml:     { type: "string",  required: true,  min: 1, max: AD_CAMPAIGN_BODY_MAX },
-    isDefault:    { type: "boolean", required: false },
     active:       { type: "boolean", required: false },
 } as const;
 

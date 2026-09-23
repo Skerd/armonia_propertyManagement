@@ -10,7 +10,6 @@ export type AdCampaignTemplate = OwnershipData & DeletedData & LifeCycleData & {
     previewText?: string;
     /** Sanitized on write; re-sanitized on render as defence in depth. */
     bodyHtml: string;
-    isDefault?: boolean;
     active?: boolean;
 };
 
