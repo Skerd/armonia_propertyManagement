@@ -1,4 +1,28 @@
 {
+  "ad_campaign_already_finished": {
+    "message": "This campaign has already finished.",
+    "error_code": "ad_campaign_already_finished"
+  },
+  "ad_campaign_not_editable": {
+    "message": "This campaign can no longer be changed because it is already sending or finished.",
+    "error_code": "ad_campaign_not_editable"
+  },
+  "ad_campaign_not_found": {
+    "message": "Campaign not found",
+    "error_code": "ad_campaign_not_found"
+  },
+  "ad_campaign_not_pausable": {
+    "message": "Only a scheduled or sending campaign can be paused.",
+    "error_code": "ad_campaign_not_pausable"
+  },
+  "ad_campaign_not_resumable": {
+    "message": "Only a paused campaign can be resumed.",
+    "error_code": "ad_campaign_not_resumable"
+  },
+  "ad_campaign_send_disabled": {
+    "message": "Bulk campaign sending is disabled in this environment.",
+    "error_code": "ad_campaign_send_disabled"
+  },
   "at_least_one_installment_required": {
     "message": "At least one installment is required.",
     "error_code": "at_least_one_installment_required"
@@ -18,6 +42,10 @@
   "commission_splits_exceed_total": {
     "message": "Commission splits exceed the total commission amount.",
     "error_code": "commission_splits_exceed_total"
+  },
+  "construction_progress_not_found": {
+    "message": "Construction progress report not found.",
+    "error_code": "construction_progress_not_found"
   },
   "constructor_not_found": {
     "message": "Constructor not found",
@@ -59,6 +87,30 @@
     "message": "The selected inspection already has a follow-up inspection linked. Cannot override.",
     "error_code": "follow_up_inspection_already_has_follower"
   },
+  "handover_package_already_exists_for_scope": {
+    "message": "A handover package already exists for this project, edifice, floor, or unit.",
+    "error_code": "handover_package_already_exists_for_scope"
+  },
+  "handover_package_already_exists_for_unit": {
+    "message": "A handover package already exists for this unit. Edit the existing package to add or remove items.",
+    "error_code": "handover_package_already_exists_for_unit"
+  },
+  "handover_package_ancestry_mismatch": {
+    "message": "The selected project, edifice, floor, and unit do not form a valid hierarchy.",
+    "error_code": "handover_package_ancestry_mismatch"
+  },
+  "handover_package_title_already_transferred": {
+    "message": "Title transfer has already been recorded for this unit. The handover package can no longer be changed.",
+    "error_code": "handover_package_title_already_transferred"
+  },
+  "handover_package_unit_not_sold": {
+    "message": "A handover package can only be created for a sold unit.",
+    "error_code": "handover_package_unit_not_sold"
+  },
+  "inspection_checklist_incomplete": {
+    "message": "All checklist items must be completed before this inspection can be marked completed.",
+    "error_code": "inspection_checklist_incomplete"
+  },
   "inspection_not_deleted": {
     "message": "Inspection is not deleted and cannot be restored",
     "error_code": "inspection_not_deleted"
@@ -90,14 +142,6 @@
   "invalid_status_for_cancel_scheduled": {
     "message": "The inspection status does not allow cancelling a scheduled inspection.",
     "error_code": "invalid_status_for_cancel_scheduled"
-  },
-  "invalid_status_for_update_inspection_checklist": {
-    "message": "The inspection checklist cannot be updated after the inspection is completed or cancelled.",
-    "error_code": "invalid_status_for_update_inspection_checklist"
-  },
-  "inspection_checklist_incomplete": {
-    "message": "All checklist items must be completed before this inspection can be marked completed.",
-    "error_code": "inspection_checklist_incomplete"
   },
   "invalid_status_for_client_approval": {
     "message": "The modification request status does not allow client approval.",
@@ -139,6 +183,10 @@
     "message": "Only a lost lead can be reopened.",
     "error_code": "invalid_status_for_reopen"
   },
+  "invalid_status_for_update_inspection_checklist": {
+    "message": "The inspection checklist cannot be updated after the inspection is completed or cancelled.",
+    "error_code": "invalid_status_for_update_inspection_checklist"
+  },
   "invalid_status_transition": {
     "message": "Invalid status transition for modification request.",
     "error_code": "invalid_status_transition"
@@ -150,6 +198,42 @@
   "lead_qualify_required": {
     "message": "Set an interest and a project or unit before qualifying this lead.",
     "error_code": "lead_qualify_required"
+  },
+  "lease_currency_change_with_payments": {
+    "message": "Cannot change rent currency after payment rows exist.",
+    "error_code": "lease_currency_change_with_payments"
+  },
+  "lease_deposit_already_paid": {
+    "message": "Deposit has already been marked as paid.",
+    "error_code": "lease_deposit_already_paid"
+  },
+  "lease_deposit_already_returned": {
+    "message": "Deposit has already been returned.",
+    "error_code": "lease_deposit_already_returned"
+  },
+  "lease_deposit_not_paid": {
+    "message": "Deposit has not been marked as paid.",
+    "error_code": "lease_deposit_not_paid"
+  },
+  "lease_end_before_collected_rent": {
+    "message": "Cannot shorten the lease to a date before a collected rent month.",
+    "error_code": "lease_end_before_collected_rent"
+  },
+  "lease_not_active": {
+    "message": "Lease is not active.",
+    "error_code": "lease_not_active"
+  },
+  "lease_start_after_collected_rent": {
+    "message": "Cannot change the start date after rent has been collected.",
+    "error_code": "lease_start_after_collected_rent"
+  },
+  "lease_term_too_long": {
+    "message": "Lease term cannot exceed 600 months.",
+    "error_code": "lease_term_too_long"
+  },
+  "lease_unit_immutable": {
+    "message": "The leased unit cannot be changed after create.",
+    "error_code": "lease_unit_immutable"
   },
   "manual_rent_email_action_not_allowed": {
     "message": "This rent reminder email is not allowed for the current due date.",
@@ -183,9 +267,17 @@
     "message": "Modification request not found",
     "error_code": "modification_request_not_found"
   },
+  "no_clients_to_notify": {
+    "message": "There are no clients to notify: no unit in this project or building has a buyer or an active reservation.",
+    "error_code": "no_clients_to_notify"
+  },
   "no_marketing_booklet": {
     "message": "Marketing booklet could not be generated for this unit.",
     "error_code": "no_marketing_booklet"
+  },
+  "no_notification_recipients": {
+    "message": "No active recipients are set up for these notifications. Add users under Sales & handover → Notifications.",
+    "error_code": "no_notification_recipients"
   },
   "paymentPlan_not_found": {
     "message": "Payment plan not found.",
@@ -223,6 +315,42 @@
     "message": "Project not found",
     "error_code": "project_not_found"
   },
+  "propertyManagementConfig_already_exists": {
+    "message": "Property management settings already exist for this company.",
+    "error_code": "propertyManagementConfig_already_exists"
+  },
+  "rental_payment_already_paid": {
+    "message": "Rental payment is already paid.",
+    "error_code": "rental_payment_already_paid"
+  },
+  "rental_payment_amount_locked": {
+    "message": "Amount and due date cannot be changed after a payment has been recorded.",
+    "error_code": "rental_payment_amount_locked"
+  },
+  "rental_payment_duplicate_due": {
+    "message": "A rent row already exists for this due date.",
+    "error_code": "rental_payment_duplicate_due"
+  },
+  "rental_payment_exceeds_open_due": {
+    "message": "Paid amount exceeds the remaining open rent on this lease.",
+    "error_code": "rental_payment_exceeds_open_due"
+  },
+  "rental_payment_invalid_amount": {
+    "message": "Paid amount is invalid.",
+    "error_code": "rental_payment_invalid_amount"
+  },
+  "rental_payment_no_open_due": {
+    "message": "There is no open rent due on this lease.",
+    "error_code": "rental_payment_no_open_due"
+  },
+  "rental_payment_overpay": {
+    "message": "Paid amount exceeds the remaining due for this month.",
+    "error_code": "rental_payment_overpay"
+  },
+  "rental_payment_waived": {
+    "message": "Rental payment was waived and cannot be marked paid.",
+    "error_code": "rental_payment_waived"
+  },
   "reservation_already_active": {
     "message": "This reservation is already active.",
     "error_code": "reservation_already_active"
@@ -247,14 +375,6 @@
     "message": "The reservation has no client assigned.",
     "error_code": "reservation_client_missing"
   },
-  "reservation_deposit_data_missing": {
-    "message": "The active reservation is marked as paid but is missing deposit amount or deposit currency. Update the reservation before creating a sale.",
-    "error_code": "reservation_deposit_data_missing"
-  },
-  "reservation_exchange_rate_required": {
-    "message": "An exchange rate is required because the reservation deposit currency differs from the sale currency.",
-    "error_code": "reservation_exchange_rate_required"
-  },
   "reservation_date_must_be_before_expiration_date": {
     "message": "The reservation date must be before the expiration date.",
     "error_code": "reservation_date_must_be_before_expiration_date"
@@ -262,6 +382,14 @@
   "reservation_date_must_not_be_in_the_future": {
     "message": "The reservation date cannot be in the future.",
     "error_code": "reservation_date_must_not_be_in_the_future"
+  },
+  "reservation_deposit_data_missing": {
+    "message": "The active reservation is marked as paid but is missing deposit amount or deposit currency. Update the reservation before creating a sale.",
+    "error_code": "reservation_deposit_data_missing"
+  },
+  "reservation_exchange_rate_required": {
+    "message": "An exchange rate is required because the reservation deposit currency differs from the sale currency.",
+    "error_code": "reservation_exchange_rate_required"
   },
   "reservation_expiration_date_must_be_in_the_future": {
     "message": "The reservation expiration date must be in the future.",
@@ -299,6 +427,18 @@
     "message": "An exchange rate is required because the unit list price currency differs from the sale currency.",
     "error_code": "sale_exchange_rate_required"
   },
+  "sale_handover_already_completed": {
+    "message": "This sale handover is already completed.",
+    "error_code": "sale_handover_already_completed"
+  },
+  "sale_handover_not_recorded": {
+    "message": "This sale has no handover to complete.",
+    "error_code": "sale_handover_not_recorded"
+  },
+  "sale_handover_requires_completed_handover_package": {
+    "message": "This unit cannot be handed over until its handover package is completed.",
+    "error_code": "sale_handover_requires_completed_handover_package"
+  },
   "sale_not_available_for_restore": {
     "message": "Sale is not available for restore.",
     "error_code": "sale_not_available_for_restore"
@@ -315,53 +455,21 @@
     "message": "The sale is not pending approval.",
     "error_code": "sale_not_pending_approval"
   },
-  "sale_handover_already_completed": {
-    "message": "This sale handover is already completed.",
-    "error_code": "sale_handover_already_completed"
-  },
-  "sale_handover_not_recorded": {
-    "message": "This sale has no handover to complete.",
-    "error_code": "sale_handover_not_recorded"
-  },
-  "sale_handover_requires_completed_handover_package": {
-    "message": "This unit cannot be handed over until its handover package is completed.",
-    "error_code": "sale_handover_requires_completed_handover_package"
-  },
-  "handover_package_already_exists_for_unit": {
-    "message": "A handover package already exists for this unit. Edit the existing package to add or remove items.",
-    "error_code": "handover_package_already_exists_for_unit"
-  },
-  "handover_package_unit_not_sold": {
-    "message": "A handover package can only be created for a sold unit.",
-    "error_code": "handover_package_unit_not_sold"
-  },
-  "handover_package_title_already_transferred": {
-    "message": "Title transfer has already been recorded for this unit. The handover package can no longer be changed.",
-    "error_code": "handover_package_title_already_transferred"
-  },
-  "handover_package_already_exists_for_scope": {
-    "message": "A handover package already exists for this project, edifice, floor, or unit.",
-    "error_code": "handover_package_already_exists_for_scope"
-  },
-  "handover_package_ancestry_mismatch": {
-    "message": "The selected project, edifice, floor, and unit do not form a valid hierarchy.",
-    "error_code": "handover_package_ancestry_mismatch"
-  },
-  "sale_title_transfer_package_required": {
-    "message": "Title transfer requires a completed handover package for this unit.",
-    "error_code": "sale_title_transfer_package_required"
+  "sale_title_transfer_already_recorded": {
+    "message": "Title transfer has already been recorded for this sale.",
+    "error_code": "sale_title_transfer_already_recorded"
   },
   "sale_title_transfer_package_in_progress": {
     "message": "Title transfer is blocked until the handover package is completed.",
     "error_code": "sale_title_transfer_package_in_progress"
   },
-  "sale_title_transfer_already_recorded": {
-    "message": "Title transfer has already been recorded for this sale.",
-    "error_code": "sale_title_transfer_already_recorded"
+  "sale_title_transfer_package_required": {
+    "message": "Title transfer requires a completed handover package for this unit.",
+    "error_code": "sale_title_transfer_package_required"
   },
-  "propertyManagementConfig_already_exists": {
-    "message": "Property management settings already exist for this company.",
-    "error_code": "propertyManagementConfig_already_exists"
+  "story_type_in_use": {
+    "message": "Story type is in use and cannot be deleted.",
+    "error_code": "story_type_in_use"
   },
   "unauthorized_to_approve": {
     "message": "You are not authorized to approve at this stage",
@@ -375,17 +483,21 @@
     "message": "This unit already has an active reservation.",
     "error_code": "unit_already_has_active_reservation"
   },
-  "unit_already_reserved_and_unpaid": {
-    "message": "This unit has an active reservation that is not marked as paid. Complete or cancel the reservation before creating a sale.",
-    "error_code": "unit_already_reserved_and_unpaid"
-  },
   "unit_already_rented": {
     "message": "Unit is already rented.",
     "error_code": "unit_already_rented"
   },
+  "unit_already_reserved_and_unpaid": {
+    "message": "This unit has an active reservation that is not marked as paid. Complete or cancel the reservation before creating a sale.",
+    "error_code": "unit_already_reserved_and_unpaid"
+  },
   "unit_already_sold": {
     "message": "Unit is already sold.",
     "error_code": "unit_already_sold"
+  },
+  "unit_already_sold_thus_reservation_payment_cannot_be_reversed": {
+    "message": "Unit is already sold; reservation payment cannot be reversed.",
+    "error_code": "unit_already_sold_thus_reservation_payment_cannot_be_reversed"
   },
   "unit_cannot_mark_available": {
     "message": "Only unavailable units can be marked available.",
@@ -395,89 +507,17 @@
     "message": "Only available units can be marked unavailable. Reserved, sold, or rented units cannot be taken off the market this way.",
     "error_code": "unit_cannot_mark_unavailable"
   },
-  "unit_not_available_for_lease": {
-    "message": "Unit is not available for lease.",
-    "error_code": "unit_not_available_for_lease"
-  },
   "unit_has_active_lease": {
     "message": "Unit already has an active lease.",
     "error_code": "unit_has_active_lease"
   },
-  "lease_not_active": {
-    "message": "Lease is not active.",
-    "error_code": "lease_not_active"
-  },
-  "lease_deposit_already_paid": {
-    "message": "Deposit has already been marked as paid.",
-    "error_code": "lease_deposit_already_paid"
-  },
-  "lease_deposit_not_paid": {
-    "message": "Deposit has not been marked as paid.",
-    "error_code": "lease_deposit_not_paid"
-  },
-  "lease_deposit_already_returned": {
-    "message": "Deposit has already been returned.",
-    "error_code": "lease_deposit_already_returned"
-  },
-  "rental_payment_already_paid": {
-    "message": "Rental payment is already paid.",
-    "error_code": "rental_payment_already_paid"
-  },
-  "rental_payment_waived": {
-    "message": "Rental payment was waived and cannot be marked paid.",
-    "error_code": "rental_payment_waived"
-  },
-  "rental_payment_invalid_amount": {
-    "message": "Paid amount is invalid.",
-    "error_code": "rental_payment_invalid_amount"
-  },
-  "rental_payment_overpay": {
-    "message": "Paid amount exceeds the remaining due for this month.",
-    "error_code": "rental_payment_overpay"
-  },
-  "rental_payment_exceeds_open_due": {
-    "message": "Paid amount exceeds the remaining open rent on this lease.",
-    "error_code": "rental_payment_exceeds_open_due"
-  },
-  "rental_payment_duplicate_due": {
-    "message": "A rent row already exists for this due date.",
-    "error_code": "rental_payment_duplicate_due"
-  },
-  "rental_payment_no_open_due": {
-    "message": "There is no open rent due on this lease.",
-    "error_code": "rental_payment_no_open_due"
-  },
-  "rental_payment_amount_locked": {
-    "message": "Amount and due date cannot be changed after a payment has been recorded.",
-    "error_code": "rental_payment_amount_locked"
-  },
-  "lease_end_before_collected_rent": {
-    "message": "Cannot shorten the lease to a date before a collected rent month.",
-    "error_code": "lease_end_before_collected_rent"
-  },
-  "lease_term_too_long": {
-    "message": "Lease term cannot exceed 600 months.",
-    "error_code": "lease_term_too_long"
-  },
-  "lease_start_after_collected_rent": {
-    "message": "Cannot change the start date after rent has been collected.",
-    "error_code": "lease_start_after_collected_rent"
-  },
-  "lease_currency_change_with_payments": {
-    "message": "Cannot change rent currency after payment rows exist.",
-    "error_code": "lease_currency_change_with_payments"
-  },
-  "lease_unit_immutable": {
-    "message": "The leased unit cannot be changed after create.",
-    "error_code": "lease_unit_immutable"
-  },
-  "unit_already_sold_thus_reservation_payment_cannot_be_reversed": {
-    "message": "Unit is already sold; reservation payment cannot be reversed.",
-    "error_code": "unit_already_sold_thus_reservation_payment_cannot_be_reversed"
-  },
   "unit_not_available": {
     "message": "Unit is not available.",
     "error_code": "unit_not_available"
+  },
+  "unit_not_available_for_lease": {
+    "message": "Unit is not available for lease.",
+    "error_code": "unit_not_available_for_lease"
   },
   "unit_not_available_for_reactivation": {
     "message": "Unit is no longer available; it may be reserved or sold. Cannot reactivate reservation.",
@@ -499,20 +539,8 @@
     "message": "Unit type is in use and cannot be deleted.",
     "error_code": "unit_type_in_use"
   },
-  "story_type_in_use": {
-    "message": "Story type is in use and cannot be deleted.",
-    "error_code": "story_type_in_use"
-  },
-  "no_notification_recipients": {
-    "message": "No active recipients are set up for these notifications. Add users under Sales & handover → Notifications.",
-    "error_code": "no_notification_recipients"
-  },
-  "construction_progress_not_found": {
-    "message": "Construction progress report not found.",
-    "error_code": "construction_progress_not_found"
-  },
-  "no_clients_to_notify": {
-    "message": "There are no clients to notify: no unit in this project or building has a buyer or an active reservation.",
-    "error_code": "no_clients_to_notify"
+  "user_has_no_email": {
+    "message": "This account has no email address, so it cannot have email preferences.",
+    "error_code": "user_has_no_email"
   }
 }

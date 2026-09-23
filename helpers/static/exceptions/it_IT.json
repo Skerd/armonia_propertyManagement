@@ -1,4 +1,28 @@
 {
+  "ad_campaign_already_finished": {
+    "message": "Questa campagna è già conclusa.",
+    "error_code": "ad_campaign_already_finished"
+  },
+  "ad_campaign_not_editable": {
+    "message": "Questa campagna non può più essere modificata perché è già in invio o conclusa.",
+    "error_code": "ad_campaign_not_editable"
+  },
+  "ad_campaign_not_found": {
+    "message": "Campagna non trovata",
+    "error_code": "ad_campaign_not_found"
+  },
+  "ad_campaign_not_pausable": {
+    "message": "Solo una campagna pianificata o in invio può essere messa in pausa.",
+    "error_code": "ad_campaign_not_pausable"
+  },
+  "ad_campaign_not_resumable": {
+    "message": "Solo una campagna in pausa può essere ripresa.",
+    "error_code": "ad_campaign_not_resumable"
+  },
+  "ad_campaign_send_disabled": {
+    "message": "L'invio massivo di campagne è disattivato in questo ambiente.",
+    "error_code": "ad_campaign_send_disabled"
+  },
   "at_least_one_installment_required": {
     "message": "È richiesta almeno una rata.",
     "error_code": "at_least_one_installment_required"
@@ -18,6 +42,10 @@
   "commission_splits_exceed_total": {
     "message": "Le ripartizioni della commissione superano l'importo totale della commissione.",
     "error_code": "commission_splits_exceed_total"
+  },
+  "construction_progress_not_found": {
+    "message": "Rapporto di avanzamento lavori non trovato.",
+    "error_code": "construction_progress_not_found"
   },
   "constructor_not_found": {
     "message": "Costruttore non trovato",
@@ -59,6 +87,30 @@
     "message": "L'ispezione selezionata ha già un'ispezione di follow-up collegata. Impossibile sovrascrivere.",
     "error_code": "follow_up_inspection_already_has_follower"
   },
+  "handover_package_already_exists_for_scope": {
+    "message": "Esiste già un pacchetto di consegna per questo progetto, edificio, piano o unità.",
+    "error_code": "handover_package_already_exists_for_scope"
+  },
+  "handover_package_already_exists_for_unit": {
+    "message": "Esiste già un pacchetto di consegna per questa unità. Modifica il pacchetto esistente per aggiungere o rimuovere voci.",
+    "error_code": "handover_package_already_exists_for_unit"
+  },
+  "handover_package_ancestry_mismatch": {
+    "message": "Progetto, edificio, piano e unità non formano una gerarchia valida.",
+    "error_code": "handover_package_ancestry_mismatch"
+  },
+  "handover_package_title_already_transferred": {
+    "message": "Il trasferimento del titolo è già stato registrato per questa unità. Il pacchetto di consegna non può più essere modificato.",
+    "error_code": "handover_package_title_already_transferred"
+  },
+  "handover_package_unit_not_sold": {
+    "message": "Un pacchetto di consegna può essere creato solo per un'unità venduta.",
+    "error_code": "handover_package_unit_not_sold"
+  },
+  "inspection_checklist_incomplete": {
+    "message": "Tutte le voci della checklist devono essere completate prima di chiudere l'ispezione.",
+    "error_code": "inspection_checklist_incomplete"
+  },
   "inspection_not_deleted": {
     "message": "L'ispezione non è eliminata e non può essere ripristinata",
     "error_code": "inspection_not_deleted"
@@ -90,14 +142,6 @@
   "invalid_status_for_cancel_scheduled": {
     "message": "Lo stato dell'ispezione non consente di annullare un'ispezione programmata.",
     "error_code": "invalid_status_for_cancel_scheduled"
-  },
-  "invalid_status_for_update_inspection_checklist": {
-    "message": "La checklist dell'ispezione non può essere aggiornata dopo il completamento o l'annullamento.",
-    "error_code": "invalid_status_for_update_inspection_checklist"
-  },
-  "inspection_checklist_incomplete": {
-    "message": "Tutte le voci della checklist devono essere completate prima di chiudere l'ispezione.",
-    "error_code": "inspection_checklist_incomplete"
   },
   "invalid_status_for_client_approval": {
     "message": "Lo stato della richiesta di modifica non consente l'approvazione del cliente.",
@@ -139,6 +183,10 @@
     "message": "Solo un lead perso può essere riaperto.",
     "error_code": "invalid_status_for_reopen"
   },
+  "invalid_status_for_update_inspection_checklist": {
+    "message": "La checklist dell'ispezione non può essere aggiornata dopo il completamento o l'annullamento.",
+    "error_code": "invalid_status_for_update_inspection_checklist"
+  },
   "invalid_status_transition": {
     "message": "Transizione di stato non valida per la richiesta di modifica.",
     "error_code": "invalid_status_transition"
@@ -150,6 +198,22 @@
   "lead_qualify_required": {
     "message": "Imposta un interesse e un progetto o un'unità prima di qualificare questo lead.",
     "error_code": "lead_qualify_required"
+  },
+  "lease_deposit_already_paid": {
+    "message": "L'acconto è già stato contrassegnato come pagato.",
+    "error_code": "lease_deposit_already_paid"
+  },
+  "lease_deposit_already_returned": {
+    "message": "L'acconto è già stato restituito.",
+    "error_code": "lease_deposit_already_returned"
+  },
+  "lease_deposit_not_paid": {
+    "message": "L'acconto non è stato contrassegnato come pagato.",
+    "error_code": "lease_deposit_not_paid"
+  },
+  "lease_not_active": {
+    "message": "La locazione non è attiva.",
+    "error_code": "lease_not_active"
   },
   "manual_rent_email_action_not_allowed": {
     "message": "Questa email di promemoria affitto non è consentita per la data di scadenza attuale.",
@@ -183,9 +247,17 @@
     "message": "Richiesta di modifica non trovata",
     "error_code": "modification_request_not_found"
   },
+  "no_clients_to_notify": {
+    "message": "Nessun cliente da notificare: nessuna unità di questo progetto o edificio ha un acquirente o una prenotazione attiva.",
+    "error_code": "no_clients_to_notify"
+  },
   "no_marketing_booklet": {
     "message": "Impossibile generare il booklet marketing per questa unità.",
     "error_code": "no_marketing_booklet"
+  },
+  "no_notification_recipients": {
+    "message": "Nessun destinatario attivo è configurato per queste notifiche. Aggiungi utenti in Vendite e consegna → Notifiche.",
+    "error_code": "no_notification_recipients"
   },
   "paymentPlan_not_found": {
     "message": "Piano di pagamento non trovato.",
@@ -223,6 +295,22 @@
     "message": "Progetto non trovato",
     "error_code": "project_not_found"
   },
+  "propertyManagementConfig_already_exists": {
+    "message": "Le impostazioni di property management esistono già per questa azienda.",
+    "error_code": "propertyManagementConfig_already_exists"
+  },
+  "rental_payment_already_paid": {
+    "message": "Il pagamento dell'affitto è già stato versato.",
+    "error_code": "rental_payment_already_paid"
+  },
+  "rental_payment_invalid_amount": {
+    "message": "L'importo pagato non è valido.",
+    "error_code": "rental_payment_invalid_amount"
+  },
+  "rental_payment_waived": {
+    "message": "Il pagamento dell'affitto è stato esentato e non può essere contrassegnato come pagato.",
+    "error_code": "rental_payment_waived"
+  },
   "reservation_already_active": {
     "message": "Questa prenotazione è già attiva.",
     "error_code": "reservation_already_active"
@@ -247,14 +335,6 @@
     "message": "La prenotazione non ha un cliente assegnato.",
     "error_code": "reservation_client_missing"
   },
-  "reservation_deposit_data_missing": {
-    "message": "La prenotazione attiva è contrassegnata come pagata ma manca l'importo o la valuta dell'acconto. Aggiornare la prenotazione prima di creare una vendita.",
-    "error_code": "reservation_deposit_data_missing"
-  },
-  "reservation_exchange_rate_required": {
-    "message": "È richiesto un tasso di cambio perché la valuta dell'acconto della prenotazione differisce dalla valuta della vendita.",
-    "error_code": "reservation_exchange_rate_required"
-  },
   "reservation_date_must_be_before_expiration_date": {
     "message": "La data di prenotazione deve essere precedente alla data di scadenza.",
     "error_code": "reservation_date_must_be_before_expiration_date"
@@ -262,6 +342,14 @@
   "reservation_date_must_not_be_in_the_future": {
     "message": "La data di prenotazione non può essere nel futuro.",
     "error_code": "reservation_date_must_not_be_in_the_future"
+  },
+  "reservation_deposit_data_missing": {
+    "message": "La prenotazione attiva è contrassegnata come pagata ma manca l'importo o la valuta dell'acconto. Aggiornare la prenotazione prima di creare una vendita.",
+    "error_code": "reservation_deposit_data_missing"
+  },
+  "reservation_exchange_rate_required": {
+    "message": "È richiesto un tasso di cambio perché la valuta dell'acconto della prenotazione differisce dalla valuta della vendita.",
+    "error_code": "reservation_exchange_rate_required"
   },
   "reservation_expiration_date_must_be_in_the_future": {
     "message": "La data di scadenza della prenotazione deve essere nel futuro.",
@@ -299,6 +387,18 @@
     "message": "È richiesto un tasso di cambio perché la valuta del prezzo di listino dell'unità differisce dalla valuta della vendita.",
     "error_code": "sale_exchange_rate_required"
   },
+  "sale_handover_already_completed": {
+    "message": "Questa consegna della vendita è già completata.",
+    "error_code": "sale_handover_already_completed"
+  },
+  "sale_handover_not_recorded": {
+    "message": "Questa vendita non ha una consegna da completare.",
+    "error_code": "sale_handover_not_recorded"
+  },
+  "sale_handover_requires_completed_handover_package": {
+    "message": "Questa unità non può essere consegnata finché il pacchetto di consegna non è completato.",
+    "error_code": "sale_handover_requires_completed_handover_package"
+  },
   "sale_not_available_for_restore": {
     "message": "La vendita non è disponibile per il ripristino.",
     "error_code": "sale_not_available_for_restore"
@@ -315,53 +415,21 @@
     "message": "La vendita non è in attesa di approvazione.",
     "error_code": "sale_not_pending_approval"
   },
-  "sale_handover_already_completed": {
-    "message": "Questa consegna della vendita è già completata.",
-    "error_code": "sale_handover_already_completed"
-  },
-  "sale_handover_not_recorded": {
-    "message": "Questa vendita non ha una consegna da completare.",
-    "error_code": "sale_handover_not_recorded"
-  },
-  "sale_handover_requires_completed_handover_package": {
-    "message": "Questa unità non può essere consegnata finché il pacchetto di consegna non è completato.",
-    "error_code": "sale_handover_requires_completed_handover_package"
-  },
-  "handover_package_already_exists_for_unit": {
-    "message": "Esiste già un pacchetto di consegna per questa unità. Modifica il pacchetto esistente per aggiungere o rimuovere voci.",
-    "error_code": "handover_package_already_exists_for_unit"
-  },
-  "handover_package_unit_not_sold": {
-    "message": "Un pacchetto di consegna può essere creato solo per un'unità venduta.",
-    "error_code": "handover_package_unit_not_sold"
-  },
-  "handover_package_title_already_transferred": {
-    "message": "Il trasferimento del titolo è già stato registrato per questa unità. Il pacchetto di consegna non può più essere modificato.",
-    "error_code": "handover_package_title_already_transferred"
-  },
-  "handover_package_already_exists_for_scope": {
-    "message": "Esiste già un pacchetto di consegna per questo progetto, edificio, piano o unità.",
-    "error_code": "handover_package_already_exists_for_scope"
-  },
-  "handover_package_ancestry_mismatch": {
-    "message": "Progetto, edificio, piano e unità non formano una gerarchia valida.",
-    "error_code": "handover_package_ancestry_mismatch"
-  },
-  "sale_title_transfer_package_required": {
-    "message": "Il trasferimento del titolo richiede un pacchetto di consegna completato per questa unità.",
-    "error_code": "sale_title_transfer_package_required"
+  "sale_title_transfer_already_recorded": {
+    "message": "Il trasferimento del titolo è già stato registrato per questa vendita.",
+    "error_code": "sale_title_transfer_already_recorded"
   },
   "sale_title_transfer_package_in_progress": {
     "message": "Il trasferimento del titolo è bloccato finché il pacchetto di consegna non è completato.",
     "error_code": "sale_title_transfer_package_in_progress"
   },
-  "sale_title_transfer_already_recorded": {
-    "message": "Il trasferimento del titolo è già stato registrato per questa vendita.",
-    "error_code": "sale_title_transfer_already_recorded"
+  "sale_title_transfer_package_required": {
+    "message": "Il trasferimento del titolo richiede un pacchetto di consegna completato per questa unità.",
+    "error_code": "sale_title_transfer_package_required"
   },
-  "propertyManagementConfig_already_exists": {
-    "message": "Le impostazioni di property management esistono già per questa azienda.",
-    "error_code": "propertyManagementConfig_already_exists"
+  "story_type_in_use": {
+    "message": "Il tipo di piano è in uso e non può essere eliminato.",
+    "error_code": "story_type_in_use"
   },
   "unauthorized_to_approve": {
     "message": "Non si è autorizzati ad approvare in questa fase",
@@ -375,17 +443,21 @@
     "message": "Questa unità ha già una prenotazione attiva.",
     "error_code": "unit_already_has_active_reservation"
   },
-  "unit_already_reserved_and_unpaid": {
-    "message": "Questa unità ha una prenotazione attiva non contrassegnata come pagata. Completare o annullare la prenotazione prima di creare una vendita.",
-    "error_code": "unit_already_reserved_and_unpaid"
-  },
   "unit_already_rented": {
     "message": "L'unità è già affittata.",
     "error_code": "unit_already_rented"
   },
+  "unit_already_reserved_and_unpaid": {
+    "message": "Questa unità ha una prenotazione attiva non contrassegnata come pagata. Completare o annullare la prenotazione prima di creare una vendita.",
+    "error_code": "unit_already_reserved_and_unpaid"
+  },
   "unit_already_sold": {
     "message": "L'unità è già venduta.",
     "error_code": "unit_already_sold"
+  },
+  "unit_already_sold_thus_reservation_payment_cannot_be_reversed": {
+    "message": "L'unità è già venduta; il pagamento della prenotazione non può essere stornato.",
+    "error_code": "unit_already_sold_thus_reservation_payment_cannot_be_reversed"
   },
   "unit_cannot_mark_available": {
     "message": "Solo le unità non disponibili possono essere segnate come disponibili.",
@@ -395,49 +467,17 @@
     "message": "Solo le unità disponibili possono essere segnate come non disponibili. Le unità prenotate, vendute o affittate non possono essere tolte dal mercato in questo modo.",
     "error_code": "unit_cannot_mark_unavailable"
   },
-  "unit_not_available_for_lease": {
-    "message": "L'unità non è disponibile per la locazione.",
-    "error_code": "unit_not_available_for_lease"
-  },
   "unit_has_active_lease": {
     "message": "L'unità ha già una locazione attiva.",
     "error_code": "unit_has_active_lease"
   },
-  "lease_not_active": {
-    "message": "La locazione non è attiva.",
-    "error_code": "lease_not_active"
-  },
-  "lease_deposit_already_paid": {
-    "message": "L'acconto è già stato contrassegnato come pagato.",
-    "error_code": "lease_deposit_already_paid"
-  },
-  "lease_deposit_not_paid": {
-    "message": "L'acconto non è stato contrassegnato come pagato.",
-    "error_code": "lease_deposit_not_paid"
-  },
-  "lease_deposit_already_returned": {
-    "message": "L'acconto è già stato restituito.",
-    "error_code": "lease_deposit_already_returned"
-  },
-  "rental_payment_already_paid": {
-    "message": "Il pagamento dell'affitto è già stato versato.",
-    "error_code": "rental_payment_already_paid"
-  },
-  "rental_payment_waived": {
-    "message": "Il pagamento dell'affitto è stato esentato e non può essere contrassegnato come pagato.",
-    "error_code": "rental_payment_waived"
-  },
-  "rental_payment_invalid_amount": {
-    "message": "L'importo pagato non è valido.",
-    "error_code": "rental_payment_invalid_amount"
-  },
-  "unit_already_sold_thus_reservation_payment_cannot_be_reversed": {
-    "message": "L'unità è già venduta; il pagamento della prenotazione non può essere stornato.",
-    "error_code": "unit_already_sold_thus_reservation_payment_cannot_be_reversed"
-  },
   "unit_not_available": {
     "message": "L'unità non è disponibile.",
     "error_code": "unit_not_available"
+  },
+  "unit_not_available_for_lease": {
+    "message": "L'unità non è disponibile per la locazione.",
+    "error_code": "unit_not_available_for_lease"
   },
   "unit_not_available_for_reactivation": {
     "message": "L'unità non è più disponibile; potrebbe essere prenotata o venduta. Impossibile riattivare la prenotazione.",
@@ -459,20 +499,8 @@
     "message": "Il tipo di unità è in uso e non può essere eliminato.",
     "error_code": "unit_type_in_use"
   },
-  "story_type_in_use": {
-    "message": "Il tipo di piano è in uso e non può essere eliminato.",
-    "error_code": "story_type_in_use"
-  },
-  "no_notification_recipients": {
-    "message": "Nessun destinatario attivo è configurato per queste notifiche. Aggiungi utenti in Vendite e consegna → Notifiche.",
-    "error_code": "no_notification_recipients"
-  },
-  "construction_progress_not_found": {
-    "message": "Rapporto di avanzamento lavori non trovato.",
-    "error_code": "construction_progress_not_found"
-  },
-  "no_clients_to_notify": {
-    "message": "Nessun cliente da notificare: nessuna unità di questo progetto o edificio ha un acquirente o una prenotazione attiva.",
-    "error_code": "no_clients_to_notify"
+  "user_has_no_email": {
+    "message": "Questo account non ha un indirizzo email, quindi non può avere preferenze email.",
+    "error_code": "user_has_no_email"
   }
 }

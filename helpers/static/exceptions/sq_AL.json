@@ -1,4 +1,28 @@
 {
+  "ad_campaign_already_finished": {
+    "message": "Kjo fushatë ka përfunduar tashmë.",
+    "error_code": "ad_campaign_already_finished"
+  },
+  "ad_campaign_not_editable": {
+    "message": "Kjo fushatë nuk mund të ndryshohet më sepse është duke u dërguar ose ka përfunduar.",
+    "error_code": "ad_campaign_not_editable"
+  },
+  "ad_campaign_not_found": {
+    "message": "Fushata nuk u gjet",
+    "error_code": "ad_campaign_not_found"
+  },
+  "ad_campaign_not_pausable": {
+    "message": "Vetëm një fushatë e planifikuar ose në dërgim mund të pezullohet.",
+    "error_code": "ad_campaign_not_pausable"
+  },
+  "ad_campaign_not_resumable": {
+    "message": "Vetëm një fushatë e pezulluar mund të rifillohet.",
+    "error_code": "ad_campaign_not_resumable"
+  },
+  "ad_campaign_send_disabled": {
+    "message": "Dërgimi masiv i fushatave është çaktivizuar në këtë mjedis.",
+    "error_code": "ad_campaign_send_disabled"
+  },
   "at_least_one_installment_required": {
     "message": "Kërkohet të paktën një këst.",
     "error_code": "at_least_one_installment_required"
@@ -18,6 +42,10 @@
   "commission_splits_exceed_total": {
     "message": "Ndarjet e komisionit tejkalojnë shumën totale të komisionit.",
     "error_code": "commission_splits_exceed_total"
+  },
+  "construction_progress_not_found": {
+    "message": "Raporti i ecurisë së punimeve nuk u gjet.",
+    "error_code": "construction_progress_not_found"
   },
   "constructor_not_found": {
     "message": "Ndërtuesi nuk u gjet",
@@ -59,6 +87,30 @@
     "message": "Inspektimi i zgjedhur ka tashmë një inspektim pasues të lidhur. Nuk mund të mbishkruhet.",
     "error_code": "follow_up_inspection_already_has_follower"
   },
+  "handover_package_already_exists_for_scope": {
+    "message": "Një paketë dorëzimi ekziston tashmë për këtë projekt, ndërtesë, kat ose njësi.",
+    "error_code": "handover_package_already_exists_for_scope"
+  },
+  "handover_package_already_exists_for_unit": {
+    "message": "Ekziston tashmë një paketë dorëzimi për këtë njësi. Ndryshoni paketën ekzistuese për të shtuar ose hequr zëra.",
+    "error_code": "handover_package_already_exists_for_unit"
+  },
+  "handover_package_ancestry_mismatch": {
+    "message": "Projekti, ndërtesa, kati dhe njësia nuk formojnë një hierarki të vlefshme.",
+    "error_code": "handover_package_ancestry_mismatch"
+  },
+  "handover_package_title_already_transferred": {
+    "message": "Transferimi i titullit është regjistruar tashmë për këtë njësi. Paketa e dorëzimit nuk mund të ndryshohet më.",
+    "error_code": "handover_package_title_already_transferred"
+  },
+  "handover_package_unit_not_sold": {
+    "message": "Paketa e dorëzimit mund të krijohet vetëm për një njësi të shitur.",
+    "error_code": "handover_package_unit_not_sold"
+  },
+  "inspection_checklist_incomplete": {
+    "message": "Të gjithë zërat e listës së kontrollit duhet të përfundohen para se inspektimi të shënohet i përfunduar.",
+    "error_code": "inspection_checklist_incomplete"
+  },
   "inspection_not_deleted": {
     "message": "Inspektimi nuk është fshirë dhe nuk mund të restaurohet",
     "error_code": "inspection_not_deleted"
@@ -90,14 +142,6 @@
   "invalid_status_for_cancel_scheduled": {
     "message": "Statusi i inspektimit nuk lejon anulimin e një inspektimi të planifikuar.",
     "error_code": "invalid_status_for_cancel_scheduled"
-  },
-  "invalid_status_for_update_inspection_checklist": {
-    "message": "Lista e kontrollit nuk mund të përditësohet pasi inspektimi është përfunduar ose anuluar.",
-    "error_code": "invalid_status_for_update_inspection_checklist"
-  },
-  "inspection_checklist_incomplete": {
-    "message": "Të gjithë zërat e listës së kontrollit duhet të përfundohen para se inspektimi të shënohet i përfunduar.",
-    "error_code": "inspection_checklist_incomplete"
   },
   "invalid_status_for_client_approval": {
     "message": "Statusi i kërkesës së ndryshimit nuk lejon miratimin nga klienti.",
@@ -139,6 +183,10 @@
     "message": "Vetëm një lead i humbur mund të rihapet.",
     "error_code": "invalid_status_for_reopen"
   },
+  "invalid_status_for_update_inspection_checklist": {
+    "message": "Lista e kontrollit nuk mund të përditësohet pasi inspektimi është përfunduar ose anuluar.",
+    "error_code": "invalid_status_for_update_inspection_checklist"
+  },
   "invalid_status_transition": {
     "message": "Kalim i pavlefshëm statusi për kërkesën e ndryshimit.",
     "error_code": "invalid_status_transition"
@@ -150,6 +198,42 @@
   "lead_qualify_required": {
     "message": "Vendos një interes dhe një projekt ose njësi para se ta kualifikosh këtë lead.",
     "error_code": "lead_qualify_required"
+  },
+  "lease_currency_change_with_payments": {
+    "message": "Nuk mund të ndryshohet monedha e qirasë pasi ekzistojnë rreshta pagese.",
+    "error_code": "lease_currency_change_with_payments"
+  },
+  "lease_deposit_already_paid": {
+    "message": "Depozita është shënuar tashmë si e paguar.",
+    "error_code": "lease_deposit_already_paid"
+  },
+  "lease_deposit_already_returned": {
+    "message": "Depozita është kthyer tashmë.",
+    "error_code": "lease_deposit_already_returned"
+  },
+  "lease_deposit_not_paid": {
+    "message": "Depozita nuk është shënuar si e paguar.",
+    "error_code": "lease_deposit_not_paid"
+  },
+  "lease_end_before_collected_rent": {
+    "message": "Nuk mund të shkurtohet kontrata para një muaji qiraje të inkasuar.",
+    "error_code": "lease_end_before_collected_rent"
+  },
+  "lease_not_active": {
+    "message": "Kontrata e qirasë nuk është aktive.",
+    "error_code": "lease_not_active"
+  },
+  "lease_start_after_collected_rent": {
+    "message": "Nuk mund të ndryshohet data e fillimit pasi qiraja është inkasuar.",
+    "error_code": "lease_start_after_collected_rent"
+  },
+  "lease_term_too_long": {
+    "message": "Afati i kontratës nuk mund të kalojë 600 muaj.",
+    "error_code": "lease_term_too_long"
+  },
+  "lease_unit_immutable": {
+    "message": "Njësia e qirasë nuk mund të ndryshohet pas krijimit.",
+    "error_code": "lease_unit_immutable"
   },
   "manual_rent_email_action_not_allowed": {
     "message": "Ky email kujtese qiraje nuk lejohet për datën aktuale të maturimit.",
@@ -183,9 +267,17 @@
     "message": "Kërkesa e ndryshimit nuk u gjet",
     "error_code": "modification_request_not_found"
   },
+  "no_clients_to_notify": {
+    "message": "Nuk ka klientë për t’u njoftuar: asnjë njësi në këtë projekt ose ndërtesë nuk ka blerës ose rezervim aktiv.",
+    "error_code": "no_clients_to_notify"
+  },
   "no_marketing_booklet": {
     "message": "Broshura e marketingut nuk mund të gjenerohej për këtë njësi.",
     "error_code": "no_marketing_booklet"
+  },
+  "no_notification_recipients": {
+    "message": "Nuk ka marrës aktivë për këto njoftime. Shtoni përdorues te Shitjet dhe dorëzimi → Njoftimet.",
+    "error_code": "no_notification_recipients"
   },
   "paymentPlan_not_found": {
     "message": "Plani i pagesës nuk u gjet.",
@@ -223,6 +315,42 @@
     "message": "Projekti nuk u gjet",
     "error_code": "project_not_found"
   },
+  "propertyManagementConfig_already_exists": {
+    "message": "Cilësimet e menaxhimit të pronës ekzistojnë tashmë për këtë kompani.",
+    "error_code": "propertyManagementConfig_already_exists"
+  },
+  "rental_payment_already_paid": {
+    "message": "Pagesa e qirasë është paguar tashmë.",
+    "error_code": "rental_payment_already_paid"
+  },
+  "rental_payment_amount_locked": {
+    "message": "Shuma dhe data e pagesës nuk mund të ndryshohen pas regjistrimit të një pagese.",
+    "error_code": "rental_payment_amount_locked"
+  },
+  "rental_payment_duplicate_due": {
+    "message": "Ekziston tashmë një rresht qiraje për këtë datë pagese.",
+    "error_code": "rental_payment_duplicate_due"
+  },
+  "rental_payment_exceeds_open_due": {
+    "message": "Shuma e paguar tejkalon qiranë e hapur të kësaj kontrate.",
+    "error_code": "rental_payment_exceeds_open_due"
+  },
+  "rental_payment_invalid_amount": {
+    "message": "Shuma e paguar nuk është e vlefshme.",
+    "error_code": "rental_payment_invalid_amount"
+  },
+  "rental_payment_no_open_due": {
+    "message": "Nuk ka qira të hapur për këtë kontratë.",
+    "error_code": "rental_payment_no_open_due"
+  },
+  "rental_payment_overpay": {
+    "message": "Shuma e paguar tejkalon mbetjen e këtij muaji.",
+    "error_code": "rental_payment_overpay"
+  },
+  "rental_payment_waived": {
+    "message": "Pagesa e qirasë është hequr dhe nuk mund të shënohet si e paguar.",
+    "error_code": "rental_payment_waived"
+  },
   "reservation_already_active": {
     "message": "Ky rezervim është aktiv tashmë.",
     "error_code": "reservation_already_active"
@@ -247,14 +375,6 @@
     "message": "Rezervimi nuk ka klient të caktuar.",
     "error_code": "reservation_client_missing"
   },
-  "reservation_deposit_data_missing": {
-    "message": "Rezervimi aktiv është shenjuar si i paguar, por mungon shuma apo monedha e depozitos. Përditësoni rezervimin përpara krijimit të një shitje.",
-    "error_code": "reservation_deposit_data_missing"
-  },
-  "reservation_exchange_rate_required": {
-    "message": "Kërkohet një kurs këmbimi sepse monedha e depozitos së rezervimit ndryshon nga monedha e shitjes.",
-    "error_code": "reservation_exchange_rate_required"
-  },
   "reservation_date_must_be_before_expiration_date": {
     "message": "Data e rezervimit duhet të jetë para datës së skadimit.",
     "error_code": "reservation_date_must_be_before_expiration_date"
@@ -262,6 +382,14 @@
   "reservation_date_must_not_be_in_the_future": {
     "message": "Data e rezervimit nuk mund të jetë në të ardhmen.",
     "error_code": "reservation_date_must_not_be_in_the_future"
+  },
+  "reservation_deposit_data_missing": {
+    "message": "Rezervimi aktiv është shenjuar si i paguar, por mungon shuma apo monedha e depozitos. Përditësoni rezervimin përpara krijimit të një shitje.",
+    "error_code": "reservation_deposit_data_missing"
+  },
+  "reservation_exchange_rate_required": {
+    "message": "Kërkohet një kurs këmbimi sepse monedha e depozitos së rezervimit ndryshon nga monedha e shitjes.",
+    "error_code": "reservation_exchange_rate_required"
   },
   "reservation_expiration_date_must_be_in_the_future": {
     "message": "Data e skadimit të rezervimit duhet të jetë në të ardhmen.",
@@ -299,6 +427,18 @@
     "message": "Kërkohet një kurs këmbimi sepse monedha e listës së njësisë ndryshon nga monedha e shitjes.",
     "error_code": "sale_exchange_rate_required"
   },
+  "sale_handover_already_completed": {
+    "message": "Ky dorëzim i shitjes është tashmë i përfunduar.",
+    "error_code": "sale_handover_already_completed"
+  },
+  "sale_handover_not_recorded": {
+    "message": "Kjo shitje nuk ka dorëzim për t’u përfunduar.",
+    "error_code": "sale_handover_not_recorded"
+  },
+  "sale_handover_requires_completed_handover_package": {
+    "message": "Kjo njësi nuk mund të dorëzohet derisa paketa e dorëzimit të jetë përfunduar.",
+    "error_code": "sale_handover_requires_completed_handover_package"
+  },
   "sale_not_available_for_restore": {
     "message": "Shitja nuk mund të restaurohet.",
     "error_code": "sale_not_available_for_restore"
@@ -315,53 +455,21 @@
     "message": "Shitja nuk është në pritje të miratimit.",
     "error_code": "sale_not_pending_approval"
   },
-  "sale_handover_already_completed": {
-    "message": "Ky dorëzim i shitjes është tashmë i përfunduar.",
-    "error_code": "sale_handover_already_completed"
-  },
-  "sale_handover_not_recorded": {
-    "message": "Kjo shitje nuk ka dorëzim për t’u përfunduar.",
-    "error_code": "sale_handover_not_recorded"
-  },
-  "sale_handover_requires_completed_handover_package": {
-    "message": "Kjo njësi nuk mund të dorëzohet derisa paketa e dorëzimit të jetë përfunduar.",
-    "error_code": "sale_handover_requires_completed_handover_package"
-  },
-  "handover_package_already_exists_for_unit": {
-    "message": "Ekziston tashmë një paketë dorëzimi për këtë njësi. Ndryshoni paketën ekzistuese për të shtuar ose hequr zëra.",
-    "error_code": "handover_package_already_exists_for_unit"
-  },
-  "handover_package_unit_not_sold": {
-    "message": "Paketa e dorëzimit mund të krijohet vetëm për një njësi të shitur.",
-    "error_code": "handover_package_unit_not_sold"
-  },
-  "handover_package_title_already_transferred": {
-    "message": "Transferimi i titullit është regjistruar tashmë për këtë njësi. Paketa e dorëzimit nuk mund të ndryshohet më.",
-    "error_code": "handover_package_title_already_transferred"
-  },
-  "handover_package_already_exists_for_scope": {
-    "message": "Një paketë dorëzimi ekziston tashmë për këtë projekt, ndërtesë, kat ose njësi.",
-    "error_code": "handover_package_already_exists_for_scope"
-  },
-  "handover_package_ancestry_mismatch": {
-    "message": "Projekti, ndërtesa, kati dhe njësia nuk formojnë një hierarki të vlefshme.",
-    "error_code": "handover_package_ancestry_mismatch"
-  },
-  "sale_title_transfer_package_required": {
-    "message": "Transferimi i titullit kërkon një paketë dorëzimi të përfunduar për këtë njësi.",
-    "error_code": "sale_title_transfer_package_required"
+  "sale_title_transfer_already_recorded": {
+    "message": "Transferimi i titullit është regjistruar tashmë për këtë shitje.",
+    "error_code": "sale_title_transfer_already_recorded"
   },
   "sale_title_transfer_package_in_progress": {
     "message": "Transferimi i titullit është i bllokuar derisa paketa e dorëzimit të përfundojë.",
     "error_code": "sale_title_transfer_package_in_progress"
   },
-  "sale_title_transfer_already_recorded": {
-    "message": "Transferimi i titullit është regjistruar tashmë për këtë shitje.",
-    "error_code": "sale_title_transfer_already_recorded"
+  "sale_title_transfer_package_required": {
+    "message": "Transferimi i titullit kërkon një paketë dorëzimi të përfunduar për këtë njësi.",
+    "error_code": "sale_title_transfer_package_required"
   },
-  "propertyManagementConfig_already_exists": {
-    "message": "Cilësimet e menaxhimit të pronës ekzistojnë tashmë për këtë kompani.",
-    "error_code": "propertyManagementConfig_already_exists"
+  "story_type_in_use": {
+    "message": "Lloji i historisë është në përdorim dhe nuk mund të fshihet.",
+    "error_code": "story_type_in_use"
   },
   "unauthorized_to_approve": {
     "message": "Nuk keni autorizim për të miratuar në këtë fazë",
@@ -375,17 +483,21 @@
     "message": "Kjo njësi ka tashmë një rezervim aktiv.",
     "error_code": "unit_already_has_active_reservation"
   },
-  "unit_already_reserved_and_unpaid": {
-    "message": "Kjo njësi ka rezervim aktiv që nuk është shenjuar si i paguar. Përfundoni ose anuloni rezervimin përpara se të krijohet shitje.",
-    "error_code": "unit_already_reserved_and_unpaid"
-  },
   "unit_already_rented": {
     "message": "Njësia është e dhënë me qira.",
     "error_code": "unit_already_rented"
   },
+  "unit_already_reserved_and_unpaid": {
+    "message": "Kjo njësi ka rezervim aktiv që nuk është shenjuar si i paguar. Përfundoni ose anuloni rezervimin përpara se të krijohet shitje.",
+    "error_code": "unit_already_reserved_and_unpaid"
+  },
   "unit_already_sold": {
     "message": "Njësia është shitur tashmë.",
     "error_code": "unit_already_sold"
+  },
+  "unit_already_sold_thus_reservation_payment_cannot_be_reversed": {
+    "message": "Njësia është shitur tashmë; pagesa e rezervimit nuk mund të zhbhet.",
+    "error_code": "unit_already_sold_thus_reservation_payment_cannot_be_reversed"
   },
   "unit_cannot_mark_available": {
     "message": "Vetëm njësitë e padisponueshme mund të shënohen si të disponueshme.",
@@ -395,89 +507,17 @@
     "message": "Vetëm njësitë e disponueshme mund të shënohen si të padisponueshme. Njësitë e rezervuara, të shitura ose me qira nuk mund të hiqen nga tregu në këtë mënyrë.",
     "error_code": "unit_cannot_mark_unavailable"
   },
-  "unit_not_available_for_lease": {
-    "message": "Njësia nuk është e disponueshme për qira.",
-    "error_code": "unit_not_available_for_lease"
-  },
   "unit_has_active_lease": {
     "message": "Njësia ka tashmë një kontratë qiraje aktive.",
     "error_code": "unit_has_active_lease"
   },
-  "lease_not_active": {
-    "message": "Kontrata e qirasë nuk është aktive.",
-    "error_code": "lease_not_active"
-  },
-  "lease_deposit_already_paid": {
-    "message": "Depozita është shënuar tashmë si e paguar.",
-    "error_code": "lease_deposit_already_paid"
-  },
-  "lease_deposit_not_paid": {
-    "message": "Depozita nuk është shënuar si e paguar.",
-    "error_code": "lease_deposit_not_paid"
-  },
-  "lease_deposit_already_returned": {
-    "message": "Depozita është kthyer tashmë.",
-    "error_code": "lease_deposit_already_returned"
-  },
-  "rental_payment_already_paid": {
-    "message": "Pagesa e qirasë është paguar tashmë.",
-    "error_code": "rental_payment_already_paid"
-  },
-  "rental_payment_waived": {
-    "message": "Pagesa e qirasë është hequr dhe nuk mund të shënohet si e paguar.",
-    "error_code": "rental_payment_waived"
-  },
-  "rental_payment_invalid_amount": {
-    "message": "Shuma e paguar nuk është e vlefshme.",
-    "error_code": "rental_payment_invalid_amount"
-  },
-  "rental_payment_overpay": {
-    "message": "Shuma e paguar tejkalon mbetjen e këtij muaji.",
-    "error_code": "rental_payment_overpay"
-  },
-  "rental_payment_exceeds_open_due": {
-    "message": "Shuma e paguar tejkalon qiranë e hapur të kësaj kontrate.",
-    "error_code": "rental_payment_exceeds_open_due"
-  },
-  "rental_payment_duplicate_due": {
-    "message": "Ekziston tashmë një rresht qiraje për këtë datë pagese.",
-    "error_code": "rental_payment_duplicate_due"
-  },
-  "rental_payment_no_open_due": {
-    "message": "Nuk ka qira të hapur për këtë kontratë.",
-    "error_code": "rental_payment_no_open_due"
-  },
-  "rental_payment_amount_locked": {
-    "message": "Shuma dhe data e pagesës nuk mund të ndryshohen pas regjistrimit të një pagese.",
-    "error_code": "rental_payment_amount_locked"
-  },
-  "lease_end_before_collected_rent": {
-    "message": "Nuk mund të shkurtohet kontrata para një muaji qiraje të inkasuar.",
-    "error_code": "lease_end_before_collected_rent"
-  },
-  "lease_term_too_long": {
-    "message": "Afati i kontratës nuk mund të kalojë 600 muaj.",
-    "error_code": "lease_term_too_long"
-  },
-  "lease_start_after_collected_rent": {
-    "message": "Nuk mund të ndryshohet data e fillimit pasi qiraja është inkasuar.",
-    "error_code": "lease_start_after_collected_rent"
-  },
-  "lease_currency_change_with_payments": {
-    "message": "Nuk mund të ndryshohet monedha e qirasë pasi ekzistojnë rreshta pagese.",
-    "error_code": "lease_currency_change_with_payments"
-  },
-  "lease_unit_immutable": {
-    "message": "Njësia e qirasë nuk mund të ndryshohet pas krijimit.",
-    "error_code": "lease_unit_immutable"
-  },
-  "unit_already_sold_thus_reservation_payment_cannot_be_reversed": {
-    "message": "Njësia është shitur tashmë; pagesa e rezervimit nuk mund të zhbhet.",
-    "error_code": "unit_already_sold_thus_reservation_payment_cannot_be_reversed"
-  },
   "unit_not_available": {
     "message": "Njësia nuk është në dispozicion.",
     "error_code": "unit_not_available"
+  },
+  "unit_not_available_for_lease": {
+    "message": "Njësia nuk është e disponueshme për qira.",
+    "error_code": "unit_not_available_for_lease"
   },
   "unit_not_available_for_reactivation": {
     "message": "Njësia nuk është më e disponueshme; mund të jetë rezervuar ose e shitur. Nuk mund të riaktivohet rezervimi.",
@@ -499,20 +539,8 @@
     "message": "Tipi i njësisë është në përdorim dhe nuk mund të fshihet.",
     "error_code": "unit_type_in_use"
   },
-  "story_type_in_use": {
-    "message": "Lloji i historisë është në përdorim dhe nuk mund të fshihet.",
-    "error_code": "story_type_in_use"
-  },
-  "no_notification_recipients": {
-    "message": "Nuk ka marrës aktivë për këto njoftime. Shtoni përdorues te Shitjet dhe dorëzimi → Njoftimet.",
-    "error_code": "no_notification_recipients"
-  },
-  "construction_progress_not_found": {
-    "message": "Raporti i ecurisë së punimeve nuk u gjet.",
-    "error_code": "construction_progress_not_found"
-  },
-  "no_clients_to_notify": {
-    "message": "Nuk ka klientë për t’u njoftuar: asnjë njësi në këtë projekt ose ndërtesë nuk ka blerës ose rezervim aktiv.",
-    "error_code": "no_clients_to_notify"
+  "user_has_no_email": {
+    "message": "Kjo llogari nuk ka adresë emaili, prandaj nuk mund të ketë preferenca emaili.",
+    "error_code": "user_has_no_email"
   }
 }
