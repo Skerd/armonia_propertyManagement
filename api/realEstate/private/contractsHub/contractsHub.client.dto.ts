@@ -1,4 +1,8 @@
 import type {ClientRegistryStatus} from "./contractsHub.constants";
+import type {CurrencySimple} from "../../../../../core/dto/currency.dto";
+import type {SimpleBlankUser} from "../../../../../core/dto/user.dto";
+import type {ProjectSimple} from "../../../../dto/project.dto";
+import type {UnitSimple} from "../../../../dto/unit.dto";
 
 export type ClientRegistryRow = {
     _id: string;
@@ -8,16 +12,16 @@ export type ClientRegistryRow = {
     surname?: string;
     phone?: string;
     email?: string;
-    project?: {_id: string; name?: string};
-    unit?: {_id: string; name?: string; unitNumber?: string};
+    project?: ProjectSimple;
+    unit?: UnitSimple;
     typology?: string;
     surface?: number;
     unitValue?: number;
-    currency?: {_id: string; name?: string; symbol?: string; abbreviation?: string};
+    currency?: CurrencySimple;
     status: ClientRegistryStatus;
     bookingDate?: string;
     contractDate?: string;
-    agent?: {_id: string; name?: string; surname?: string};
+    agent?: SimpleBlankUser;
     paid?: number;
     remaining?: number;
     sourceType?: "sale" | "reservation";

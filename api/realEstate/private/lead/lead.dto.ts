@@ -1,11 +1,14 @@
 import type {DeletedData, LifeCycleData, OwnershipData} from "../../../../../core/types/shared.types";
-import {Currency} from "../../../../../core/database/types";
+import type {CurrencySimple} from "../../../../../core/dto/currency.dto";
+import type {SimpleBlankUser} from "../../../../../core/dto/user.dto";
+import type {ProjectSimple} from "../../../../dto/project.dto";
+import type {UnitSimple} from "../../../../dto/unit.dto";
 
 export type LeadActivityEntry = {
     _id: string;
     action: string;
     notes?: string;
-    performedBy?: {_id: string; name?: string; surname?: string};
+    performedBy?: SimpleBlankUser;
     performedAt: string;
 };
 
@@ -19,14 +22,14 @@ export type Lead = DeletedData & OwnershipData & LifeCycleData & {
     status?: string;
     source?: string;
     interest?: string;
-    projectInterest?: {_id: string; name?: string};
-    unitInterest?: {_id: string; name?: string; unitNumber?: number};
+    projectInterest?: ProjectSimple;
+    unitInterest?: UnitSimple;
     budget?: number;
-    budgetCurrency?: Currency;
+    budgetCurrency?: CurrencySimple;
     notes?: string;
     /** Linked public website chat (`Channel`), when the lead came from chat identify. */
     chat?: {_id: string; name?: string};
-    assignedTo?: {_id: string; name?: string; surname?: string};
+    assignedTo?: SimpleBlankUser;
     followUpDate?: string;
     convertedAt?: string;
     lostReason?: string;

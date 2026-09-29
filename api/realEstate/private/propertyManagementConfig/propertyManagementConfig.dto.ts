@@ -1,15 +1,10 @@
 import type {DeletedData, LifeCycleData, OwnershipData} from "../../../../../core/types/shared.types";
-
-export type PropertyManagementConfigNotifyUser = {
-    _id: string;
-    name?: string;
-    surname?: string;
-};
+import type {SimpleBlankUser} from "../../../../../core/dto/user.dto";
 
 export type PropertyManagementConfig = OwnershipData & DeletedData & LifeCycleData & {
     _id: string;
     requiresSaleApproval?: boolean;
     requiresHandoverPackageForHandover?: boolean;
-    notifyOnSales?: PropertyManagementConfigNotifyUser[];
-    notifyOnReservations?: PropertyManagementConfigNotifyUser[];
+    notifyOnSales?: SimpleBlankUser[];
+    notifyOnReservations?: SimpleBlankUser[];
 };

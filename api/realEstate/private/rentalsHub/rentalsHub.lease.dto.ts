@@ -1,4 +1,8 @@
 import type {LeaseRegistryStatus} from "./rentalsHub.constants";
+import type {CurrencySimple} from "../../../../../core/dto/currency.dto";
+import type {SimpleBlankUser} from "../../../../../core/dto/user.dto";
+import type {ProjectSimple} from "../../../../dto/project.dto";
+import type {UnitSimple} from "../../../../dto/unit.dto";
 
 export type LeaseRegistryRow = {
     _id: string;
@@ -9,11 +13,11 @@ export type LeaseRegistryRow = {
     monthlyRent?: number;
     collectedAmount?: number;
     outstandingAmount?: number;
-    currency?: {_id: string; name?: string; symbol?: string};
+    currency?: CurrencySimple;
     depositAmount?: number;
     depositPaid?: boolean;
-    tenant?: {_id: string; name?: string; surname?: string; email?: string};
-    unit?: {_id: string; name?: string; unitNumber?: string | number};
-    project?: {_id: string; name?: string};
+    tenant?: SimpleBlankUser & {email?: string};
+    unit?: UnitSimple;
+    project?: ProjectSimple;
     createdAt?: string;
 };

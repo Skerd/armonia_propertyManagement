@@ -1,35 +1,27 @@
 import type {DeletedData, LifeCycleData, OwnershipData} from "../../../../../core/types/shared.types";
-import {Currency} from "../../../../../core/database/types";
+import type {CurrencySimple} from "../../../../../core/dto/currency.dto";
+import type {SimpleBlankUser} from "../../../../../core/dto/user.dto";
+import type {ReservationBlank} from "../../../../dto/reservation.dto";
+import type {SaleBlank} from "../../../../dto/sale.dto";
+import type {UnitSimple} from "../../../../dto/unit.dto";
 
 export type CommissionStatus = "pending" | "pending_approval" | "approved" | "paid" | "voided";
 
 export type CommissionSourceType = "sale" | "reservation";
 
-export type CommissionUserRef = {
-    _id: string;
-    name?: string;
-    surname?: string;
-};
-
 export type Commission = DeletedData & OwnershipData & LifeCycleData & {
     _id: string;
-    agent?: CommissionUserRef;
-    recordedByActionUser?: CommissionUserRef;
+    agent?: SimpleBlankUser;
+    recordedByActionUser?: SimpleBlankUser;
     sourceType: CommissionSourceType;
     sourceId: string;
     basis: string;
     basisAmount: number;
     ratePercent: number;
     amount: number;
-    sale?: {
-        _id: string;
-        name?: string;
-    };
-    reservation?: {
-        _id: string;
-        name?: string;
-    };
-    currency?: Currency;
+    sale?: SaleBlank;
+    reservation?: ReservationBlank;
+    currency?: CurrencySimple;
     status: CommissionStatus;
     notes?: string;
     paidAt?: string;
@@ -41,19 +33,10 @@ export type Commission = DeletedData & OwnershipData & LifeCycleData & {
         name?: string;
     };
     splits?: {
-        agent?: CommissionUserRef;
+        agent?: SimpleBlankUser;
         label?: string;
         ratePercent: number;
         amount: number;
     }[];
-    unit?: {
-        _id: string;
-        name?: string;
-        unitNumber?: string;
-        unitType?: {
-            _id: string;
-            name?: string;
-            icon?: string;
-        };
-    };
+    unit?: UnitSimple;
 };

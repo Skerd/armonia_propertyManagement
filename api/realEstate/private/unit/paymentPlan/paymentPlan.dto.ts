@@ -1,5 +1,7 @@
 import {DeletedData, LifeCycleData, OwnershipData} from "../../../../../../core/types/shared.types";
-import {Currency} from "../../../../../../core/database/types";
+import type {CurrencySimple} from "../../../../../../core/dto/currency.dto";
+import type {SimpleBlankUser} from "../../../../../../core/dto/user.dto";
+import type {SaleBlank} from "../../../../../dto/sale.dto";
 
 export type PaymentPlanInstallment = {
     installmentNumber: number;
@@ -20,7 +22,7 @@ export type PaymentPlanInstallment = {
 
 export type RestructureHistoryEntry = {
     restructuredAt: string;
-    restructuredBy?: {_id: string; name?: string; surname?: string};
+    restructuredBy?: SimpleBlankUser;
     reason?: string;
     previousNumberOfInstallments: number;
     previousStartDate: string;
@@ -32,12 +34,9 @@ export type RestructureHistoryEntry = {
 export type PaymentPlan = DeletedData & OwnershipData & LifeCycleData & {
     _id: string;
     name: string;
-    sale: {
-        _id: string;
-        name?: string;
-    };
+    sale: SaleBlank;
     /** Denormalized from populated `sale.saleCurrency` for sheet money rows. */
-    saleCurrency?: Currency;
+    saleCurrency?: CurrencySimple;
     status: string;
     totalAmount: number;
     downPayment: number;

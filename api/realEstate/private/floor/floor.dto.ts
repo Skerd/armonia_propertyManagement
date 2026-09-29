@@ -1,5 +1,8 @@
 import type {Media, PolygonCoordinates} from "../../../../../core/types";
 import type {DeletedData, LifeCycleData, OwnershipData} from "../../../../../core/types/shared.types";
+import type {CurrencySimple} from "../../../../../core/dto/currency.dto";
+import type {EdificeSimple} from "../../../../dto/edifice.dto";
+import type {ProjectSimple} from "../../../../dto/project.dto";
 import {EdificeMoneyByCurrency} from "../edifice/edifice.dto";
 import type {EffectivePriceVisibility, PriceVisibility} from "../priceVisibility.constants";
 
@@ -15,7 +18,7 @@ export type FloorEffectivePricing = {
     pricePerMeterSquared: number | null;
     verandaPricePerMeterSquared: number | null;
     source: {pricePerMeterSquared: EffectiveRateSource; verandaPricePerMeterSquared: EffectiveRateSource};
-    saleCurrency?: {_id: string; symbol?: string; name?: string};
+    saleCurrency?: CurrencySimple;
 };
 
 export type FloorStatistics = {
@@ -59,14 +62,8 @@ export type Floor = DeletedData & OwnershipData & LifeCycleData & {
     videoGallery?: Media[];
     mediaFiles?: Media[];
     marketingBooklet?: Media;
-    edifice?: {
-        _id: string;
-        name?: string;
-    };
-    project?: {
-        _id: string;
-        name?: string;
-    };
+    edifice?: EdificeSimple;
+    project?: ProjectSimple;
     priceVisibility?: PriceVisibility;
     /** Resolved public price visibility (single-record reads only). */
     effectivePriceVisibility?: EffectivePriceVisibility;

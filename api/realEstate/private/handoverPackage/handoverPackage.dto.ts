@@ -1,5 +1,10 @@
 import type {DeletedData, LifeCycleData, OwnershipData} from "../../../../../core/types/shared.types";
 import type {Media} from "../../../../../core/types";
+import type {SimpleBlankUser} from "../../../../../core/dto/user.dto";
+import type {EdificeSimple} from "../../../../dto/edifice.dto";
+import type {FloorSimple} from "../../../../dto/floor.dto";
+import type {ProjectSimple} from "../../../../dto/project.dto";
+import type {UnitSimple} from "../../../../dto/unit.dto";
 import type {
     HandoverChecklistSourceScopeValue,
     HandoverConfigScopeValue,
@@ -25,17 +30,17 @@ export type SaleHandoverChecklistItem = {
     importance?: HandoverItemImportanceValue;
     completed?: boolean;
     completedAt?: string;
-    completedBy?: {_id: string; name?: string; surname?: string};
+    completedBy?: SimpleBlankUser;
     retained?: boolean;
 };
 
 export type HandoverPackage = OwnershipData & DeletedData & LifeCycleData & {
     _id: string;
     name?: string;
-    project: {_id: string; name: string};
-    edifice?: {_id: string; name: string};
-    floor?: {_id: string; name: string};
-    unit?: {_id: string; name?: string};
+    project: ProjectSimple;
+    edifice?: EdificeSimple;
+    floor?: FloorSimple;
+    unit?: UnitSimple;
     title: string;
     description?: string;
     notes?: string;

@@ -1,11 +1,22 @@
 import type {Media, PolygonCoordinates} from "../../../../../../core/types";
 import type {DeletedData, LifeCycleData, OwnershipData} from "../../../../../../core/types/shared.types";
+import type {CurrencySimple} from "../../../../../../core/dto/currency.dto";
+import type {SimpleBlankUser} from "../../../../../../core/dto/user.dto";
+import type {EdificeSimple} from "../../../../../dto/edifice.dto";
+import type {FloorSimple} from "../../../../../dto/floor.dto";
+import type {InspectionSimple} from "../../../../../dto/inspection.dto";
+import type {ModificationRequestSimple} from "../../../../../dto/modificationRequest.dto";
+import type {ProjectSimple} from "../../../../../dto/project.dto";
+import type {ReservationBlank} from "../../../../../dto/reservation.dto";
+import type {SaleBlank} from "../../../../../dto/sale.dto";
+import type {UnitCostSimple} from "../../../../../dto/unitCost.dto";
+import type {UnitSimple} from "../../../../../dto/unit.dto";
+import type {UnitTypeSimple} from "../../../../../dto/unitType.dto";
 import {UnitStatus} from "./unit.constants";
-import {Currency} from "../../../../../../core/database/types";
 import type {EffectivePriceVisibility, PriceVisibility} from "../../priceVisibility.constants";
 
 export type UnitMoneyByCurrency = {
-    currency?: Currency;
+    currency?: CurrencySimple;
     value: number;
 }
 
@@ -28,11 +39,7 @@ export type UnitStatistics = {
 
 export type Unit = DeletedData & OwnershipData & LifeCycleData & {
     _id: string;
-    unitType?: {
-        _id: string;
-        name?: string;
-        icon?: string;
-    };
+    unitType?: UnitTypeSimple;
     unitNumber: string;
     name: string;
     area: number;
@@ -40,7 +47,7 @@ export type Unit = DeletedData & OwnershipData & LifeCycleData & {
     netArea: number;
     verandaArea?: number;
     price: number;
-    priceCurrency?: Currency;
+    priceCurrency?: CurrencySimple;
     isAvailable: boolean;
     hasBalcony: boolean;
     hasTerrace: boolean;
@@ -59,67 +66,27 @@ export type Unit = DeletedData & OwnershipData & LifeCycleData & {
     polygonCoordinates?: PolygonCoordinates[];
     status: UnitStatus;
     unavailableNotes?: string;
-    connectedUnits?: {
-        _id: string;
-        name?: string;
-        unitNumber?: string;
-        unitType?: {
-            _id: string;
-            name?: string;
-            icon?: string;
-        }
-    }[];
-    inspections: {
-        _id: string,
-        name?: string
-    }[],
-    modificationRequests: {
-        _id: string,
-        name?: string
-    }[],
-    costs?: {
-        _id: string;
-        name?: string;
-        purchaseDate?: string;
-        verificationStatus?: string;
-        paymentStatus?: string;
-    }[],
-    reservation?: {
-        _id?: string;
-        name: string;
-    };
-    sale?: {
-        _id?: string;
-        name?: string;
-    };
+    connectedUnits?: UnitSimple[];
+    inspections: InspectionSimple[];
+    modificationRequests: ModificationRequestSimple[];
+    costs?: UnitCostSimple[];
+    reservation?: ReservationBlank;
+    sale?: SaleBlank;
     orientation?: "N" | "S" | "E" | "W" | "NE" | "NW" | "SE" | "SW";
     constructionStatus?: "planned" | "under_construction" | "ready" | "delivered";
     saleCommissionRatePercent?: number;
     reservationCommissionRatePercent?: number;
     priceHistory?: {
         price: number;
-        currency?: Currency;
+        currency?: CurrencySimple;
         changedAt: string;
-        changedBy?: {
-            _id: string;
-            name?: string;
-            surname?: string
-        };
+        changedBy?: SimpleBlankUser;
         reason?: string;
     }[];
 
-    project?: {
-        _id: string;
-        name?: string;
-    };
-    edifice?: {
-        _id: string;
-        name?: string;
-    };
-    floor?: {
-        _id: string;
-        name?: string;
-    };
+    project?: ProjectSimple;
+    edifice?: EdificeSimple;
+    floor?: FloorSimple;
     featuredOnHomepage?: boolean;
     featuredSortOrder?: number;
     priceVisibility?: PriceVisibility;
@@ -127,4 +94,3 @@ export type Unit = DeletedData & OwnershipData & LifeCycleData & {
     effectivePriceVisibility?: EffectivePriceVisibility;
     statistics?: UnitStatistics;
 }
-

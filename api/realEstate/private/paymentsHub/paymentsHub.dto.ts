@@ -1,5 +1,8 @@
 import type {PaymentsHubKind, PaymentsHubStatus} from "./paymentsHub.constants";
 import type {RevenueByCurrency} from "../dashboard/dashboard.form.response.type";
+import type {CurrencySimple} from "../../../../../core/dto/currency.dto";
+import type {ProjectSimple} from "../../../../dto/project.dto";
+import type {UnitSimple} from "../../../../dto/unit.dto";
 
 /** One payment-plan money movement, flattened out of the plan it belongs to. */
 export type PaymentsHubRow = {
@@ -20,11 +23,11 @@ export type PaymentsHubRow = {
     remaining?: number;
     lateFeeAmount?: number;
     daysOverdue?: number;
-    currency?: {_id: string; name?: string; symbol?: string; abbreviation?: string};
+    currency?: CurrencySimple;
     /** The buyer. `companyName` is set instead of name/surname for company buyers. */
     client?: {_id?: string; name?: string; surname?: string; companyName?: string};
-    unit?: {_id: string; name?: string; unitNumber?: string | number};
-    project?: {_id: string; name?: string};
+    unit?: UnitSimple;
+    project?: ProjectSimple;
 };
 
 /** Totals for one grouping period, in one currency. */

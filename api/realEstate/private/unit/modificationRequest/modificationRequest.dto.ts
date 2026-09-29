@@ -1,14 +1,13 @@
 import {Media} from "../../../../../../core/types";
 import {DeletedData, LifeCycleData, OwnershipData} from "../../../../../../core/types/shared.types";
-import {Currency} from "../../../../../../core/database/types";
+import type {CurrencySimple} from "../../../../../../core/dto/currency.dto";
+import type {SimpleBlankUser} from "../../../../../../core/dto/user.dto";
+import type {InspectionSimple} from "../../../../../dto/inspection.dto";
+import type {UnitWithFloor} from "../../../../../dto/unit.dto";
 
 export type ApprovalStage = {
     decision: string;                // approved, rejected, pending
-    user?: {
-        _id: string;
-        name?: string;
-        surname?: string;
-    };
+    user?: SimpleBlankUser;
     notes?: string;
     reviewedAt?: string;
     media?: Media[];
@@ -18,9 +17,9 @@ export type ApprovalStage = {
         unit?: string;
         notes?: string;
         pricePerUnit?: number;
-        currency?: Currency;
+        currency?: CurrencySimple;
     }[];
-    inspections?: {_id: string; name?: string}[];
+    inspections?: InspectionSimple[];
 }
 
 export type CostBreakdownItem = {
@@ -33,7 +32,7 @@ export type CostBreakdownItem = {
 
 export type FinanceStageDetails = {
     totalCost?: number;
-    currency?: Currency;
+    currency?: CurrencySimple;
     costBreakdown?: CostBreakdownItem[];
     media?: Media[];
     notes?: string;
@@ -43,33 +42,8 @@ export type FinanceStageDetails = {
 export type ModificationRequest = DeletedData & OwnershipData & LifeCycleData & {
     _id: string;
     name?: string;
-    unit: {
-        _id: string;
-        name?: string;
-        unitNumber?: string;
-        unitType?: {
-            _id: string;
-            name?: string;
-            icon?: string;
-        };
-        floor?: {
-            _id: string;
-            name?: string;
-            edifice?: {
-                _id: string;
-                name?: string;
-                project?: {
-                    _id?: string;
-                    name?: string;
-                };
-            };
-        };
-    };
-    requestedBy?: {
-        _id: string;
-        name?: string;
-        surname?: string;
-    };
+    unit: UnitWithFloor;
+    requestedBy?: SimpleBlankUser;
     title?: string;
     description?: string;
     constructionType?: string;
@@ -85,7 +59,7 @@ export type ModificationRequest = DeletedData & OwnershipData & LifeCycleData & 
     notificationSent?: boolean;
     submittedAt?: string;
     deliveryApproval: ApprovalStage;
-    inspections?: {_id: string, name?: string}[];
+    inspections?: InspectionSimple[];
     completedAt?: string;
     cancelledAt?: string;
     cancellationReason?: string;

@@ -1,17 +1,19 @@
 import type {DeletedData, LifeCycleData, OwnershipData} from "../../../../../core/types/shared.types";
+import type {SimpleUser} from "../../../../../core/dto/user.dto";
+import type {LeadSimple} from "../../../../dto/lead.dto";
 import type {MarketingPreferenceSource} from "../adCampaign/adCampaign.constants";
 
 export type MarketingPreference = OwnershipData & DeletedData & LifeCycleData & {
     _id: string;
     email: string;
-    user?: {_id: string; name?: string; surname?: string};
-    lead?: {_id: string; firstName?: string; lastName?: string};
+    user?: SimpleUser;
+    lead?: LeadSimple;
     allowPriceChange: boolean;
     allowOffers: boolean;
     allowNewProjects: boolean;
-    unsubscribedAllAt?: string;
+    unsubscribedAllAt?: Date;
     source?: MarketingPreferenceSource;
-    lastChangedAt?: string;
+    lastChangedAt?: Date;
 };
 
 /**
@@ -26,7 +28,7 @@ export type MarketingPreferenceState = {
     allowPriceChange: boolean;
     allowOffers: boolean;
     allowNewProjects: boolean;
-    unsubscribedAllAt?: string;
+    unsubscribedAllAt?: Date;
 };
 
 /** Body for `PATCH /me` and the unsubscribe manage page. Omitted flags are left alone. */

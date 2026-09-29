@@ -1,5 +1,9 @@
 import type {Media} from "../../../../../../core/types";
 import type {DeletedData, LifeCycleData, OwnershipData} from "../../../../../../core/types/shared.types";
+import type {SimpleBlankUser} from "../../../../../../core/dto/user.dto";
+import type {InspectionChecklistTemplateSimple} from "../../../../../dto/inspectionChecklistTemplate.dto";
+import type {InspectionSimple} from "../../../../../dto/inspection.dto";
+import type {UnitWithFloor} from "../../../../../dto/unit.dto";
 import {
     InspectionChecklistItemImportanceValue
 } from "../../inspectionChecklistTemplate/inspectionChecklistTemplate.schema-def";
@@ -9,7 +13,7 @@ export type InspectionFindingItem = {
     media: Media[];
     severity?: string;
     resolvedAt?: string;
-    resolvedBy?: {_id: string; name?: string; surname?: string};
+    resolvedBy?: SimpleBlankUser;
 };
 
 export type InspectionFindings = {
@@ -32,40 +36,15 @@ export type InspectionChecklistItem = {
     importance?: InspectionChecklistItemImportanceValue;
     completed?: boolean;
     completedAt?: string;
-    completedBy?: {_id: string; name?: string; surname?: string};
+    completedBy?: SimpleBlankUser;
     retained?: boolean;
 };
 
 export type Inspection = DeletedData & OwnershipData & LifeCycleData & {
     _id: string;
     name: string;
-    unit: {
-        _id: string;
-        name?: string;
-        unitNumber?: string;
-        unitType?: {
-            _id: string;
-            name?: string;
-            icon?: string;
-        };
-        floor?: {
-            _id: string;
-            name?: string;
-            edifice?: {
-                _id: string;
-                name?: string;
-                project?: {
-                    _id?: string;
-                    name?: string;
-                };
-            };
-        };
-    };
-    inspectedBy: {
-        _id: string;
-        name?: string;
-        surname?: string;
-    };
+    unit: UnitWithFloor;
+    inspectedBy: SimpleBlankUser;
     inspectionDate: string;
     scheduledDate?: string;
     type: string;
@@ -77,20 +56,14 @@ export type Inspection = DeletedData & OwnershipData & LifeCycleData & {
     nextInspectionDate?: string;
     followUpRequired: boolean;
     followUpRequiredOutstanding?: boolean;
-    followUpInspection?: {
-        _id: string;
-        name?: string;
-    };
-    followedUpByInspection?: {
-        _id: string;
-        name?: string;
-    };
+    followUpInspection?: InspectionSimple;
+    followedUpByInspection?: InspectionSimple;
     completedAt?: string;
     cancelledAt?: string;
     cancellationReason?: string;
-    clientSignatureMediaId?: {_id: string; url?: string; name?: string;};
+    clientSignatureMediaId?: {_id: string; url?: string; name?: string};
     clientSignedAt?: string;
-    checklistTemplate?: {_id: string; name?: string; title?: string};
+    checklistTemplate?: InspectionChecklistTemplateSimple;
     checklistItems?: InspectionChecklistItem[];
     checklistComplete?: boolean;
 };

@@ -1,29 +1,14 @@
 import type {DeletedData, LifeCycleData, OwnershipData} from "../../../../../core/types/shared.types";
+import type {SimpleUser} from "../../../../../core/dto/user.dto";
+import type {AdCampaignTemplateSimple} from "../../../../dto/adCampaignTemplate.dto";
+import type {LeadSimple} from "../../../../dto/lead.dto";
+import type {ProjectSimple} from "../../../../dto/project.dto";
+import type {UnitSimple} from "../../../../dto/unit.dto";
 import type {
     AdCampaignAudienceMode,
     AdCampaignStatus,
     AdCampaignType,
 } from "./adCampaign.constants";
-
-/** Minimal shape the `refAllowlist` projections expose for a referenced entity. */
-export type AdCampaignRefSummary = {
-    _id: string;
-    name?: string;
-};
-
-export type AdCampaignRecipientSummary = {
-    _id: string;
-    name?: string;
-    surname?: string;
-    username?: string;
-};
-
-export type AdCampaignLeadSummary = {
-    _id: string;
-    firstName?: string;
-    lastName?: string;
-    email?: string;
-};
 
 /**
  * Progress counters. Incremented during a drain and recomputed authoritatively
@@ -46,22 +31,22 @@ export type AdCampaign = OwnershipData & DeletedData & LifeCycleData & {
     campaignType: AdCampaignType;
     status: AdCampaignStatus;
 
-    template?: AdCampaignRefSummary;
+    template?: AdCampaignTemplateSimple;
     subjectOverride?: string;
     bodyHtmlOverride?: string;
 
     audienceMode: AdCampaignAudienceMode;
-    recipients?: AdCampaignRecipientSummary[];
-    leadRecipients?: AdCampaignLeadSummary[];
+    recipients?: SimpleUser[];
+    leadRecipients?: LeadSimple[];
     includeClientUsers?: boolean;
     includeLeads?: boolean;
 
-    projects?: AdCampaignRefSummary[];
-    units?: AdCampaignRefSummary[];
+    projects?: ProjectSimple[];
+    units?: UnitSimple[];
 
-    scheduledAt?: string;
-    startedAt?: string;
-    completedAt?: string;
+    scheduledAt?: Date;
+    startedAt?: Date;
+    completedAt?: Date;
 
     batchSize?: number;
     fromName?: string;

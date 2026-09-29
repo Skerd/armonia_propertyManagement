@@ -1,6 +1,12 @@
 import {Media, PolygonCoordinates} from "../../../../../core/types";
 import type {DeletedData, LifeCycleData, OwnershipData} from "../../../../../core/types/shared.types";
-import {Currency} from "../../../../../core/database/types";
+import type {CitySimple} from "../../../../../core/dto/city.dto";
+import type {CountrySimple} from "../../../../../core/dto/country.dto";
+import type {CurrencySimple} from "../../../../../core/dto/currency.dto";
+import type {StateSimple} from "../../../../../core/dto/state.dto";
+import type {ConstructorSimple} from "../../../../dto/constructor.dto";
+import type {ProjectSimple} from "../../../../dto/project.dto";
+import type {UnitTypeSimple} from "../../../../dto/unitType.dto";
 import type {EffectivePriceVisibility, PriceVisibility} from "../priceVisibility.constants";
 
 export type EdificeFloorCoordinate = {
@@ -10,7 +16,7 @@ export type EdificeFloorCoordinate = {
 };
 
 export type EdificeMoneyByCurrency = {
-    currency?: Currency;
+    currency?: CurrencySimple;
     value: number;
 };
 
@@ -36,24 +42,19 @@ export type EdificeStatistics = {
     };
 };
 
+export type EdificeProject = ProjectSimple & {
+    mainImage?: Media;
+};
+
 export type Edifice = DeletedData & OwnershipData & LifeCycleData & {
     _id: string;
     name: string;
     address: {
         street: string;
         postalCode: string;
-        country: {
-            _id: string;
-            name: string;
-        };
-        state?: {
-            _id: string;
-            name: string;
-        };
-        city: {
-            _id: string;
-            name: string;
-        };
+        country?: CountrySimple;
+        state?: StateSimple;
+        city?: CitySimple;
         latitude: number;
         longitude: number;
     };
@@ -61,10 +62,10 @@ export type Edifice = DeletedData & OwnershipData & LifeCycleData & {
     totalArea: number;
     greenArea: number;
     investmentValue: number;
-    investmentCurrency: Currency;
+    investmentCurrency?: CurrencySimple;
     pricePerMeterSquared?: number;
     verandaPricePerMeterSquared?: number;
-    saleCurrency?: Currency;
+    saleCurrency?: CurrencySimple;
     numberOfFloors?: number;
     numberOfParkingSpaces?: number;
     numberOfGarages?: number;
@@ -72,25 +73,14 @@ export type Edifice = DeletedData & OwnershipData & LifeCycleData & {
     numberOfFloorsUnderGround?: number;
     commercialFacilities?: string[];
     neighborhoodFacilities?: string[];
-    constructors?: Array<{
-        _id: string;
-        name: string;
-    }>;
-    propertyTypes?: Array<{
-        _id: string;
-        name?: string;
-        icon?: string;
-    }>;
+    constructors?: ConstructorSimple[];
+    propertyTypes?: UnitTypeSimple[];
     mainImage?: Media;
     imageGallery?: Media[];
     videoGallery?: Media[];
     mediaFiles?: Media[];
     marketingBooklet?: Media;
-    project: {
-        _id: string;
-        name: string;
-        mainImage: Media;
-    };
+    project: EdificeProject;
     statistics?: EdificeStatistics;
     floorsCoordinates?: EdificeFloorCoordinate[];
     polygonCoordinates?: PolygonCoordinates[];

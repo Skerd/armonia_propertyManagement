@@ -1,5 +1,14 @@
 import type {Media} from "../../../../../../core/types";
 import type {DeletedData, LifeCycleData, OwnershipData} from "../../../../../../core/types/shared.types";
+import type {CompanyBlank} from "../../../../../../core/dto/company.dto";
+import type {CurrencySimple} from "../../../../../../core/dto/currency.dto";
+import type {SimpleBlankUser} from "../../../../../../core/dto/user.dto";
+import type {EdificeSimple} from "../../../../../dto/edifice.dto";
+import type {FloorSimple} from "../../../../../dto/floor.dto";
+import type {PaymentPlanSimple} from "../../../../../dto/paymentPlan.dto";
+import type {ProjectSimple} from "../../../../../dto/project.dto";
+import type {ReservationBlank} from "../../../../../dto/reservation.dto";
+import type {UnitSale} from "../../../../../dto/unit.dto";
 import type {ApprovalStage} from "../modificationRequest/modificationRequest.dto";
 import type {HandoverPackage, SaleHandoverChecklistItem} from "../../handoverPackage/handoverPackage.dto";
 
@@ -7,99 +16,39 @@ export type Sale = DeletedData & OwnershipData & LifeCycleData & {
     _id: string;
     /** Unique sale code from persistence (e.g. SALE-YYYYMMDD-XXXXXXXX). */
     name?: string;
-    unit: {
-        _id: string;
-        name?: string;
-        unitNumber?: string;
-        unitType?: {
-            _id: string;
-            name?: string;
-            icon?: string;
-        };
-        price: number;
-        priceCurrency?: {
-            _id: string;
-            name?: string;
-            symbol?: string;
-            abbreviation?: string;
-        }
-    };
-    project?: {
-        _id: string;
-        name?: string;
-    };
-    edifice?: {
-        _id: string;
-        name?: string;
-    };
-    floor?: {
-        _id: string;
-        name?: string;
-    };
+    unit: UnitSale;
+    project?: ProjectSimple;
+    edifice?: EdificeSimple;
+    floor?: FloorSimple;
     paymentType: string;
-    paymentPlan?: {
-        _id: string;
-        name?: string;
-    };
-    reservation?: {
-        _id: string;
-        name?: string;
-    };
+    paymentPlan?: PaymentPlanSimple;
+    reservation?: ReservationBlank;
     listedUnitPrice?: number;
-    listedUnitCurrency?: {
-        _id: string;
-        name?: string;
-        symbol?: string;
-        abbreviation?: string;
-    };
+    listedUnitCurrency?: CurrencySimple;
     saleExchangeRate?: number;
     reservationDepositAmount?: number;
-    reservationDepositCurrency?: {
-        _id: string;
-        name?: string;
-        symbol?: string;
-        abbreviation?: string;
-    };
+    reservationDepositCurrency?: CurrencySimple;
     reservationExchangeRate?: number;
     reservationConvertedAmount?: number;
     localDiscount?: number;
-    buyer?: {
-        _id: string;
-        name?: string;
-        surname?: string;
-    };
-    buyerCompany?: {
-        _id: string;
-        name?: string;
-        vat?: string;
-    };
+    buyer?: SimpleBlankUser;
+    buyerCompany?: CompanyBlank;
     purchaseContract?: Media;
     additionalDocuments?: Media[];
-    soldBy: {
-        _id: string;
-        name?: string;
-        surname?: string;
-    };
+    soldBy: SimpleBlankUser;
     saleDate: string;
     finalPrice: number;
-    saleCurrency: {
-        _id: string;
-        name?: string;
-        symbol?: string;
-        abbreviation?: string;
-    };
+    saleCurrency: CurrencySimple;
     notes?: string;
     transactionReference?: string;
     saleConfirmationEmailSentAt?: string;
     approvalStatus?: string;
     saleApproval?: ApprovalStage;
-    // FEAT-004 — handover tracking
     handoverDate?: string;
     handoverCertificate?: Media;
-    handedOverBy?: {_id: string; name?: string; surname?: string};
+    handedOverBy?: SimpleBlankUser;
     handoverNotes?: string;
     handoverCompletedAt?: string;
-    // FEAT-014 — title transfer tracking
     titleTransferDate?: string;
     deedNumber?: string;
     notaryName?: string;

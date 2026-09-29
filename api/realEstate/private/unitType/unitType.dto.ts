@@ -1,9 +1,5 @@
 import type {DeletedData, LifeCycleData, OwnershipData} from "../../../../../core/types/shared.types";
-
-export type UnitTypeCategorySimple = {
-    _id: string;
-    name: string;
-};
+import type {UnitTypeCategorySimple} from "../../../../dto/unitTypeCategory.dto";
 
 export type UnitType = DeletedData & OwnershipData & LifeCycleData & {
     _id: string;

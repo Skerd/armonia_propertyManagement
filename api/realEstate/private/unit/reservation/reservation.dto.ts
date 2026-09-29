@@ -1,64 +1,29 @@
 import type {DeletedData, LifeCycleData, OwnershipData} from "../../../../../../core/types/shared.types";
-import {Media} from "../../../../../../core/types";
+import type {Media} from "../../../../../../core/types";
+import type {CompanyBlank} from "../../../../../../core/dto/company.dto";
+import type {CurrencySimple} from "../../../../../../core/dto/currency.dto";
+import type {SimpleBlankUser} from "../../../../../../core/dto/user.dto";
+import type {EdificeSimple} from "../../../../../dto/edifice.dto";
+import type {FloorSimple} from "../../../../../dto/floor.dto";
+import type {ProjectSimple} from "../../../../../dto/project.dto";
+import type {UnitSale} from "../../../../../dto/unit.dto";
 
 /** Reservation document as returned by list/single APIs (DTO). */
 export type Reservation = DeletedData & OwnershipData & LifeCycleData & {
     _id: string;
     name?: string;
-    unit: {
-        _id: string;
-        name?: string;
-        unitNumber?: string;
-        unitType?: {
-            _id: string;
-            name?: string;
-            icon?: string;
-        };
-        price?: number;
-        priceCurrency?: {
-            _id: string;
-            name?: string;
-            symbol?: string;
-            abbreviation?: string;
-        };
-    };
-    project?: {
-        _id: string;
-        name?: string;
-    };
-    edifice?: {
-        _id: string;
-        name?: string;
-    };
-    floor?: {
-        _id: string;
-        name?: string;
-    };
-    reservedBy: {
-        _id: string;
-        name?: string;
-        surname?: string;
-    };
-    reservedByCompany: {
-        _id: string;
-        name?: string;
-        vat?: string;
-    };
-    client: {
-        _id: string;
-        name?: string;
-        surname?: string;
-    };
+    unit: UnitSale;
+    project?: ProjectSimple;
+    edifice?: EdificeSimple;
+    floor?: FloorSimple;
+    reservedBy: SimpleBlankUser;
+    reservedByCompany: CompanyBlank;
+    client: SimpleBlankUser;
     reservationDate: string;
     expirationDate?: string;
     reservationNotes?: string;
     depositAmount?: number;
-    depositCurrency?: {
-        _id: string;
-        name?: string;
-        symbol?: string;
-        abbreviation?: string;
-    };
+    depositCurrency?: CurrencySimple;
     paymentMethod?: string;
     isActive: boolean;
     cancelledAt?: string;

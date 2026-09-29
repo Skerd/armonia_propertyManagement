@@ -1,14 +1,17 @@
 import type {Media} from "../../../../../core/types";
 import type {DeletedData, LifeCycleData, OwnershipData} from "../../../../../core/types/shared.types";
+import type {CurrencySimple} from "../../../../../core/dto/currency.dto";
+import type {LeaseSimple} from "../../../../dto/lease.dto";
+import type {UnitSimple} from "../../../../dto/unit.dto";
 
 export type RentalPayment = DeletedData & OwnershipData & LifeCycleData & {
     _id: string;
     name?: string;
-    lease?: {_id: string; name?: string};
-    unit?: {_id: string; name?: string; unitNumber?: number};
+    lease?: LeaseSimple;
+    unit?: UnitSimple;
     dueDate: string;
     amount: number;
-    currency?: {_id: string; name?: string; symbol?: string};
+    currency?: CurrencySimple;
     status?: string;
     paidDate?: string;
     paidAmount?: number;
@@ -18,7 +21,7 @@ export type RentalPayment = DeletedData & OwnershipData & LifeCycleData & {
         amount: number;
         paidDate: string;
         notes?: string;
-        currency?: {_id: string; name?: string; symbol?: string};
+        currency?: CurrencySimple;
         media?: Media[];
     }[];
     paymentReceiptsMedia?: Media[];

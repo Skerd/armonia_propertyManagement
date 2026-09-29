@@ -1,29 +1,19 @@
 import type { Media } from "../../../../../core/types";
 import type {DeletedData, LifeCycleData, OwnershipData} from "../../../../../core/types/shared.types";
+import type {CitySimple} from "../../../../../core/dto/city.dto";
+import type {CountrySimple} from "../../../../../core/dto/country.dto";
+import type {StateSimple} from "../../../../../core/dto/state.dto";
+import type {EdificeBlank} from "../../../../dto/edifice.dto";
 
 export type ConstructorAddress = {
-    _id: string,
-    street: string,
-    postalCode: string,
-    city: {
-        _id: string,
-        name: string
-    },
-    state: {
-        _id: string,
-        name: string
-    },
-    country: {
-        _id: string,
-        name: string
-    },
-    latitude: number,
-    longitude: number
-};
-
-export type ConstructorEdifice = {
-    _id: string,
-    name: string,
+    _id: string;
+    street: string;
+    postalCode: string;
+    city?: CitySimple;
+    state?: StateSimple;
+    country?: CountrySimple;
+    latitude: number;
+    longitude: number;
 };
 
 export type Constructor = DeletedData & OwnershipData & LifeCycleData & {
@@ -36,7 +26,7 @@ export type Constructor = DeletedData & OwnershipData & LifeCycleData & {
     logo?: Media;
     website: string;
     vat: string;
-    edifices?: ConstructorEdifice[];
+    edifices?: EdificeBlank[];
     partyType?: string;
     trades?: string;
     insuranceExpiry?: string;
