@@ -17,6 +17,8 @@ export type AdCampaignRecipient = OwnershipData & DeletedData & LifeCycleData & 
     user?: SimpleUser;
     lead?: LeadSimple;
     email: string;
+    firstName?: string;
+    lastName?: string;
     fullName?: string;
     languageCode?: string;
     status: AdCampaignRecipientStatus;

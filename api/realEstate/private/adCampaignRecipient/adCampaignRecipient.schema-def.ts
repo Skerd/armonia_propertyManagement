@@ -23,6 +23,8 @@ export const AdCampaignRecipientSchemaDef = {
     user:          { type: "objectId", required: false },
     lead:          { type: "objectId", required: false },
     email:         { type: "string",   required: true,  format: "email" },
+    firstName:     { type: "string",   required: false, max: 80 },
+    lastName:      { type: "string",   required: false, max: 80 },
     fullName:      { type: "string",   required: false, max: 200 },
     languageCode:  { type: "string",   required: false, max: 10 },
     status:        { type: "enum",     required: true,  options: AD_CAMPAIGN_RECIPIENT_STATUS_VALUES },

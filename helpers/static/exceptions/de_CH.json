@@ -3,6 +3,22 @@
     "message": "Diese Kampagne ist bereits abgeschlossen.",
     "error_code": "ad_campaign_already_finished"
   },
+  "ad_campaign_content_project_required": {
+    "message": "Eine Kampagne für ein neues Projekt braucht das anzukündigende Projekt.",
+    "error_code": "ad_campaign_content_project_required"
+  },
+  "ad_campaign_content_unit_required": {
+    "message": "Eine Preisänderungskampagne braucht die Einheit, deren Preis sich geändert hat.",
+    "error_code": "ad_campaign_content_unit_required"
+  },
+  "ad_campaign_empty_audience": {
+    "message": "Niemand würde diese Kampagne erhalten. Prüfen Sie die Zielgruppe vor dem Versand.",
+    "error_code": "ad_campaign_empty_audience"
+  },
+  "ad_campaign_no_price_history": {
+    "message": "Diese Einheit hat keinen vorherigen Preis zum Vergleich. Ändern Sie zuerst den Preis, dann senden Sie die Kampagne.",
+    "error_code": "ad_campaign_no_price_history"
+  },
   "ad_campaign_not_editable": {
     "message": "Diese Kampagne kann nicht mehr geändert werden, da sie bereits versendet wird oder abgeschlossen ist.",
     "error_code": "ad_campaign_not_editable"
@@ -22,6 +38,18 @@
   "ad_campaign_send_disabled": {
     "message": "Der Massenversand von Kampagnen ist in dieser Umgebung deaktiviert.",
     "error_code": "ad_campaign_send_disabled"
+  },
+  "ad_campaign_offer_fields_required": {
+    "message": "Eine Angebotskampagne braucht einen Titel und ein Enddatum.",
+    "error_code": "ad_campaign_offer_fields_required"
+  },
+  "ad_campaign_test_send_no_operator_email": {
+    "message": "Ihr Konto hat keine E-Mail-Adresse für einen Testversand.",
+    "error_code": "ad_campaign_test_send_no_operator_email"
+  },
+  "ad_campaign_unresolved_placeholders": {
+    "message": "Diese Kampagne enthält noch ungefüllte Platzhalter. Ergänzen Sie den Inhalt oder entfernen Sie die Tokens.",
+    "error_code": "ad_campaign_unresolved_placeholders"
   },
   "adCampaignTemplate_not_found": {
     "message": "Kampagnenvorlage nicht gefunden",

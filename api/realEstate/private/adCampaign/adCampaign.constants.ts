@@ -167,6 +167,10 @@ export function findUnknownPlaceholders(text: string | null | undefined): string
 export const AD_CAMPAIGN_NAME_MAX = 120;
 /** Admin-facing campaign label. */
 export const AD_CAMPAIGN_TITLE_MAX = 160;
+/** Operator-authored offer headline. */
+export const AD_CAMPAIGN_OFFER_TITLE_MAX = 160;
+/** Optional CTA override. */
+export const AD_CAMPAIGN_CTA_URL_MAX = 2048;
 /** Email subject line, and the preview/preheader text. */
 export const AD_CAMPAIGN_SUBJECT_MAX = 200;
 /** Authored HTML body. Generous — an email with images inlined as markup gets long. */

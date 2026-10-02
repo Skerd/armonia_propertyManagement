@@ -4,6 +4,8 @@ import {
     AD_CAMPAIGN_BATCH_SIZE_MAX,
     AD_CAMPAIGN_BATCH_SIZE_MIN,
     AD_CAMPAIGN_BODY_MAX,
+    AD_CAMPAIGN_CTA_URL_MAX,
+    AD_CAMPAIGN_OFFER_TITLE_MAX,
     AD_CAMPAIGN_SUBJECT_MAX,
     AD_CAMPAIGN_TITLE_MAX,
     AD_CAMPAIGN_TYPE_VALUES,
@@ -36,6 +38,14 @@ export const AdCampaignSchemaDef = {
     // Scope filters. Empty in `all` mode means the whole tenant.
     projects:           { type: "objectIdArray", required: false },
     units:              { type: "objectIdArray", required: false },
+
+    // What the email is about — independent of who receives it.
+    // Required-by-type is enforced in `withContentFieldsCheck`, not here.
+    contentUnit:        { type: "objectId",     required: false },
+    contentProject:     { type: "objectId",     required: false },
+    offerTitle:         { type: "string",       required: false, max: AD_CAMPAIGN_OFFER_TITLE_MAX },
+    offerEndsAt:        { type: "date",         required: false },
+    ctaUrl:             { type: "string",       required: false, format: "url", max: AD_CAMPAIGN_CTA_URL_MAX },
 
     scheduledAt:        { type: "date",         required: false, validation: "notInThePast" },
     batchSize:          { type: "number",       required: false, min: AD_CAMPAIGN_BATCH_SIZE_MIN, max: AD_CAMPAIGN_BATCH_SIZE_MAX },

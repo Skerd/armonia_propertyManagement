@@ -3,6 +3,22 @@
     "message": "Questa campagna è già conclusa.",
     "error_code": "ad_campaign_already_finished"
   },
+  "ad_campaign_content_project_required": {
+    "message": "Una campagna per un nuovo progetto deve indicare il progetto annunciato.",
+    "error_code": "ad_campaign_content_project_required"
+  },
+  "ad_campaign_content_unit_required": {
+    "message": "Una campagna di cambio prezzo deve indicare l'unità il cui prezzo è cambiato.",
+    "error_code": "ad_campaign_content_unit_required"
+  },
+  "ad_campaign_empty_audience": {
+    "message": "Nessuno riceverebbe questa campagna. Controlla il pubblico prima di inviare.",
+    "error_code": "ad_campaign_empty_audience"
+  },
+  "ad_campaign_no_price_history": {
+    "message": "Questa unità non ha un prezzo precedente da confrontare. Modifica prima il prezzo, poi invia la campagna.",
+    "error_code": "ad_campaign_no_price_history"
+  },
   "ad_campaign_not_editable": {
     "message": "Questa campagna non può più essere modificata perché è già in invio o conclusa.",
     "error_code": "ad_campaign_not_editable"
@@ -22,6 +38,18 @@
   "ad_campaign_send_disabled": {
     "message": "L'invio massivo di campagne è disattivato in questo ambiente.",
     "error_code": "ad_campaign_send_disabled"
+  },
+  "ad_campaign_offer_fields_required": {
+    "message": "Una campagna offerta deve avere un titolo e una data di fine.",
+    "error_code": "ad_campaign_offer_fields_required"
+  },
+  "ad_campaign_test_send_no_operator_email": {
+    "message": "Il tuo account non ha un indirizzo e-mail per un invio di prova.",
+    "error_code": "ad_campaign_test_send_no_operator_email"
+  },
+  "ad_campaign_unresolved_placeholders": {
+    "message": "Questa campagna ha ancora segnaposto vuoti. Aggiungi il contenuto mancante o rimuovi i token.",
+    "error_code": "ad_campaign_unresolved_placeholders"
   },
   "adCampaignTemplate_not_found": {
     "message": "Modello di campagna non trovato",

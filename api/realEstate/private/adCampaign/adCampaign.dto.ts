@@ -44,6 +44,12 @@ export type AdCampaign = OwnershipData & DeletedData & LifeCycleData & {
     projects?: ProjectSimple[];
     units?: UnitSimple[];
 
+    contentUnit?: UnitSimple;
+    contentProject?: ProjectSimple;
+    offerTitle?: string;
+    offerEndsAt?: Date;
+    ctaUrl?: string;
+
     scheduledAt?: Date;
     startedAt?: Date;
     completedAt?: Date;

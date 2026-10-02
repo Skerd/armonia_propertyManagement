@@ -3,6 +3,22 @@
     "message": "This campaign has already finished.",
     "error_code": "ad_campaign_already_finished"
   },
+  "ad_campaign_content_project_required": {
+    "message": "A new-project campaign needs the project it is announcing.",
+    "error_code": "ad_campaign_content_project_required"
+  },
+  "ad_campaign_content_unit_required": {
+    "message": "A price-change campaign needs the unit whose price changed.",
+    "error_code": "ad_campaign_content_unit_required"
+  },
+  "ad_campaign_empty_audience": {
+    "message": "Nobody would receive this campaign. Check the audience before sending.",
+    "error_code": "ad_campaign_empty_audience"
+  },
+  "ad_campaign_no_price_history": {
+    "message": "This unit has no previous price to compare against. Change the unit price first, then send the campaign.",
+    "error_code": "ad_campaign_no_price_history"
+  },
   "ad_campaign_not_editable": {
     "message": "This campaign can no longer be changed because it is already sending or finished.",
     "error_code": "ad_campaign_not_editable"
@@ -22,6 +38,18 @@
   "ad_campaign_send_disabled": {
     "message": "Bulk campaign sending is disabled in this environment.",
     "error_code": "ad_campaign_send_disabled"
+  },
+  "ad_campaign_offer_fields_required": {
+    "message": "An offer campaign needs a title and an end date.",
+    "error_code": "ad_campaign_offer_fields_required"
+  },
+  "ad_campaign_test_send_no_operator_email": {
+    "message": "Your account has no email address to send a test to.",
+    "error_code": "ad_campaign_test_send_no_operator_email"
+  },
+  "ad_campaign_unresolved_placeholders": {
+    "message": "This campaign still has unfilled placeholders. Add the missing content or remove those tokens.",
+    "error_code": "ad_campaign_unresolved_placeholders"
   },
   "adCampaignTemplate_not_found": {
     "message": "Campaign template not found",

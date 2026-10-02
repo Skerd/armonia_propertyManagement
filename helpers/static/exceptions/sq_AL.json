@@ -3,6 +3,22 @@
     "message": "Kjo fushatë ka përfunduar tashmë.",
     "error_code": "ad_campaign_already_finished"
   },
+  "ad_campaign_content_project_required": {
+    "message": "Një fushatë për projekt të ri duhet të tregojë projektin që njofton.",
+    "error_code": "ad_campaign_content_project_required"
+  },
+  "ad_campaign_content_unit_required": {
+    "message": "Një fushatë ndryshimi çmimi duhet të tregojë njësinë së cilës i ndryshoi çmimi.",
+    "error_code": "ad_campaign_content_unit_required"
+  },
+  "ad_campaign_empty_audience": {
+    "message": "Askush nuk do ta merrte këtë fushatë. Kontrolloni audiencën para dërgimit.",
+    "error_code": "ad_campaign_empty_audience"
+  },
+  "ad_campaign_no_price_history": {
+    "message": "Kjo njësi nuk ka një çmim të mëparshëm për krahasim. Ndryshoni fillimisht çmimin, pastaj dërgoni fushatën.",
+    "error_code": "ad_campaign_no_price_history"
+  },
   "ad_campaign_not_editable": {
     "message": "Kjo fushatë nuk mund të ndryshohet më sepse është duke u dërguar ose ka përfunduar.",
     "error_code": "ad_campaign_not_editable"
@@ -22,6 +38,18 @@
   "ad_campaign_send_disabled": {
     "message": "Dërgimi masiv i fushatave është çaktivizuar në këtë mjedis.",
     "error_code": "ad_campaign_send_disabled"
+  },
+  "ad_campaign_offer_fields_required": {
+    "message": "Një fushatë oferte duhet të ketë një titull dhe një datë përfundimi.",
+    "error_code": "ad_campaign_offer_fields_required"
+  },
+  "ad_campaign_test_send_no_operator_email": {
+    "message": "Llogaria juaj nuk ka një adresë email për një dërgim prove.",
+    "error_code": "ad_campaign_test_send_no_operator_email"
+  },
+  "ad_campaign_unresolved_placeholders": {
+    "message": "Kjo fushatë ka ende vendmbajtëse të paplotësuara. Shtoni përmbajtjen ose hiqni ato shenja.",
+    "error_code": "ad_campaign_unresolved_placeholders"
   },
   "adCampaignTemplate_not_found": {
     "message": "Shablloni i fushatës nuk u gjet",
