@@ -1,6 +1,6 @@
 import {registerRefSelects, type RefSelectConfig} from "../../../core/database/filter/refSelectRegistry";
 
-export const PROPERTY_MANAGEMENT_REF_SELECTS = {
+export const PROPERTY_MANAGEMENT_REF_SELECTS: Record<string, RefSelectConfig> = {
     Project: {apiUrl: "/api/realEstate/project/select"},
     Edifice: {apiUrl: "/api/realEstate/edifice/select", postBodyKeys: ["projectId"]},
     Floor: {apiUrl: "/api/realEstate/floor/select", postBodyKeys: ["edificeId"]},
@@ -14,7 +14,7 @@ export const PROPERTY_MANAGEMENT_REF_SELECTS = {
     PaymentPlan: {apiUrl: "/api/realEstate/unit/paymentPlan/select"},
     UnitType: {apiUrl: "/api/realEstate/unitType/select"},
     Constructor: {apiUrl: "/api/realEstate/constructor/select"},
-} as const satisfies Record<string, RefSelectConfig>;
+};
 
 export function registerPropertyManagementRefSelects(): void {
     registerRefSelects(PROPERTY_MANAGEMENT_REF_SELECTS);
