@@ -1,6 +1,9 @@
 import {z} from "zod";
 import {getValidationMessage} from "../../../../../core/helpers/zodBuilder";
-import type {AdCampaignType} from "./adCampaign.constants";
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+    return typeof value === "object" && value !== null && !Array.isArray(value);
+}
 
 function isPresent(value: unknown): boolean {
     if (value == null) return false;
@@ -38,9 +41,10 @@ export function withContentFieldsCheck<T extends z.ZodTypeAny>(
     languageCode: string,
     form: any = null,
 ) {
-    return schema.superRefine((value: Record<string, unknown>, ctx) => {
-        const campaignType = value.campaignType as AdCampaignType | undefined;
-        if (!campaignType) return;
+    return schema.superRefine((value, ctx) => {
+        if (!isRecord(value)) return;
+        const campaignType = value.campaignType;
+        if (typeof campaignType !== "string") return;
 
         if (campaignType === "price_change") {
             requireField(value, "contentUnit", ctx, languageCode, form, "objectId");
