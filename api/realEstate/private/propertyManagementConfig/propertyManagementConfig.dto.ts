@@ -5,6 +5,7 @@ export type PropertyManagementConfig = OwnershipData & DeletedData & LifeCycleDa
     _id: string;
     requiresSaleApproval?: boolean;
     requiresHandoverPackageForHandover?: boolean;
+    listedOnPortal?: boolean;
     notifyOnSales?: SimpleBlankUser[];
     notifyOnReservations?: SimpleBlankUser[];
 };
